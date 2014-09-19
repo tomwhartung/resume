@@ -1,0 +1,120 @@
+/*
+ * General site-wide styles for iPhones
+ * Based on a style sheet from Chapter 2 of Building iPhone Apps by Jonathan Stark (O'Reilly)
+ * This file is virtually identical to androidPhone.css, and that is OK.
+ */
+body {
+	background-color: #ddd;
+	color: #222;
+	font-family: Helvetica, Verdana, Arial, sans-serif;
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+}
+/*
+ * Header styles
+ */
+#header h1 {
+	margin: 0;
+	padding: 0;
+}
+#header h1 a {
+	background-color: #ccc;
+	border-bottom: 1px solid #666;
+	color: #222;
+	display: block;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 10px 0;
+	text-align: center;
+	text-decoration: none;
+}
+/*
+ * Navigation
+ */
+#header ul {
+	list-style: none;
+	margin: 10px;
+	padding: 0;
+}
+#header ul li a {
+	background-color: #FFFFFF;
+	border: 1px solid #999999;
+	color: #222222;
+	display: block;
+	font-size: 17px;
+	font-weight: bold;
+	margin-bottom: -1px;
+	padding: 12px 10px;
+	text-decoration: none;
+}
+/*
+ * Indent content a tad bit from the edge
+ */
+#content {
+	padding: 10px;
+}
+/*
+ * Niceties: drop shadow for header text and gradient for header background
+ * Note: gradient can be used anywhere in lieu of a URL
+ *    type: linear (or radial)
+ *    start: left top (or left bottom, right top, or right bottom)
+ *    end: left bottom (or left top, right top, or right bottom)
+ *    start color and end color
+ */
+#header h1 a {
+	text-shadow: 0px 1px 0px #fff;	/* horiz offset, vert offset, blur, color */
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#ccc), to(#999));
+}
+/*
+ * Round off corners of navigation elements
+ */
+#header ul li:first-child a {
+	-webkit-border-top-left-radius: 8px;
+	-webkit-border-top-right-radius: 8px;
+}
+#header ul li:last-child a {
+    -webkit-border-bottom-left-radius: 8px;
+	-webkit-border-bottom-right-radius: 8px;
+}
+/*
+ * Used to toggle display of menu
+ */
+#header ul.hide, #content div.hide  {
+	display: none;
+}
+#header div.leftButton {
+	position: absolute;			/* remove from document flow */
+	top: 7px;
+	left: 6px;
+	height: 30px;				/* big enough to tap easily */
+	font-weight: bold;
+	text-align: center;
+	color: white;
+	text-shadow: rgba(0,0,0,0.6) 0px -1px 0px;	/* 0.6 = alpha value (opacity) */
+	line-height: 28px;							/* don't want it flush against top */
+	border-width: 0 8px 0 8px;					/* 0 top and bottom, 8px left and right */
+	-webkit-border-image: url(../../images/button.png) 0 8 0 8;
+}
+#header div.pressed {
+	-webkit-border-image: url(../../images/button_clicked.png) 0 8 0 8;
+}
+div#content {
+	text-align:  left;
+}
+p {
+	margin: 3px;
+	padding: 3px;
+}
+ul {
+	margin: 0px;
+	padding: 0px;
+}
+li {
+	margin: 2px 0px 2px 0px;
+	padding: 2px 0px 2px 0px;
+}
+li ul {
+	margin: 5px;
+	padding: 5px;
+}

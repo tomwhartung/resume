@@ -1,0 +1,36 @@
+/*
+ * tablet.css: styles for tablets
+ * Similar to desktop.css except margins and width are smaller and
+ * font sizes are a little bit bigger
+ */
+body {
+	background-color: #000000;   /* reverse */
+	color:            #ffffff;   /* colors */
+}
+div#container {
+	margin-top:    0.25in;
+	margin-left:   0.50in;
+	margin-right:  1.25in;
+}
+div#content {
+	text-align:  left;
+}
+h1 {
+	margin-top:    1.25em;
+}
+h2 {
+	margin-top:    1.0em;
+}
+ul {
+	margin-top: 0.5em;
+	padding-top: 0.0em;
+}
+a, li, p {
+/*	font-size:   1.25em; */  /* doesn't work as hoped */
+	font-size:   22px;
+	margin-top:  0.5em;
+	line-height: 1.75em;
+}
+a, a:link, a:hover, a:visited  {
+	color: skyblue;      /* make links easier to see */
+}

@@ -1,0 +1,31 @@
+/*
+ * desktop.css: styles for desktop PCs
+ * Similar to tablet.css except margins and width are bigger and 
+ * font sizes are a little bit smaller.
+ */
+body {
+	background-color: #ffffff;
+	color:            #000000;
+}
+div#container {
+	margin-top:    0.50in;
+	margin-left:   0.70in;
+	width:         7.25in;
+}
+div#content {
+	text-align:  justify;
+}
+h1 {
+	margin-top: 1.0em;
+}
+h2 {
+	margin-top: 0.75em;
+}
+ul {
+	margin-top: 0.25em;
+	padding-top: 0.0em;
+}
+a, li, p {
+	margin-top:  0.25em;
+	line-height: 1.25em;
+}
