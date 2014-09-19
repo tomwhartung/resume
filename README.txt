@@ -6,6 +6,9 @@ Author: Tom W. Hartung
 ---------------
 Follow these steps to implement your own mobile friendly resume.
 
+Note that this is still a Work in Progress (WiP), so contact me
+if you have any questions.
+
 This process requires you first install idMyGadget.  It was
 developed on a server running Ubuntu 14.04, running Apache with
 the DocumentRoot set to /var/www .
@@ -25,13 +28,14 @@ such as Cygwin, to run these commands.
 
  Installation and Setup:
 -------------------------
-Install (git clone) idMyGadget source:
+Install idMyGadget source and initialize WURFL (the Wireless
+Uniform Resource FiLe):
 	cd /var/www
 	git clone git://github.com:tomwhartung/idMyGadget.git
 	cd idMyGadget
 
 Follow the instructions in the idMyGadget/README.txt file to
-get that going.
+initialize WURFL get all of that going.
 
 Install (git clone) the resume source:
 	cd /var/www
@@ -41,14 +45,18 @@ Link the idMyGadget directory into the resume directory:
 	cd /var/www/resume
 	ln -s /var/www/idMyGadget .
 
-Copy the example js/ProfessionalExperience.js.example and
-js/Resume.js.example files:
-	cd /var/www/resume/js
-	cp ProfessionalExperience.js.example ProfessionalExperience.js
-	cp Resume.js.example Resume.js
+Change the value of the $myName variable near the top of
+index.php , so that your name (and not mine) appears in the
+title of the page.
 
-Update the JSON in these files so that they contain the content of your
-own resume.
+Copy the example js/ProfessionalExperience-example.js and
+js/Resume-example.js files:
+	cd /var/www/resume/js
+	cp ProfessionalExperience-example.js ProfessionalExperience.js
+	cp Resume-example.js Resume.js
+
+Update the JavaScript object literals in these files so that
+they contain the content of your resume.
 
 To verify that you have everything set up properly, access the
 following file in your web browser:
@@ -59,7 +67,8 @@ For example, if you are setting this up on your localhost, go to
 
  Conclusion:
 -------------
-
+This is still a Work In Progress, so no conclusions are available
+right now.
 
 
  References:
