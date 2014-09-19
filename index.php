@@ -5,6 +5,8 @@
  * index.php: static and dynamic markup, and handlebars templates for
  * my mobile friendly, interactive resume
  */
+$myName = 'Tom W. Hartung';
+
 $newIncludePath = get_include_path() . ":php";
 set_include_path( $newIncludePath );
 include_once 'filenames.php';
@@ -54,8 +56,6 @@ else if ( $gadgetType === GADGET_TYPE_PHONE )
 		$deviceJsFile = JS_DEVICE_ANDROID_PHONE;
 	}
 }
-// $pageTitle = $gadgetString . " Resume";
-$pageTitle = 'Tom W. Hartung';
 
 //
 // CSS link tags to consider thinking about - specifically the media attributes:
@@ -70,7 +70,7 @@ $pageTitle = 'Tom W. Hartung';
 ?>
 
 <head>
-	<title><?php print $pageTitle; ?></title>
+	<title><?php print $myName; ?></title>
 <?php
 print '<link rel="stylesheet" type="text/css" ' .
 		'href="' . STYLE_SHEET_DIRECTORY . STYLE_SHEET_ALL_DEVICES . '" />';
@@ -265,11 +265,11 @@ else   // presumably a tablet
 	<div id="container">
 		<div id='header'>
 		<?php if ( $gadgetType === GADGET_TYPE_PHONE ): ?>
-			<h1><a href='./'>Tom Hartung</a></h1>
+			<h1><a href='./'><?php echo $myName ?></a></h1>
 		<?php elseif ( $gadgetType === GADGET_TYPE_DESKTOP_BROWSER ): ?>
-			<h1>The Resume of Tom W. Hartung</h1>
+			<h1>The Resume of <?php echo $myName ?></h1>
 		<?php else: ?>
-			<h1>Tom W. Hartung's Resume</h1>
+			<h1><?php echo $myName ?>'s Resume</h1>
 		<?php endif; ?>
 		</div>  <!-- header -->
 
@@ -286,7 +286,7 @@ else   // presumably a tablet
 				<li class="footer_links"><a href="http://tomhartung.com">tomhartung.com</a></li>
 			</ul>
 			<hr />
-			<p class="footer">&copy; 2001-2014 Tom Hartung, P. O. Box 18216, Denver, CO 80218, 303-863-1757</p>
+			<p class="footer">&copy; 2001-2014 Tom W. Hartung, P. O. Box 18216, Denver, CO 80218, 303-863-1757</p>
 			<hr />
 		</div> <!-- footer -->
 	</div> <!-- container -->
