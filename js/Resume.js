@@ -44,7 +44,7 @@ var Introduction = Object.create( MinimalSection, {
 			"if you would like a version of this resume in Word format, or if you know of " +
 			"any opportunities in the Denver, Colorado Metropolitan area (including Boulder) " +
 			"appropriate for someone with my background."
-	},
+	}
 });
 
 /**
@@ -76,7 +76,7 @@ var SummaryOfQualifications = Object.create( MinimalSection, {
 			"I am very personable, enjoy problem solving and learning new tools and " +
 			"technologies, have a passion for writing easily-maintainable code, and " +
 			"am willing and able to do whatever it takes to get the job done."
-	},
+	}
 });
 
 /**
@@ -99,35 +99,35 @@ var TechnicalExperience = Object.create( MinimalSection, {
 		value: "",    // content is bullet points
 		configurable: true,
 		writable: true
-	},
+	}
 });
 TechnicalExperience.point_01 = {
 	bold: "Programming Languages:",
-	text: "Java, PHP, JavaScript, CoffeeScript, Bash, Ksh, Perl, Awk, C/C++, C#, Tcl/Expect, Cobol, Assemblers",
+	text: "Java, PHP, JavaScript, CoffeeScript, Bash, Ksh, Perl, Awk, C/C++, C#, Tcl/Expect, Cobol, Assemblers"
 };
 TechnicalExperience.point_05 = {
 	bold: "Web Technologies:",
-	text: "Apache, Tomcat, Selenium WebDriver API, jQuery, Backbone, Underscore, Node, Mootools, REST, SOAP, LAMP, WAMP, HTML, CSS, XHTML, XML, Struts, Adobe Flex3, Freemarker Templates, Joomla, PHP Nuke, Ajax, JSP",
+	text: "Apache, Tomcat, Selenium WebDriver API, jQuery, Backbone, Underscore, Node, Mootools, REST, SOAP, LAMP, WAMP, HTML, CSS, XHTML, XML, Struts, Adobe Flex3, Freemarker Templates, Joomla, PHP Nuke, Ajax, JSP"
 };
 TechnicalExperience.point_10 = {
 	bold: "Relational Databases:",
-	text: "MySql, Microsoft SQL Server, Oracle, LiquiBase, Sybase, Informix",
+	text: "MySql, Microsoft SQL Server, Oracle, LiquiBase, Sybase, Informix"
 };
 TechnicalExperience.point_15 = {
 	bold: "Development Tools:",
-	text: "Eclipse, JUnit, Spring, Hibernate, NetBeans, IntelliJ, MySql Work Bench, Sql Server Management Studio, phpMyAdmin, Vim, Cygwin",
+	text: "Eclipse, JUnit, Spring, Hibernate, NetBeans, IntelliJ, MySql Work Bench, Sql Server Management Studio, phpMyAdmin, Vim, Cygwin"
 };
 TechnicalExperience.point_20 = {
 	bold: "Operating Systems:",
-	text: "Unix (Linux, Mac OS X, Solaris, Sun-OS, AIX, HP-UX), Windows7, Windows XP, Windows XP Mode, DOS, MCP, MVS",
+	text: "Unix (Linux, Mac OS X, Solaris, Sun-OS, AIX, HP-UX), Windows7, Windows Vista, Windows XP, Windows XP Mode, DOS, MCP, MVS"
 };
 TechnicalExperience.point_25 = {
 	bold: "Software Life Cycle Tools:",
-	text: "Maven, Git, Jira, Ant, Subversion (SVN), Tortoise SVN, Maven, Version One, Redmine, Make, Visio, Rational Rose, Clearcase, Bugzilla, CVS, RCS, PVCS",
+	text: "Maven, Git, Jira, Ant, Subversion (SVN), Tortoise SVN, Maven, Version One, Redmine, Make, Visio, Rational Rose, Clearcase, Bugzilla, CVS, RCS, PVCS"
 };
 TechnicalExperience.point_30 = {
 	bold: "Other Software Packages:",
-	text: "Microsoft Office, Open Office, PHP Nuke, Autocad",
+	text: "Microsoft Office, Open Office, PHP Nuke, Autocad"
 };
 TechnicalExperience.bulletPoints = [
 	TechnicalExperience.point_01,
@@ -136,7 +136,7 @@ TechnicalExperience.bulletPoints = [
 	TechnicalExperience.point_15,
 	TechnicalExperience.point_20,
 	TechnicalExperience.point_25,
-	TechnicalExperience.point_30,
+	TechnicalExperience.point_30
 ];
 
 /**
@@ -159,7 +159,7 @@ var RepresentativeAccomplishments = Object.create( MinimalSection, {
 		value: "TBD (RepresentativeAccomplishments content comprises bullet points)",
 		configurable: true,
 		writable: true
-	},
+	}
 });
 //
 // One might say that this is inefficient use of variables, e.g.:
@@ -173,19 +173,19 @@ RepresentativeAccomplishments.point_05 = {
 	text: "Demonstrated ability to reduce complicated programs and processes intowell-organized sets of simpler components that others can maintain with minimal effort.",
 };
 RepresentativeAccomplishments.point_10 = {
-	text: "Worked independently to gather requirements, design, code, test, document, and implement programs effectively, using new technologies to meet a variety of customer needs.",
+	text: "Worked independently to gather requirements, design, code, test, document, and implement programs effectively, using new technologies to meet a variety of customer needs."
 };
 RepresentativeAccomplishments.point_15 = {
-	text: "Defined, performed, and documented processes required to customize and implement an extremely complicated software package, giving the company a unique product to offer its customers.",
+	text: "Defined, performed, and documented processes required to customize and implement an extremely complicated software package, giving the company a unique product to offer its customers."
 };
 RepresentativeAccomplishments.point_20 = {
-	text: "Willing to perform tasks that others shun, and able to succeed where others fail.",
+	text: "Willing to perform tasks that others shun, and able to succeed where others fail."
 };
 RepresentativeAccomplishments.point_25 = {
-	text: "Earned five promotions, demonstrating the desire and ability to master new technologies.",
+	text: "Earned five promotions, demonstrating the desire and ability to master new technologies."
 };
 RepresentativeAccomplishments.point_30 = {
-	text: "Always professional, exhibiting excellent written and oral communication skills even under stress.",
+	text: ""
 };
 RepresentativeAccomplishments.bulletPoints = [
 	RepresentativeAccomplishments.point_01,
@@ -193,8 +193,8 @@ RepresentativeAccomplishments.bulletPoints = [
 	RepresentativeAccomplishments.point_10,
 	RepresentativeAccomplishments.point_15,
 	RepresentativeAccomplishments.point_20,
-	RepresentativeAccomplishments.point_25,
-//	RepresentativeAccomplishments.point_30,
+	RepresentativeAccomplishments.point_25
+//	RepresentativeAccomplishments.point_30
 ];
 
 /**
@@ -221,7 +221,7 @@ var CertificationsAndEducation = Object.create( MinimalSection, {
 		value: "TBD (CertificationsAndEducation content comprises bullet points)",
 		configurable: true,
 		writable: true
-	},
+	}
 });
 CertificationsAndEducation.point_JavaCertification = {
 	linkText: "Sun Certified Java2 Programmer,",
@@ -230,7 +230,7 @@ CertificationsAndEducation.point_JavaCertification = {
 	schoolHref: "",
 	location: "Denver, CO",
 	completedDate: "July, 2001",
-	listItems: "<li>Scored 83% (60% is passing).</li>",
+	listItems: "<li>Scored 83% (60% is passing).</li>"
 };
 CertificationsAndEducation.point_Masters = {
 	linkText: "Master of Interdisciplinary Studies,",
@@ -239,7 +239,7 @@ CertificationsAndEducation.point_Masters = {
 	schoolHref: "http://www.vcu.edu/",
 	location: "Richmond, VA",
 	completedDate: "May, 1989",
-	listItems: "<li>Emphasis: Computer Science and Art</li><li>GPA: 3.77 (of 4.0)</li>",
+	listItems: "<li>Emphasis: Computer Science and Art</li><li>GPA: 3.77 (of 4.0)</li>"
 };
 CertificationsAndEducation.point_Bachelors = {
 	linkText: "Bachelor of Science in Mathematics,",
@@ -252,12 +252,12 @@ CertificationsAndEducation.point_Bachelors = {
 		"<li>GPAs: 3.43 in Major, 3.15 Overall</li>" +
 		"<li>Minor: Chemistry</li>",
 	more: "Computer Languages Learned: Pascal, PL/I, Mainframe Assembler, Hewlett Packard Basic, Cobol, Fortran, Snobol4<br />" +
-		"Paid for 90% of undergraduate-level education myself.",
+		"Paid for 90% of undergraduate-level education myself."
 };
 CertificationsAndEducation.bulletPoints = [
 	CertificationsAndEducation.point_JavaCertification,
 	CertificationsAndEducation.point_Masters,
-	CertificationsAndEducation.point_Bachelors,
+	CertificationsAndEducation.point_Bachelors
 ];
 
 
@@ -281,7 +281,7 @@ var Volunteering = Object.create( MinimalSection, {
 		value: "TBD (Volunteering content comprises bullet points)",
 		configurable: true,
 		writable: true
-	},
+	}
 });
 Volunteering.point_DenverFilmSociety = {
 	bold: "Denver Film Society:",
@@ -289,8 +289,9 @@ Volunteering.point_DenverFilmSociety = {
 	text: "Volunteer Usher since 2011",
 };
 Volunteering.bulletPoints = [
-	Volunteering.point_DenverFilmSociety,
-];//
+	Volunteering.point_DenverFilmSociety
+];
+//
 // =========================================================
 //  Here is where we pull it all together and print it out:
 // =========================================================
