@@ -18,7 +18,6 @@ $newIncludePath = get_include_path() . ":idMyGadget";
 set_include_path( $newIncludePath );
 include_once 'Tera-Wurfl/wurfl-dbapi/TeraWurfl.php';
 require_once 'php/deviceData.php';
-require_once 'php/DemoIdMyGadget.php';
 require_once 'php/IdMyGadget.php';
 //
 // debugging: displays verbose information; we don't need to use this very often
