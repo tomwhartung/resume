@@ -17,12 +17,20 @@ include_once 'filenames.php';
 $newIncludePath = get_include_path() . ":idMyGadget";
 set_include_path( $newIncludePath );
 include_once 'Tera-Wurfl/wurfl-dbapi/TeraWurfl.php';
-require_once 'idMyGadget/deviceData.php';
-require_once 'idMyGadget/DemoIdMyGadget.php';
-require_once 'idMyGadget/IdMyGadget.php';
-
+require_once 'php/deviceData.php';
+require_once 'php/DemoIdMyGadget.php';
+require_once 'php/IdMyGadget.php';
+//
+// debugging: displays verbose information; we don't need to use this very often
+// allowOverridesInUrl: Allow testing with overrides as GET variables, TRUE is OK
+//    for example, to test the iPhone layout in a browser:
+//       <a href="http://localhost/resume/?gadgetType=phone&gadgetModel=iPhone&gadgetBrand=Apple">
+//    and to test the androidPhone layout in a browser:
+//       <a href="http://localhost/resume/?gadgetType=phone&gadgetModel=androidPhone&gadgetBrand=brand_name_not_set">
+//
 $debugging = FALSE;
-$allowOverridesInUrl = FALSE;
+$allowOverridesInUrl = TRUE;
+## $allowOverridesInUrl = FALSE;
 $idMyGadget = new IdMyGadget( $debugging, $allowOverridesInUrl );
 $deviceData = $idMyGadget->getDeviceData();
 $gadgetType = $deviceData["gadgetType"];
