@@ -107,8 +107,6 @@ elseif ( $styleSheetName === STYLE_SHEET_ANDROID_PHONE )
 else   // presumably a tablet
 {
 	print '  <link rel="stylesheet" type="text/css" ' .
-			'href="' . STYLE_SHEET_DIRECTORY . STYLE_SHEET_REVERSE_COLORS . '" />';
-	print '  <link rel="stylesheet" type="text/css" ' .
 			'href="' . STYLE_SHEET_DEVICE_DIRECTORY . $styleSheetName . '" />';
 }
 ?>

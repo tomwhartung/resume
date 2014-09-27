@@ -5,7 +5,6 @@
  */
 define( "STYLE_SHEET_DIRECTORY",		"css/" );
 define( "STYLE_SHEET_ALL_DEVICES",		"allDevices.css" );
-define( "STYLE_SHEET_REVERSE_COLORS",	"reverseColors.css" );   // for fun
 define( "STYLE_SHEET_DEVICE_DIRECTORY",	"css/device/" );
 define( "STYLE_SHEET_DESKTOP",			"desktop.css" );
 define( "STYLE_SHEET_TABLET",			"tablet.css" );
