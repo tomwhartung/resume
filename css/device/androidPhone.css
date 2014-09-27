@@ -7,34 +7,37 @@ body {
 	background-color: #ddd;
 	color: #222;
 	font-family: Helvetica, Verdana, Arial, sans-serif;
-	font-size: 14px;
-	margin: 0;
-	padding: 0;
+	font-size: 14px;    /* Leave as px for now ... */
+	margin: 0.0em;
+	padding: 0.0em;
 }
 /*
  * Header styles
  */
 #header h1 {
-	margin: 0;
-	padding: 0;
+	margin: 0.0em;
+	padding: 0.0em;
 }
 #header h1 a {
 	background-color: #ccc;
 	border-bottom: 1px solid #666;
 	color: #222;
 	display: block;
-	font-size: 20px;
+	font-size: 20px;    /* Leave as px for now ... */
 	font-weight: bold;
-	padding: 10px 0;
+	padding: 0.625em 0.0em;
 	text-align: center;
 	text-decoration: none;
+}
+h2 {
+	font-size: 1.5em;
 }
 /*
  * Navigation
  */
 #header ul {
 	list-style: none;
-	margin: 10px;
+	margin: 0.625em;
 	padding: 0;
 }
 #header ul li a {
@@ -42,17 +45,17 @@ body {
 	border: 1px solid #999999;
 	color: #222222;
 	display: block;
-	font-size: 17px;
+	font-size: 1.2em;
 	font-weight: bold;
 	margin-bottom: -1px;
-	padding: 12px 10px;
+	padding: 0.75em 0.625em;
 	text-decoration: none;
 }
 /*
  * Indent content a tad bit from the edge
  */
 #content {
-	padding: 10px;
+	padding: 0.625em;
 }
 /*
  * Niceties: drop shadow for header text and gradient for header background
@@ -63,19 +66,19 @@ body {
  *    start color and end color
  */
 #header h1 a {
-	text-shadow: 0px 1px 0px #fff;	/* horiz offset, vert offset, blur, color */
+	text-shadow: 0.0em 1px 0.0em #fff;	/* horiz offset, vert offset, blur, color */
 	background-image: -webkit-gradient(linear, left top, left bottom, from(#ccc), to(#999));
 }
 /*
  * Round off corners of navigation elements
  */
 #header ul li:first-child a {
-	-webkit-border-top-left-radius: 8px;
-	-webkit-border-top-right-radius: 8px;
+	-webkit-border-top-left-radius: 0.5em;
+	-webkit-border-top-right-radius: 0.5em;
 }
 #header ul li:last-child a {
-    -webkit-border-bottom-left-radius: 8px;
-	-webkit-border-bottom-right-radius: 8px;
+    -webkit-border-bottom-left-radius: 0.5em;
+	-webkit-border-bottom-right-radius: 0.5em;
 }
 /*
  * Used to toggle display of menu
@@ -85,15 +88,15 @@ body {
 }
 #header div.leftButton {
 	position: absolute;			/* remove from document flow */
-	top: 7px;
-	left: 6px;
-	height: 30px;				/* big enough to tap easily */
+	top: 0.75em;
+	left: 0.75em;
+	height: 2.0em;				/* big enough to tap easily */
 	font-weight: bold;
 	text-align: center;
 	color: white;
 	text-shadow: rgba(0,0,0,0.6) 0px -1px 0px;	/* 0.6 = alpha value (opacity) */
-	line-height: 28px;							/* don't want it flush against top */
-	border-width: 0 8px 0 8px;					/* 0 top and bottom, 8px left and right */
+	line-height: 1.625em;						/* don't want it flush against top */
+	border-width: 0 0.5em 0 0.5em;				/* 0 top and bottom, 0.5em left and right */
 	-webkit-border-image: url(../../images/button.png) 0 8 0 8;
 }
 #header div.pressed {
@@ -103,18 +106,18 @@ div#content {
 	text-align:  left;
 }
 p {
-	margin: 3px;
-	padding: 3px;
+	margin: 0.2em;
+	padding: 0.2em;
 }
 ul {
-	margin: 0px;
-	padding: 0px;
+	margin: 0.0em;
+	padding: 0.0em;
 }
 li {
-	margin: 2px 0px 2px 0px;
-	padding: 2px 0px 2px 0px;
+	margin: 0.1em 0.0em 0.1em 0.0em;
+	padding: 0.1em 0.0em 0.1em 0.0em;
 }
 li ul {
-	margin: 5px;
-	padding: 5px;
+	margin: 0.4em;
+	padding: 0.4em;
 }
