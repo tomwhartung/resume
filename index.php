@@ -39,21 +39,21 @@ $gadgetType = $deviceData["gadgetType"];
 $gadgetModel = $deviceData["gadgetModel"];
 $gadgetBrand = $deviceData["gadgetBrand"];
 
-if ( $gadgetType === GADGET_TYPE_DESKTOP_BROWSER )
+if ( $gadgetType === IdMyGadget::GADGET_TYPE_DESKTOP_BROWSER )
 {
 	$gadgetString = "Desktop";
 	$styleSheetName = STYLE_SHEET_DESKTOP;
 	$deviceJsFile = JS_DEVICE_DESKTOP;
 }
-else if ( $gadgetType === GADGET_TYPE_TABLET )
+else if ( $gadgetType === IdMyGadget::GADGET_TYPE_TABLET )
 {
 	$gadgetString = "Tablet";
 	$styleSheetName = STYLE_SHEET_TABLET;
 	$deviceJsFile = JS_DEVICE_TABLET;
 }
-else if ( $gadgetType === GADGET_TYPE_PHONE )
+else if ( $gadgetType === IdMyGadget::GADGET_TYPE_PHONE )
 {
-	if ( $gadgetModel === GADGET_MODEL_APPLE_PHONE )
+	if ( $gadgetModel === IdMyGadget::GADGET_MODEL_APPLE_PHONE )
 	{
 		$gadgetString = "iPhone";
 		$styleSheetName = STYLE_SHEET_APPLE_PHONE;
@@ -151,7 +151,7 @@ else   // presumably a tablet
 		</ul>
 	</div>
 </script>
-<?php  if ( $gadgetType === GADGET_TYPE_PHONE ): ?>
+<?php  if ( $gadgetType === IdMyGadget::GADGET_TYPE_PHONE ): ?>
 	<script id="phone-menu-template" type="text/x-handlebars-template">
 		<div id="phone-menu" class="section">
 			<ul>
@@ -163,7 +163,7 @@ else   // presumably a tablet
 		</div><!-- phone-menu -->
 	</script>
 <?php  endif ?>
-<?php  if ( $gadgetType === GADGET_TYPE_PHONE ): ?>
+<?php  if ( $gadgetType === IdMyGadget::GADGET_TYPE_PHONE ): ?>
 	<script id="experience-section-template" type="text/x-handlebars-template">
 		<div id="{{id}}" class="section hide">
 			<h2>{{title}}</h2>
@@ -227,7 +227,7 @@ else   // presumably a tablet
 	</div>
 </script>
 <?php  endif ?>
-<?php  if ( $gadgetType === GADGET_TYPE_PHONE ): ?>
+<?php  if ( $gadgetType === IdMyGadget::GADGET_TYPE_PHONE ): ?>
 	<script id="single-job-section-template" type="text/x-handlebars-template">
 		<div id="{{id}}" class="section hide">
 			<h2>{{title}}</h2>
@@ -272,9 +272,9 @@ else   // presumably a tablet
 <body>
 	<div id="container">
 		<div id='header'>
-		<?php if ( $gadgetType === GADGET_TYPE_PHONE ): ?>
+		<?php if ( $gadgetType === IdMyGadget::GADGET_TYPE_PHONE ): ?>
 			<h1><a href='./'><?php echo $myName ?></a></h1>
-		<?php elseif ( $gadgetType === GADGET_TYPE_DESKTOP_BROWSER ): ?>
+		<?php elseif ( $gadgetType === IdMyGadget::GADGET_TYPE_DESKTOP_BROWSER ): ?>
 			<h1>The Resume of <?php echo $myName ?></h1>
 		<?php else: ?>
 			<h1><?php echo $myName ?>'s Resume</h1>
