@@ -7,9 +7,19 @@
  */
 $myName = 'Tom W. Hartung';
 
-$newIncludePath = get_include_path() . ":php";
-set_include_path( $newIncludePath );
-include_once 'filenames.php';
+define( "STYLE_SHEET_DIRECTORY",     "css/" );
+define( "STYLE_SHEET_ALL_DEVICES",   "allDevices.css" );
+define( "STYLE_SHEET_MEDIA_QUERIES", "mediaQueries.css" );
+define( "STYLE_SHEET_DESKTOP",       "device/desktop.css" );
+define( "STYLE_SHEET_TABLET",        "device/tablet.css" );
+define( "STYLE_SHEET_ANDROID_PHONE", "device/androidPhone.css" );
+define( "STYLE_SHEET_APPLE_PHONE",   "device/iPhone.css" );
+
+define( "JS_DEVICE_DIRECTORY",		"js/device/" );
+define( "JS_DEVICE_DESKTOP",		"desktop.js" );
+define( "JS_DEVICE_TABLET",			"tablet.js" );
+define( "JS_DEVICE_ANDROID_PHONE",	"androidPhone.js" );
+define( "JS_DEVICE_APPLE_PHONE",	"iPhone.js" );
 //
 // Instantiate an IdMyGadget object and use it to determine key factors about 
 // the device accessing the page.
@@ -29,10 +39,7 @@ require_once 'php/IdMyGadgetTeraWurfl.php';
 //       <a href="http://localhost/resume/?gadgetType=phone&gadgetModel=androidPhone&gadgetBrand=brand_name_not_set">
 //
 $debugging = TRUE;
-## $debugging = FALSE;
-$allowOverridesInUrl = FALSE;
-## $allowOverridesInUrl = TRUE;
-
+$allowOverridesInUrl = TRUE;
 $idMyGadget = new IdMyGadgetTeraWurfl( $debugging, $allowOverridesInUrl );
 $deviceData = $idMyGadget->getDeviceData();
 $gadgetType = $deviceData["gadgetType"];
@@ -66,40 +73,42 @@ else if ( $gadgetType === IdMyGadget::GADGET_TYPE_PHONE )
 		$deviceJsFile = JS_DEVICE_ANDROID_PHONE;
 	}
 }
+else
+{
+	$gadgetString = "Unrecognized";
+	$styleSheetName = STYLE_SHEET_MEDIA_QUERIES;
+	$deviceJsFile = JS_DEVICE_DESKTOP;
+}
 ?>
-
 <head>
 	<title><?php print $myName; ?></title>
 <?php
+print '<meta name="viewport" content="user-scalable=no, width=device-width" />';
 print '<link rel="stylesheet" type="text/css" ' .
 		'href="' . STYLE_SHEET_DIRECTORY . STYLE_SHEET_ALL_DEVICES . '" />';
+
 if ( $styleSheetName === STYLE_SHEET_DESKTOP )
 {
 	print '<link rel="stylesheet" type="text/css" ' .
-			'href="' . STYLE_SHEET_DEVICE_DIRECTORY . STYLE_SHEET_DESKTOP . '" ' .
-			'media="screen and (min-width: 481px)" ' .
+			'href="' . STYLE_SHEET_DIRECTORY . STYLE_SHEET_DESKTOP . '" ' .
 			'/>' . "\n";
 }
 elseif ( $styleSheetName === STYLE_SHEET_APPLE_PHONE )
 {
-	print '<meta name="viewport" content="user-scalable=no, width=device-width" />';
 	print '<link rel="stylesheet" type="text/css" ' .
-			'href="' . STYLE_SHEET_DEVICE_DIRECTORY . STYLE_SHEET_APPLE_PHONE . '" ' .
-		//  'media="only screen and (max-width: 480px)" ' .
+			'href="' . STYLE_SHEET_DIRECTORY . STYLE_SHEET_APPLE_PHONE . '" ' .
 			'/>';
 }
 elseif ( $styleSheetName === STYLE_SHEET_ANDROID_PHONE )
 {
-	print '<meta name="viewport" content="user-scalable=no, width=device-width" />';
 	print '<link rel="stylesheet" type="text/css" ' .
-			'href="' . STYLE_SHEET_DEVICE_DIRECTORY . STYLE_SHEET_ANDROID_PHONE . '" ' .
-		//  'media="only screen and (max-width: 600px)" ' .
+			'href="' . STYLE_SHEET_DIRECTORY . STYLE_SHEET_ANDROID_PHONE . '" ' .
 			'/>';
 }
 else   // presumably a tablet
 {
 	print '  <link rel="stylesheet" type="text/css" ' .
-			'href="' . STYLE_SHEET_DEVICE_DIRECTORY . $styleSheetName . '" />';
+			'href="' . STYLE_SHEET_DIRECTORY . $styleSheetName . '" />';
 }
 ?>
 <!--[if IE]>
