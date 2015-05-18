@@ -16,7 +16,7 @@ include_once 'filenames.php';
 //
 $newIncludePath = get_include_path() . ":idMyGadget";
 set_include_path( $newIncludePath );
-require_once 'device_detectors/tera_wurfl/Tera-Wurfl/wurfl-dbapi/TeraWurfl.php';
+require_once 'gadget_detectors/tera_wurfl/Tera-Wurfl/wurfl-dbapi/TeraWurfl.php';
 require_once 'php/IdMyGadget.php';
 require_once 'php/IdMyGadgetTeraWurfl.php';
 
@@ -39,7 +39,7 @@ $gadgetType = $deviceData["gadgetType"];
 $gadgetModel = $deviceData["gadgetModel"];
 $gadgetBrand = $deviceData["gadgetBrand"];
 
-if ( $gadgetType === IdMyGadget::GADGET_TYPE_DESKTOP_BROWSER )
+if ( $gadgetType === IdMyGadget::GADGET_TYPE_DESKTOP )
 {
 	$gadgetString = "Desktop";
 	$styleSheetName = STYLE_SHEET_DESKTOP;
@@ -66,17 +66,6 @@ else if ( $gadgetType === IdMyGadget::GADGET_TYPE_PHONE )
 		$deviceJsFile = JS_DEVICE_ANDROID_PHONE;
 	}
 }
-
-//
-// CSS link tags to consider thinking about - specifically the media attributes:
-// Android version:
-//   <link rel="stylesheet" type="text/css" href="css/androidPhone.css" media="only screen and (max-width: 600px)" />
-//   <link rel="stylesheet" type="text/css" href="css/desktop.css" media="screen and (min-width: 601px)" />
-// iPhone version:
-//   <link rel="stylesheet" type="text/css" href="css/iPhone.css" media="only screen and (max-width: 480px)" />
-//   <link rel="stylesheet" type="text/css" href="css/desktop.css" media="screen and (min-width: 481px)" />
-// --> The thing is, these look like crap when we exceed the max-widths!
-// --> And that is why I did the WURFL thing!
 ?>
 
 <head>
@@ -274,7 +263,7 @@ else   // presumably a tablet
 		<div id='header'>
 		<?php if ( $gadgetType === IdMyGadget::GADGET_TYPE_PHONE ): ?>
 			<h1><a href='./'><?php echo $myName ?></a></h1>
-		<?php elseif ( $gadgetType === IdMyGadget::GADGET_TYPE_DESKTOP_BROWSER ): ?>
+		<?php elseif ( $gadgetType === IdMyGadget::GADGET_TYPE_DESKTOP ): ?>
 			<h1>The Resume of <?php echo $myName ?></h1>
 		<?php else: ?>
 			<h1><?php echo $myName ?>'s Resume</h1>
