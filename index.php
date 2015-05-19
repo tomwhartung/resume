@@ -38,7 +38,8 @@ require_once 'php/IdMyGadgetTeraWurfl.php';
 //    and to test the androidPhone layout in a browser:
 //       <a href="http://localhost/resume/?gadgetType=phone&gadgetModel=androidPhone&gadgetBrand=brand_name_not_set">
 //
-$debugging = TRUE;
+// $debugging = TRUE;  // Warning: debug output sends all <head> elts into <body>
+$debugging = FALSE;
 $allowOverridesInUrl = TRUE;
 $idMyGadget = new IdMyGadgetTeraWurfl( $debugging, $allowOverridesInUrl );
 $deviceData = $idMyGadget->getDeviceData();
@@ -86,30 +87,8 @@ else
 print '<meta name="viewport" content="user-scalable=no, width=device-width" />';
 print '<link rel="stylesheet" type="text/css" ' .
 		'href="' . STYLE_SHEET_DIRECTORY . STYLE_SHEET_ALL_DEVICES . '" />';
-
-if ( $styleSheetName === STYLE_SHEET_DESKTOP )
-{
-	print '<link rel="stylesheet" type="text/css" ' .
-			'href="' . STYLE_SHEET_DIRECTORY . STYLE_SHEET_DESKTOP . '" ' .
-			'/>' . "\n";
-}
-elseif ( $styleSheetName === STYLE_SHEET_APPLE_PHONE )
-{
-	print '<link rel="stylesheet" type="text/css" ' .
-			'href="' . STYLE_SHEET_DIRECTORY . STYLE_SHEET_APPLE_PHONE . '" ' .
-			'/>';
-}
-elseif ( $styleSheetName === STYLE_SHEET_ANDROID_PHONE )
-{
-	print '<link rel="stylesheet" type="text/css" ' .
-			'href="' . STYLE_SHEET_DIRECTORY . STYLE_SHEET_ANDROID_PHONE . '" ' .
-			'/>';
-}
-else   // presumably a tablet
-{
-	print '  <link rel="stylesheet" type="text/css" ' .
-			'href="' . STYLE_SHEET_DIRECTORY . $styleSheetName . '" />';
-}
+print '<link rel="stylesheet" type="text/css" ' .
+		'href="' . STYLE_SHEET_DIRECTORY . $styleSheetName . '" ' . '/>' . "\n";
 ?>
 <!--[if IE]>
 	<link rel="stylesheet" type="text/css" href="explorer.css" media="all" />
