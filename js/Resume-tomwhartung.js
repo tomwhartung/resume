@@ -103,7 +103,7 @@ var TechnicalExperience = Object.create( MinimalSection, {
 });
 TechnicalExperience.point_01 = {
 	bold: "Programming Languages:",
-	text: "Java, PHP, JavaScript, CoffeeScript, Bash, Ksh, Perl, Awk, C/C++, C#, Tcl/Expect, Cobol, Assemblers"
+	text: "PHP, JavaScript, Java, CoffeeScript, Bash, Ksh, Perl, Awk, C/C++, C#, Tcl/Expect, Cobol, Assemblers"
 };
 TechnicalExperience.point_05 = {
 	bold: "Web Technologies:",
@@ -115,7 +115,7 @@ TechnicalExperience.point_10 = {
 };
 TechnicalExperience.point_15 = {
 	bold: "Development Tools:",
-	text: "Eclipse, JUnit, Spring, Hibernate, NetBeans, IntelliJ, MySql Work Bench, Sql Server Management Studio, phpMyAdmin, Vim, Cygwin"
+	text: "NetBeans, Eclipse, JUnit, Spring, Hibernate, IntelliJ, MySql Work Bench, Sql Server Management Studio, phpMyAdmin, Vim, Cygwin"
 };
 TechnicalExperience.point_20 = {
 	bold: "Operating Systems:",
