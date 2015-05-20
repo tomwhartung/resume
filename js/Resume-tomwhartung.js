@@ -395,8 +395,8 @@ function showListItemsForJob( id ) {
 	var showButtonSelector;
 	listItemsSelector = '#' + id + ' div.list-items';
 	showButtonSelector = '#' + id + ' div.show-button';
-	$(listItemsSelector).show();
-	$(showButtonSelector).hide();
+	$(listItemsSelector).slideDown("slow");
+	$(showButtonSelector).slideUp("slow");
 	return true;
 }
 /**
