@@ -390,6 +390,12 @@ $(document).ready(function() {
 		}
 	}
 });
+/**
+ * Jobs are now shown with no items (accomplishments and tasks)
+ * This function shows the list items for the selected job
+ * 
+ * @param {type} id of job
+ */
 function showListItemsForJob( id ) {
 	var listItemsSelector;
 	var showButtonSelector;
@@ -397,7 +403,6 @@ function showListItemsForJob( id ) {
 	showButtonSelector = '#' + id + ' div.show-button';
 	$(listItemsSelector).slideDown("slow");
 	$(showButtonSelector).slideUp("slow");
-	return true;
 }
 /**
  * Toggle display of more or less list items for job identified by id
