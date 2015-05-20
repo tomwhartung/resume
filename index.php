@@ -179,6 +179,8 @@ print '<link rel="stylesheet" type="text/css" ' .
 				{{/if}}
 				<div>{{dateRange}}</div>
 				<div class="items">
+					<span class="show-button" onclick="showListItemsForJob('{{id}}');">
+						Show</span>
 				</div><!-- items -->
 				<div class="list-items">
 					<ul>{{{listItems}}}</ul>
