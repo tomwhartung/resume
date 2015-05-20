@@ -178,10 +178,9 @@ print '<link rel="stylesheet" type="text/css" ' .
 					<span class="underline">{{companyName}}</span>,&nbsp;{{location}}
 				{{/if}}
 				<div>{{dateRange}}</div>
-				<div class="items">
-					<span class="show-button" onclick="showListItemsForJob('{{id}}');">
-						Show</span>
-				</div><!-- items -->
+				<div class="show-button underline" onclick="showListItemsForJob('{{id}}');">
+					<span>Show Accomplishments</span>
+				</div><!-- .show-button -->
 				<div class="list-items">
 					<ul>{{{listItems}}}</ul>
 					<img src="images/more-plain.jpg" border="0"
@@ -190,7 +189,7 @@ print '<link rel="stylesheet" type="text/css" ' .
 						onmouseover="this.src='images/more-hover.jpg'; return true;"
 						onmouseout="this.src='images/more-plain.jpg'; return true;"
 						onclick="toggleMoreOrLessListItems('{{id}}');" \>
-				</div><!-- list-items -->
+				</div><!-- .list-items -->
 				<div class="more-items">
 					<ul>{{{moreItems}}}</ul>
 					<img src="images/less-plain.jpg" border="0"
@@ -199,7 +198,7 @@ print '<link rel="stylesheet" type="text/css" ' .
 						onmouseover="this.src='images/less-hover.jpg'; return true;"
 						onmouseout="this.src='images/less-plain.jpg'; return true;"
 						onclick="toggleMoreOrLessListItems('{{id}}');" \>
-				</div><!-- more-items -->
+				</div><!-- .more-items -->
 			</li>
 		{{/each}}
 		</ul>
