@@ -340,6 +340,7 @@ Resume.toHtml = function() {
 $(document).ready(function() {
 	var index;
 	var id;
+	var listItemsSelector;
 	var moreItemsSelector;
 	Resume.toHtml();
 	//
@@ -355,6 +356,8 @@ $(document).ready(function() {
 	} else {
 		for ( index = 0; index < ProfessionalExperience.jobs.length; index++ ) {
 			id = ProfessionalExperience.jobs[index].id;
+			listItemsSelector = '#' + id + ' div.list-items';
+			$(listItemsSelector).hide();
 			moreItemsSelector = '#' + id + ' div.more-items';
 //			alert( 'toggling initial display of more-items; ' +
 //					'ProfessionalExperience.jobs[index].moreOrLessToggleEffect = ' +
@@ -387,6 +390,15 @@ $(document).ready(function() {
 		}
 	}
 });
+function showListItemsForJob( id ) {
+	var listItemsSelector;
+	var showButtonSelector;
+	listItemsSelector = '#' + id + ' div.list-items';
+	showButtonSelector = '#' + id + 'span.show-button';
+	$(listItemsSelector).show();
+	$(showButtonSelector).hide();
+	return true;
+}
 /**
  * Toggle display of more or less list items for job identified by id
  */
