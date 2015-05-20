@@ -76,6 +76,13 @@ ul.no-bullets, ul.debugging  {
 .underline {
 	text-decoration: underline;
 }
+.show-button {
+	font-size: 0.8em;
+}
+a.show-button:hover {
+	color:       #000000;
+	font-size:   0.9em;
+}
 li div.hide  {
 	display: none;
 }
