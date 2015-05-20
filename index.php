@@ -178,8 +178,8 @@ print '<link rel="stylesheet" type="text/css" ' .
 					<span class="underline">{{companyName}}</span>,&nbsp;{{location}}
 				{{/if}}
 				<div>{{dateRange}}</div>
-				<div class="show-button underline" onclick="showListItemsForJob('{{id}}');">
-					<span>Show Accomplishments</span>
+				<div class="underline" onclick="showListItemsForJob('{{id}}');">
+					<a class="show-button">Show Accomplishments</a>
 				</div><!-- .show-button -->
 				<div class="list-items">
 					<ul>{{{listItems}}}</ul>
