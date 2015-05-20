@@ -56,13 +56,52 @@ ProfessionalExperience.MinimalJob = Object.create( Object.prototype, {
 	moreItems: { value: '' }
 });
 
-
 //
 // JoomooWebsites - current projects
 // ---------------------------------
 //
-ProfessionalExperience.JoomooWebsites = Object.create( ProfessionalExperience.MinimalJob, {
-	id: { value: 'joomoo_websites' },
+ProfessionalExperience.JoomooWebsites_2 = Object.create( ProfessionalExperience.MinimalJob, {
+	id: { value: 'joomoo_websites_2' },
+	companyName: { value: 'Joomoowebsites LLC' },
+	companyHref: { value: 'http://www.JoomooWebsites.com' },
+	location: { value: 'Denver, CO' },
+	title: { value: 'CEO (Sole Proprietor)' },
+	dateRange: { value: 'May, 2015 through present' },
+	listItems: { value:
+		'<li>Wrote idMyGadget, an adapter API providing a consistent interface to ' +
+			'multiple device detection packages.</li>'
+	},
+	moreItems: { value: ''
+	}
+});
+//
+// Kforce: on contract to Major Healthcare Provider
+// ------------------------------------------------
+// Mon. 11/10/2014 - Thu. 4/3/2015
+//
+ProfessionalExperience.Kforce = Object.create( Object.prototype, {
+	id: { value: 'kforce' },
+	companyName: { value: 'Kforce' },
+	companyHref: { value: 'https://www.kforce.com/' },
+	location: { value: 'Denver, CO' },
+	title: { value: 'Web Developer' },
+	dateRange: { value: 'November, 2014 through April 2015' },
+	moreOrLessToggleEffect: { value: ToggleEffectEnum.default },
+	listItems: { value:
+		'<li>Worked on a confidential contract for a large healthcare provider.</li>' +
+		'<li>Used PHP, JavaScript, HTML5, and CSS to customize Wordpress themes and plugins.</li>' +
+		'<li>Created new and ported existing websites to cloud services.</li>'
+	},
+	moreItems: { value: ''
+	}
+});
+
+//
+// JoomooWebsites - misc. projects in 2014
+// ---------------------------------------
+//
+ProfessionalExperience.JoomooWebsites_1 = Object.create( ProfessionalExperience.MinimalJob, {
+	id: { value: 'joomoo_websites_1' },
 	companyName: { value: 'Joomoowebsites LLC' },
 	companyHref: { value: 'http://www.JoomooWebsites.com' },
 	location: { value: 'Denver, CO' },
@@ -76,15 +115,16 @@ ProfessionalExperience.JoomooWebsites = Object.create( ProfessionalExperience.Mi
 		'<li>Used the Wireless Uniform Resource Library (WURFL) to create a ' +
 			'mobile-friendly resume.</li>'
 	},
-	moreItems: { value: 
+	moreItems: { value:
 		'<li>Assisted in conversion of Joomla site containing VirtueMart shopping cart data to ' +
 			'Wordpress site containing Woocommerce data.</li>' +
 		'<li>Used Wordpress to create tomwhartung.com.</li>' +
 		'<li>Used Drupal to create tomhartung.com.</li>' +
 		'<li>Used the Wireless Uniform Resource Library (WURFL) to create a ' +
 			'mobile-friendly resume.</li>' +
-		'<li>Reading technical books, attending meetups and webinars, and taking online ' +
-			'classes at coursera.org and edx.org.</li>'
+		'<li>Attended meetups, workshops and webinars, and took ' +
+			'several online classes at coursera.org and edx.org.</li>' +
+		'<li>Always reading technical books, to keep up to date.</li>'
 	}
 });
 //
@@ -1410,7 +1450,9 @@ ProfessionalExperience.OverniteTransportation = Object.create( ProfessionalExper
 
 ProfessionalExperience.jobs = [
 //	ProfessionalExperience.,
-	ProfessionalExperience.JoomooWebsites,
+	ProfessionalExperience.JoomooWebsites_2,
+	ProfessionalExperience.Kforce,
+	ProfessionalExperience.JoomooWebsites_1,
 	ProfessionalExperience.LodoSoftwareD3,
 	ProfessionalExperience.ConsultnetTlc,
 	ProfessionalExperience.ClkClk,
