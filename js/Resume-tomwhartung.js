@@ -394,7 +394,7 @@ function showListItemsForJob( id ) {
 	var listItemsSelector;
 	var showButtonSelector;
 	listItemsSelector = '#' + id + ' div.list-items';
-	showButtonSelector = '#' + id + 'span.show-button';
+	showButtonSelector = '#' + id + ' div.show-button';
 	$(listItemsSelector).show();
 	$(showButtonSelector).hide();
 	return true;
