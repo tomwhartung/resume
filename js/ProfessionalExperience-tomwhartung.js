@@ -71,7 +71,11 @@ ProfessionalExperience.JoomooWebsites_2 = Object.create( ProfessionalExperience.
 		'<li>Wrote idMyGadget, an adapter API providing a consistent interface to ' +
 			'multiple device detection packages.</li>'
 	},
-	moreItems: { value: ''
+	moreItems: { value: 
+		'<li>Wrote idMyGadget, an adapter API providing a consistent interface to ' +
+			'multiple device detection packages, allowing users to choose the proper balance between ' +
+			'functionality and licensing requirements.</li>' +
+		'<li>Updating resume to use new idMyGadget code (and quite possibly jQuery Mobile).</li>'
 	}
 });
 //
@@ -92,7 +96,14 @@ ProfessionalExperience.Kforce = Object.create( Object.prototype, {
 		'<li>Used PHP, JavaScript, HTML5, and CSS to customize Wordpress themes and plugins.</li>' +
 		'<li>Created new and ported existing websites to cloud services.</li>'
 	},
-	moreItems: { value: ''
+	moreItems: { value:
+		'<li>Worked on a series of small confidential projects for a ' +
+			'large healthcare provider.</li>' +
+		'<li>Used PHP, Linux, JavaScript, HTML5, Netbeans, CSS, and vim to ' +
+			'customize Wordpress themes and plugins.</li>' +
+		'<li>Used Wordpress to create a new internal website for sharing status information.</li>' +
+		'<li>Ported existing websites to cloud services, applying finishing touches ' +
+			'as appropriate.</li>'
 	}
 });
 
