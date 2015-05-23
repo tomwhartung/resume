@@ -13,7 +13,7 @@ $title = gethostname();
 </head>
 <body>
 
-<div data-role="page" id="resume">
+<div data-role="page" id="resume"> <!-- Introduction -->
 	<div data-role="header">
 		<h1>Resume</h1>
 	</div>
@@ -31,7 +31,7 @@ $title = gethostname();
 	</div>
 </div>
 
-<div data-role="page" id="summary">
+<div data-role="page" id="summary"> <!-- SummaryOfQualifications -->
 	<div data-role="header">
 		<h1>Summary</h1>
 	</div>
@@ -44,6 +44,106 @@ $title = gethostname();
 			<ul>
 				<li><a href="#resume" data-icon="home">Resume</a></li>
 				<li><a data-icon="alert" class="ui-btn-active ui-state-persist">Summary</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div data-role="page" id="technical"> <!-- TechnicalExperience -->
+	<div data-role="header">
+		<h1>Skills</h1>
+	</div>
+	<div data-role="content">
+		<ul>
+			<li>Programming Languages: Yadda yadda yadda yadda</li>
+			<li>Web Technologies: Yadda yadda yadda yadda</li>
+		</ul>
+	</div>
+	<div data-role="footer" data-id="main" position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a data-icon="home" class="ui-btn-active ui-state-persist">Resume</a></li>
+				<li><a href="#summary" data-icon="alert">Summary</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div data-role="page" id="accomplishments"> <!-- RepresentativeAccomplishments -->
+	<div data-role="header">
+		<h1>Representative Accomplishments</h1>
+	</div>
+	<div data-role="content">
+		<ul>
+			<li>xxx xxx: Yadda yadda yadda yadda</li>
+			<li>xxx xxx: Yadda yadda yadda yadda</li>
+		</ul>
+	</div>
+	<div data-role="footer" data-id="main" position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a data-icon="home" class="ui-btn-active ui-state-persist">Resume</a></li>
+				<li><a href="#summary" data-icon="alert">Summary</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div data-role="page" id="experience"> <!-- TechnicalExperience -->
+	<div data-role="header">
+		<h1>Technical Experience</h1>
+	</div>
+	<div data-role="content">
+		<ul>
+			<li>xxx xxx: Yadda yadda yadda yadda</li>
+			<li>xxx xxx: Yadda yadda yadda yadda</li>
+		</ul>
+	</div>
+	<div data-role="footer" data-id="main" position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a data-icon="home" class="ui-btn-active ui-state-persist">Resume</a></li>
+				<li><a href="#summary" data-icon="alert">Summary</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div data-role="page" id="education"> <!-- CertificationsAndEducation -->
+	<div data-role="header">
+		<h1>Certifications and Education</h1>
+	</div>
+	<div data-role="content">
+		<ul>
+			<li>xxx xxx: Yadda yadda yadda yadda</li>
+			<li>xxx xxx: Yadda yadda yadda yadda</li>
+		</ul>
+	</div>
+	<div data-role="footer" data-id="main" position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a data-icon="home" class="ui-btn-active ui-state-persist">Resume</a></li>
+				<li><a href="#summary" data-icon="alert">Summary</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div data-role="page" id="volunteering"> <!-- Volunteering -->
+	<div data-role="header">
+		<h1>Volunteering</h1>
+	</div>
+	<div data-role="content">
+		<ul>
+			<li>xxx xxx: Yadda yadda yadda yadda</li>
+			<li>xxx xxx: Yadda yadda yadda yadda</li>
+		</ul>
+	</div>
+	<div data-role="footer" data-id="main" position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a data-icon="home" class="ui-btn-active ui-state-persist">Resume</a></li>
+				<li><a href="#summary" data-icon="alert">Summary</a></li>
 			</ul>
 		</div>
 	</div>
