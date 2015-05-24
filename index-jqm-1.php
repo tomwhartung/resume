@@ -3,6 +3,52 @@
 <?php
 $title = gethostname();
 ?>
+
+<?php
+function navForHeader( $section )
+{
+	$resumeClass = '';
+	$resumeHref = 'href="#resume" ';
+	$skillsClass = '';
+	$skillsHref = 'href="#skills" ';
+	$experienceClass = '';
+	$experienceHref = 'href="#experience" ';
+
+	if ( $section === 'resume' )
+	{
+		$resumeClass = 'class="ui-btn-active ui-state-persist"';
+		$resumeHref = '';
+	}
+	else if ( $section === 'resume' )
+	{
+		$skillsClass = 'class="ui-btn-active ui-state-persist"';
+		$skillsHref = '';
+	}
+	else if ( $section === 'experience' )
+	{
+		$experienceClass = 'class="ui-btn-active ui-state-persist"';
+		$experienceHref = '';
+	}
+	print '<div data-role="navbar">';
+	print ' <ul>';
+	print '  <li><a ' . $resumeHref . $resumeClass . '>Resume</a></li>';
+	print '  <li><a ' . $skillsHref . $skillsClass . '>Skills</a></li>';
+	print '  <li><a ' . $experienceHref . $experienceClass . '>Experience</a></li>';
+	print ' </ul>';
+	print '</div>';
+
+}
+function navForFooter( $section )
+{
+	print '<div data-role="navbar">';
+	print ' <ul>';
+	print '  <li><a data-icon="home" class="ui-btn-active ui-state-persist">Resume</a></li>';
+	print '  <li><a href="#summary" data-icon="alert">Summary</a></li>';
+	print ' </ul>';
+	print '</div>';
+
+}
+ ?>
 <head>
 <meta charset="utf-8" />
 	<title><?php echo $title; ?></title>
@@ -11,10 +57,11 @@ $title = gethostname();
 	<script type="text/javascript" src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body>
 
+<body>
 <div data-role="page" id="resume"> <!-- Introduction -->
 	<div data-role="header">
+		<?php navForHeader( "resume" ); ?>
 		<h1>Resume</h1>
 	</div>
 	<div data-role="content">
@@ -35,6 +82,7 @@ $title = gethostname();
 
 <div data-role="page" id="summary"> <!-- SummaryOfQualifications -->
 	<div data-role="header">
+		<?php navForHeader( "resume" ); ?>
 		<h1>Summary</h1>
 	</div>
 	<div data-role="content">
@@ -44,11 +92,8 @@ $title = gethostname();
 	<div data-role="footer" data-id="main"  position="fixed">
 		<div data-role="navbar">
 			<ul>
-				<li><a href="#resume" data-direction="reverse">Resume</a></li>
-				<li><a class="ui-btn-active ui-state-persist">Summary</a></li>
-				<li><a href="#technical">Technical</a></li>
-				<li><a href="#accomplishments">Accomplishments</a></li>
 				<li><a href="#experience">Experience</a></li>
+				<li><a href="#accomplishments">Accomplishments</a></li>
 				<li><a href="#education">Education</a></li>
 				<li><a href="#volunteering">Volunteering</a></li>
 			</ul>
@@ -56,8 +101,9 @@ $title = gethostname();
 	</div>
 </div>
 
-<div data-role="page" id="technical"> <!-- TechnicalExperience -->
+<div data-role="page" id="skills"> <!-- TechnicalExperience -->
 	<div data-role="header">
+		<?php navForHeader( "resume" ); ?>
 		<h1>Skills</h1>
 	</div>
 	<div data-role="content">
@@ -78,32 +124,35 @@ $title = gethostname();
 
 <div data-role="page" id="accomplishments"> <!-- RepresentativeAccomplishments -->
 	<div data-role="header">
+		<?php navForHeader( "resume" ); ?>
 		<h1>Representative Accomplishments</h1>
 	</div>
 	<div data-role="content">
 		<ul>
-			<li>xxx xxx: Yadda yadda yadda yadda</li>
-			<li>xxx xxx: Yadda yadda yadda yadda</li>
+			<li>I did this and that and yadda yadda yadda</li>
+			<li>I also did that and this and yadda yadda yadda</li>
 		</ul>
 	</div>
 	<div data-role="footer" data-id="main" position="fixed">
 		<div data-role="navbar">
 			<ul>
-				<li><a data-icon="home" class="ui-btn-active ui-state-persist">Resume</a></li>
-				<li><a href="#summary" data-icon="alert">Summary</a></li>
+				<li><a class="ui-btn-active ui-state-persist">Summary</a></li>
+				<li><a href="#education">Education</a></li>
+				<li><a href="#volunteering">Volunteering</a></li>
 			</ul>
 		</div>
 	</div>
 </div>
 
-<div data-role="page" id="experience"> <!-- TechnicalExperience -->
+<div data-role="page" id="experience"> <!-- ProfessionalExperience -->
 	<div data-role="header">
-		<h1>Technical Experience</h1>
+		<?php navForHeader( "resume" ); ?>
+		<h1>Professional Experience</h1>
 	</div>
 	<div data-role="content">
 		<ul>
-			<li>xxx xxx: Yadda yadda yadda yadda</li>
-			<li>xxx xxx: Yadda yadda yadda yadda</li>
+			<li>Job at Abc Inc. Yadda yadda yadda yadda</li>
+			<li>Job at Xyx Company Yadda yadda yadda yadda</li>
 		</ul>
 	</div>
 	<div data-role="footer" data-id="main" position="fixed">
@@ -118,12 +167,13 @@ $title = gethostname();
 
 <div data-role="page" id="education"> <!-- CertificationsAndEducation -->
 	<div data-role="header">
+		<?php navForHeader( "resume" ); ?>
 		<h1>Certifications and Education</h1>
 	</div>
 	<div data-role="content">
 		<ul>
-			<li>xxx xxx: Yadda yadda yadda yadda</li>
-			<li>xxx xxx: Yadda yadda yadda yadda</li>
+			<li>Java Certification - More yadda yadda yadda yadda</li>
+			<li>Masters Degree: Blah blah blah and yadda yadda yadda yadda</li>
 		</ul>
 	</div>
 	<div data-role="footer" data-id="main" position="fixed">
@@ -138,12 +188,12 @@ $title = gethostname();
 
 <div data-role="page" id="volunteering"> <!-- Volunteering -->
 	<div data-role="header">
+		<?php navForHeader( "resume" ); ?>
 		<h1>Volunteering</h1>
 	</div>
 	<div data-role="content">
 		<ul>
-			<li>xxx xxx: Yadda yadda yadda yadda</li>
-			<li>xxx xxx: Yadda yadda yadda yadda</li>
+			<li>Denver Film Society: Yadda yadda yadda yadda</li>
 		</ul>
 	</div>
 	<div data-role="footer" data-id="main" position="fixed">
