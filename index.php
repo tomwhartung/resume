@@ -80,20 +80,34 @@ else
 	$styleSheetName = STYLE_SHEET_MEDIA_QUERIES;
 	$deviceJsFile = JS_DEVICE_DESKTOP;
 }
-?>
-<head>
-	<title><?php print $myName; ?></title>
-<?php
+print '<head>';
+print '<title>' . $myName . '</title>';
+print '<meta charset="utf-8" />';
 print '<meta name="viewport" content="user-scalable=no, width=device-width" />';
+//
+// We want to use jQuery Mobile only when the user is on a phone or tablet
+//
+if ( $gadgetType === IdMyGadget::GADGET_TYPE_TABLET ||
+     $gadgetType === IdMyGadget::GADGET_TYPE_PHONE )
+{
+	require_once 'php/navForMobile.php';
+	print '<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />';
+	print '<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>';
+	print '<script type="text/javascript" src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>';
+}
+else
+{
+	print '<script type="text/javascript" src="js/lib/jquery.js"></script>';
+}
+
 print '<link rel="stylesheet" type="text/css" ' .
 		'href="' . STYLE_SHEET_DIRECTORY . STYLE_SHEET_ALL_DEVICES . '" />';
 print '<link rel="stylesheet" type="text/css" ' .
-		'href="' . STYLE_SHEET_DIRECTORY . $styleSheetName . '" ' . '/>' . "\n";
+		'href="' . STYLE_SHEET_DIRECTORY . $styleSheetName . '" ' . '/>';
 ?>
 <!--[if IE]>
 	<link rel="stylesheet" type="text/css" href="explorer.css" media="all" />
 <![endif]-->
-<script type="text/javascript" src="js/lib/jquery.js"></script>
 <script type="text/javascript" src="js/lib/tomsUtilities.js"></script>
 <script type="text/javascript" src="js/device/allDevices.js"></script>
 <script type="text/javascript" src="<?php echo JS_DEVICE_DIRECTORY . $deviceJsFile ?>"></script>

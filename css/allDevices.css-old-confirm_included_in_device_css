@@ -1,0 +1,8 @@
+ul {
+ 	padding: 1.0em;
+}
+a, li, p, li li  {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:     1.0em;
+	margin-bottom: 0.0em;
+}
