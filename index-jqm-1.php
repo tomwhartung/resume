@@ -24,8 +24,10 @@ $title = gethostname();
 	<div data-role="footer" data-id="main" position="fixed">
 		<div data-role="navbar">
 			<ul>
-				<li><a data-icon="home" class="ui-btn-active ui-state-persist">Resume</a></li>
-				<li><a href="#summary" data-icon="alert">Summary</a></li>
+				<li><a data-direction="reverse" class="ui-btn-active ui-state-persist">
+					Resume</a></li>
+				<li><a href="#summary">
+					Summary</a></li>
 			</ul>
 		</div>
 	</div>
@@ -42,8 +44,13 @@ $title = gethostname();
 	<div data-role="footer" data-id="main"  position="fixed">
 		<div data-role="navbar">
 			<ul>
-				<li><a href="#resume" data-icon="home">Resume</a></li>
-				<li><a data-icon="alert" class="ui-btn-active ui-state-persist">Summary</a></li>
+				<li><a href="#resume" data-direction="reverse">Resume</a></li>
+				<li><a class="ui-btn-active ui-state-persist">Summary</a></li>
+				<li><a href="#technical">Technical</a></li>
+				<li><a href="#accomplishments">Accomplishments</a></li>
+				<li><a href="#experience">Experience</a></li>
+				<li><a href="#education">Education</a></li>
+				<li><a href="#volunteering">Volunteering</a></li>
 			</ul>
 		</div>
 	</div>
