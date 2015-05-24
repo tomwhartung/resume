@@ -32,9 +32,9 @@ function navForHeader( $section )
 
 	print '<div data-role="navbar">';
 	print ' <ul>';
-	print '  <li><a ' . $resumeHref . $resumeClass . '>Resume</a></li>';
-	print '  <li><a ' . $skillsHref . $skillsClass . '>Skills</a></li>';
-	print '  <li><a ' . $experienceHref . $experienceClass . '>Experience</a></li>';
+	print '  <li><a ' . $resumeHref . $resumeClass . ' data-transition="fade">Resume</a></li>';
+	print '  <li><a ' . $skillsHref . $skillsClass . ' data-transition="fade">Skills</a></li>';
+	print '  <li><a ' . $experienceHref . $experienceClass . ' data-transition="fade">Experience</a></li>';
 	print ' </ul>';
 	print '</div>';
 
@@ -73,10 +73,10 @@ function navForFooter( $section )
 
 	print '<div data-role="navbar">';
 	print ' <ul>';
-	print '  <li><a ' . $summaryHref . $summaryClass . '>Summary</a></li>';
-	print '  <li><a ' . $accomplishmentsHref . $accomplishmentsClass . '>Accomplishments</a></li>';
-	print '  <li><a ' . $educationHref . $educationClass . '>Education</a></li>';
-	print '  <li><a ' . $volunteeringHref . $volunteeringClass . '>Volunteering</a></li>';
+	print '  <li><a ' . $summaryHref . $summaryClass . ' data-transition="fade">Summary</a></li>';
+	print '  <li><a ' . $accomplishmentsHref . $accomplishmentsClass . ' data-transition="fade">Accomplishments</a></li>';
+	print '  <li><a ' . $educationHref . $educationClass . ' data-transition="fade">Education</a></li>';
+	print '  <li><a ' . $volunteeringHref . $volunteeringClass . ' data-transition="fade">Volunteering</a></li>';
 	print ' </ul>';
 	print '</div>';
 
