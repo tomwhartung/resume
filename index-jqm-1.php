@@ -7,19 +7,19 @@ $title = gethostname();
 <?php
 function navForHeader( $section )
 {
-	$resumeClass = '';
 	$resumeHref = 'href="#resume" ';
-	$skillsClass = '';
+	$resumeClass = '';
 	$skillsHref = 'href="#skills" ';
-	$experienceClass = '';
+	$skillsClass = '';
 	$experienceHref = 'href="#experience" ';
+	$experienceClass = '';
 
 	if ( $section === 'resume' )
 	{
 		$resumeClass = 'class="ui-btn-active ui-state-persist"';
 		$resumeHref = '';
 	}
-	else if ( $section === 'resume' )
+	else if ( $section === 'skills' )
 	{
 		$skillsClass = 'class="ui-btn-active ui-state-persist"';
 		$skillsHref = '';
@@ -29,6 +29,7 @@ function navForHeader( $section )
 		$experienceClass = 'class="ui-btn-active ui-state-persist"';
 		$experienceHref = '';
 	}
+
 	print '<div data-role="navbar">';
 	print ' <ul>';
 	print '  <li><a ' . $resumeHref . $resumeClass . '>Resume</a></li>';
@@ -40,10 +41,42 @@ function navForHeader( $section )
 }
 function navForFooter( $section )
 {
+	$summaryHref = 'href="#summary" ';
+	$summaryClass = '';
+	$accomplishmentsHref = 'href="#accomplishments" ';
+	$accomplishmentsClass = '';
+	$educationHref = 'href="#education" ';
+	$educationClass = '';
+	$volunteeringHref = 'href="#volunteering" ';
+	$volunteeringClass = '';
+	
+	if ( $section === 'summary' )
+	{
+		$summaryClass = 'class="ui-btn-active ui-state-persist"';
+		$summaryHref = '';
+	}
+	else if ( $section === 'accomplishments' )
+	{
+		$accomplishmentsClass = 'class="ui-btn-active ui-state-persist"';
+		$accomplishmentsHref = '';
+	}
+	else if ( $section === 'education' )
+	{
+		$educationClass = 'class="ui-btn-active ui-state-persist"';
+		$educationHref = '';
+	}
+	else if ( $section === 'volunteering' )
+	{
+		$volunteeringClass = 'class="ui-btn-active ui-state-persist"';
+		$volunteeringHref = '';
+	}
+
 	print '<div data-role="navbar">';
 	print ' <ul>';
-	print '  <li><a data-icon="home" class="ui-btn-active ui-state-persist">Resume</a></li>';
-	print '  <li><a href="#summary" data-icon="alert">Summary</a></li>';
+	print '  <li><a ' . $summaryHref . $summaryClass . '>Summary</a></li>';
+	print '  <li><a ' . $accomplishmentsHref . $accomplishmentsClass . '>Accomplishments</a></li>';
+	print '  <li><a ' . $educationHref . $educationClass . '>Education</a></li>';
+	print '  <li><a ' . $volunteeringHref . $volunteeringClass . '>Volunteering</a></li>';
 	print ' </ul>';
 	print '</div>';
 
@@ -69,20 +102,13 @@ function navForFooter( $section )
 		<p>Yadda yadda yadda yadda.</p>
 	</div>
 	<div data-role="footer" data-id="main" position="fixed">
-		<div data-role="navbar">
-			<ul>
-				<li><a data-direction="reverse" class="ui-btn-active ui-state-persist">
-					Resume</a></li>
-				<li><a href="#summary">
-					Summary</a></li>
-			</ul>
-		</div>
+		<?php navForFooter( "resume" ); ?>
 	</div>
 </div>
 
 <div data-role="page" id="summary"> <!-- SummaryOfQualifications -->
 	<div data-role="header">
-		<?php navForHeader( "resume" ); ?>
+		<?php navForHeader( "summary" ); ?>
 		<h1>Summary</h1>
 	</div>
 	<div data-role="content">
@@ -90,20 +116,13 @@ function navForFooter( $section )
 		<p>I am a ... yadda yadda yadda yadda.</p>
 	</div>
 	<div data-role="footer" data-id="main"  position="fixed">
-		<div data-role="navbar">
-			<ul>
-				<li><a href="#experience">Experience</a></li>
-				<li><a href="#accomplishments">Accomplishments</a></li>
-				<li><a href="#education">Education</a></li>
-				<li><a href="#volunteering">Volunteering</a></li>
-			</ul>
-		</div>
+		<?php navForFooter( "summary" ); ?>
 	</div>
 </div>
 
 <div data-role="page" id="skills"> <!-- TechnicalExperience -->
 	<div data-role="header">
-		<?php navForHeader( "resume" ); ?>
+		<?php navForHeader( "skills" ); ?>
 		<h1>Skills</h1>
 	</div>
 	<div data-role="content">
@@ -113,18 +132,13 @@ function navForFooter( $section )
 		</ul>
 	</div>
 	<div data-role="footer" data-id="main" position="fixed">
-		<div data-role="navbar">
-			<ul>
-				<li><a data-icon="home" class="ui-btn-active ui-state-persist">Resume</a></li>
-				<li><a href="#summary" data-icon="alert">Summary</a></li>
-			</ul>
-		</div>
+		<?php navForFooter( "skills" ); ?>
 	</div>
 </div>
 
 <div data-role="page" id="accomplishments"> <!-- RepresentativeAccomplishments -->
 	<div data-role="header">
-		<?php navForHeader( "resume" ); ?>
+		<?php navForHeader( "accomplishments" ); ?>
 		<h1>Representative Accomplishments</h1>
 	</div>
 	<div data-role="content">
@@ -134,19 +148,13 @@ function navForFooter( $section )
 		</ul>
 	</div>
 	<div data-role="footer" data-id="main" position="fixed">
-		<div data-role="navbar">
-			<ul>
-				<li><a class="ui-btn-active ui-state-persist">Summary</a></li>
-				<li><a href="#education">Education</a></li>
-				<li><a href="#volunteering">Volunteering</a></li>
-			</ul>
-		</div>
+		<?php navForFooter( "accomplishments" ); ?>
 	</div>
 </div>
 
 <div data-role="page" id="experience"> <!-- ProfessionalExperience -->
 	<div data-role="header">
-		<?php navForHeader( "resume" ); ?>
+		<?php navForHeader( "experience" ); ?>
 		<h1>Professional Experience</h1>
 	</div>
 	<div data-role="content">
@@ -156,18 +164,13 @@ function navForFooter( $section )
 		</ul>
 	</div>
 	<div data-role="footer" data-id="main" position="fixed">
-		<div data-role="navbar">
-			<ul>
-				<li><a data-icon="home" class="ui-btn-active ui-state-persist">Resume</a></li>
-				<li><a href="#summary" data-icon="alert">Summary</a></li>
-			</ul>
-		</div>
+		<?php navForFooter( "experience" ); ?>
 	</div>
 </div>
 
 <div data-role="page" id="education"> <!-- CertificationsAndEducation -->
 	<div data-role="header">
-		<?php navForHeader( "resume" ); ?>
+		<?php navForHeader( "education" ); ?>
 		<h1>Certifications and Education</h1>
 	</div>
 	<div data-role="content">
@@ -177,18 +180,13 @@ function navForFooter( $section )
 		</ul>
 	</div>
 	<div data-role="footer" data-id="main" position="fixed">
-		<div data-role="navbar">
-			<ul>
-				<li><a data-icon="home" class="ui-btn-active ui-state-persist">Resume</a></li>
-				<li><a href="#summary" data-icon="alert">Summary</a></li>
-			</ul>
-		</div>
+		<?php navForFooter( "education" ); ?>
 	</div>
 </div>
 
 <div data-role="page" id="volunteering"> <!-- Volunteering -->
 	<div data-role="header">
-		<?php navForHeader( "resume" ); ?>
+		<?php navForHeader( "volunteering" ); ?>
 		<h1>Volunteering</h1>
 	</div>
 	<div data-role="content">
@@ -197,12 +195,7 @@ function navForFooter( $section )
 		</ul>
 	</div>
 	<div data-role="footer" data-id="main" position="fixed">
-		<div data-role="navbar">
-			<ul>
-				<li><a data-icon="home" class="ui-btn-active ui-state-persist">Resume</a></li>
-				<li><a href="#summary" data-icon="alert">Summary</a></li>
-			</ul>
-		</div>
+		<?php navForFooter( "volunteering" ); ?>
 	</div>
 </div>
 
