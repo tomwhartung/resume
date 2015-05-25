@@ -7,7 +7,7 @@
 function mobileHeader( $section )
 {
 	$headerHtml = '';
-	$headerHtml .= '<div data-role="header">';
+	$headerHtml .= '<div data-role="header" data-theme="b">';
 	$headerHtml .= navForHeader( $section );
 	$headerHtml .= ' <h1>' . ucfirst( $section ) . '</h1>';
 	$headerHtml .= '</div>';
@@ -61,7 +61,7 @@ function navForHeader( $section )
 function mobileFooter( $section )
 {
 	$footerHtml = '';
-	$footerHtml .= '<div data-role="footer" data-id="main" data-position="fixed" class="ui-bar">';
+	$footerHtml .= '<div data-role="footer" data-id="main" data-position="fixed" class="ui-bar" data-theme="b">';
 	$footerHtml .= navForFooter( $section );
 	$footerHtml .= '</div>';
 	return $footerHtml;
