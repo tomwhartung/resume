@@ -99,7 +99,8 @@ if ( $gadgetType === IdMyGadget::GADGET_TYPE_TABLET ||
 }
 else
 {
-	print '<script type="text/javascript" src="js/lib/jquery.js"></script>';
+//	print '<script type="text/javascript" src="js/lib/jquery.js"></script>';
+	print '<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>';
 }
 
 print '<link rel="stylesheet" type="text/css" ' .
