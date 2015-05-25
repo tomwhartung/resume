@@ -336,13 +336,43 @@ Resume.toHtml = function() {
 	}
 	$('#content').append( resumeHtml );
 };
+Resume.populateSections = function() {
+	var thisSection;
+	var templateForSection;
+	var sectionTemplate;
+	var templateForParagraphSection = $("#paragraph-section-template").html();
+	var paragraphSectionTemplate = Handlebars.compile( templateForParagraphSection );
+	var sectionHtml = "";
+
+	for ( var index = 0; index < Resume.sections.length; index++ ) {
+		thisSection = Resume.sections[index];
+		console.log( 'populateSections: thisSection.id = ' + thisSection.id );
+		console.log( 'populateSections: thisSection.templateIdSelector = ' + thisSection.templateIdSelector );
+		if ( thisSection.hasOwnProperty('templateIdSelector') ) {
+			templateForSection = $(thisSection.templateIdSelector).html();
+			sectionTemplate = Handlebars.compile( templateForSection );     // TODO: inefficient...
+			if ( thisSection.hasOwnProperty('isProfessionalExperience') &&
+				 thisSection.isProfessionalExperience === true ) {
+				sectionHtml = sectionTemplate( thisSection );
+			} else {
+				sectionHtml = sectionTemplate( thisSection );
+			}
+		} else {
+			sectionHtml = paragraphSectionTemplate( thisSection );
+		}
+		console.log( "populateSections: sectionHtml = " + sectionHtml );
+	//	resumeHtml += sectionHtml;
+		$('#' + thisSection.id).append( sectionHtml );
+	}
+};
 
 $(document).ready(function() {
 	var index;
 	var id;
 	var listItemsSelector;
 	var moreItemsSelector;
-	Resume.toHtml();
+//	Resume.toHtml();
+	Resume.populateSections();
 	//
 	// If we have a showOnlySection function (i.e., if we are on a phone)
 	//   all sections are hidden, so call showOnlySection to show the Introduction
