@@ -119,11 +119,9 @@ print '<link rel="stylesheet" type="text/css" ' .
 <!-- ====================================================================== -->
 <script type="text/javascript" src="js/lib/handlebars.js"></script>
 <script id="paragraph-section-template" type="text/x-handlebars-template">
-	<h2>{{title}}</h2>
 	<p>{{{content}}}</p>
 </script>
 <script id="bullet-section-template" type="text/x-handlebars-template">
-	<h2>{{title}}</h2>
 	<ul>
 		{{#each bulletPoints}}
 			{{#if linkHref}}
@@ -174,7 +172,6 @@ print '<link rel="stylesheet" type="text/css" ' .
 	</script>
 <?php  else: ?>
 <script id="experience-section-template" type="text/x-handlebars-template">
-	<h2>{{title}}</h2>
 	<ul>
 	{{#each jobs}}
 		<li id="{{id}}">
@@ -236,7 +233,6 @@ print '<link rel="stylesheet" type="text/css" ' .
 	</script>
 <?php endif ?>
 <script id="education-section-template" type="text/x-handlebars-template">
-	<h2>{{title}}</h2>
 	<ul>
 		{{#each bulletPoints}}
 			<li>
@@ -266,13 +262,27 @@ print '<link rel="stylesheet" type="text/css" ' .
 	<!-- while on desktop browsers we display all sections at once. -->
 	<?php if ( $gadgetType === IdMyGadget::GADGET_TYPE_DESKTOP ): ?>
 		<div id="content">
-			<div id="content_introduction" class="section hide"></div>
-			<div id="content_summary" class="section hide"></div>
-			<div id="content_technical_skills" class="section hide"></div>
-			<div id="content_accomplishments" class="section hide"></div>
-			<div id="content_experience" class="section hide"></div>
-			<div id="content_education" class="section hide"></div>
-			<div id="content_volunteering" class="section hide"></div>
+			<div id="content_introduction" class="section hide">
+				<h2>Introduction</h2>
+			</div>
+			<div id="content_summary" class="section hide">
+				<h2>Summary of Qualifications</h2>
+			</div>
+			<div id="content_technical_skills" class="section hide">
+				<h2>Technical Experience</h2>
+			</div>
+			<div id="content_accomplishments" class="section hide">
+				<h2>Representative Accomplishments</h2>
+			</div>
+			<div id="content_experience" class="section hide">
+				<h2>Professional Experience</h2>
+			</div>
+			<div id="content_education" class="section hide">
+				<h2>Certifications and Education</h2>
+			</div>
+			<div id="content_volunteering" class="section hide">
+				<h2>Volunteering</h2>
+			</div>
 		</div>  <!-- content -->
 		<div id="footer">
 			<hr />
