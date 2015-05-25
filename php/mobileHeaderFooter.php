@@ -61,7 +61,9 @@ function navForHeader( $section )
 function mobileFooter( $section )
 {
 	$footerHtml = '';
+	$footerHtml .= '<div data-role="footer" data-id="main" position="fixed">';
 	$footerHtml .= navForFooter( $section );
+	$footerHtml .= '</div>';
 	return $footerHtml;
 }
 function navForFooter( $section )
