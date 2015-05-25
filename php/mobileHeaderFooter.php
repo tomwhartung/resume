@@ -1,4 +1,22 @@
 <?php
+/**
+ * Returns html for the header we want to use on mobile devices
+ * @param type $section
+ * @return string
+ */
+function mobileHeader( $section )
+{
+	$headerHtml = '';
+	$headerHtml .= '<div data-role="header">';
+	$headerHtml .= navForHeader( $section );
+	$headerHtml .= ' <h1>' . ucfirst( $section ) . '</h1>';
+	$headerHtml .= '</div>';
+	return $headerHtml;
+}
+/**
+ * Returns html for navigation elements used in the header
+ * @param type $section
+ */
 function navForHeader( $section )
 {
 	$resumeHref = 'href="#resume" ';
@@ -24,14 +42,27 @@ function navForHeader( $section )
 		$experienceHref = '';
 	}
 
-	print '<div data-role="navbar">';
-	print ' <ul>';
-	print '  <li><a ' . $resumeHref . $resumeClass . ' data-transition="fade">Resume</a></li>';
-	print '  <li><a ' . $skillsHref . $skillsClass . ' data-transition="fade">Skills</a></li>';
-	print '  <li><a ' . $experienceHref . $experienceClass . ' data-transition="fade">Experience</a></li>';
-	print ' </ul>';
-	print '</div>';
+	$headerNavHtml = '';
+	$headerNavHtml .= '<div data-role="navbar">';
+	$headerNavHtml .= ' <ul>';
+	$headerNavHtml .= '  <li><a ' . $resumeHref . $resumeClass . ' data-transition="fade">Resume</a></li>';
+	$headerNavHtml .= '  <li><a ' . $skillsHref . $skillsClass . ' data-transition="fade">Skills</a></li>';
+	$headerNavHtml .= '  <li><a ' . $experienceHref . $experienceClass . ' data-transition="fade">Experience</a></li>';
+	$headerNavHtml .= ' </ul>';
+	$headerNavHtml .= '</div>';
 
+	return $headerNavHtml;
+}
+/**
+ * Returns html for the footer we want to use on mobile devices
+ * @param type $section
+ * @return string
+ */
+function mobileFooter( $section )
+{
+	$footerHtml = '';
+	$footerHtml .= navForFooter( $section );
+	return $footerHtml;
 }
 function navForFooter( $section )
 {
@@ -65,14 +96,16 @@ function navForFooter( $section )
 		$volunteeringHref = '';
 	}
 
-	print '<div data-role="navbar">';
-	print ' <ul>';
-	print '  <li><a ' . $summaryHref . $summaryClass . ' data-transition="fade">Summary</a></li>';
-	print '  <li><a ' . $accomplishmentsHref . $accomplishmentsClass . ' data-transition="fade">Accomplishments</a></li>';
-	print '  <li><a ' . $educationHref . $educationClass . ' data-transition="fade">Education</a></li>';
-	print '  <li><a ' . $volunteeringHref . $volunteeringClass . ' data-transition="fade">Volunteering</a></li>';
-	print ' </ul>';
-	print '</div>';
+	$footerNavHtml = '';
+	$footerNavHtml .= '<div data-role="navbar">';
+	$footerNavHtml .= ' <ul>';
+	$footerNavHtml .='  <li><a ' . $summaryHref . $summaryClass . ' data-transition="fade">Summary</a></li>';
+	$footerNavHtml .='  <li><a ' . $accomplishmentsHref . $accomplishmentsClass . ' data-transition="fade">Accomplishments</a></li>';
+	$footerNavHtml .='  <li><a ' . $educationHref . $educationClass . ' data-transition="fade">Education</a></li>';
+	$footerNavHtml .='  <li><a ' . $volunteeringHref . $volunteeringClass . ' data-transition="fade">Volunteering</a></li>';
+	$footerNavHtml .=' </ul>';
+	$footerNavHtml .='</div>';
 
+	return $footerNavHtml;
 }
 
