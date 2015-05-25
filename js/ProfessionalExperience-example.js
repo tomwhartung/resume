@@ -13,9 +13,6 @@ var ProfessionalExperience = Object.create( Object.prototype, {
 	option: {
 		value: "Experience"
 	},
-	title: {
-		value: "Professional Experience"
-	},
 	isProfessionalExperience: {
 		value: true
 	},
