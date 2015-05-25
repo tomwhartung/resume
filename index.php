@@ -285,19 +285,15 @@ print '<link rel="stylesheet" type="text/css" ' .
 			<p class="footer">&copy; 2001-2014 Tom W. Hartung, P. O. Box 18216, Denver, CO 80218, 303-863-1757</p>
 			<hr />
 		</div> <!-- footer -->
-<?php  else: ?>
-	<?php require_once 'php/navForMobile.php'; ?>
-	<div data-role="page" id="resume"> <!-- Introduction -->
-		<div data-role="header">
-			<?php navForHeader( "resume" ); ?>
-			<h1>Resume</h1>
+	<?php  else: ?>
+		<?php require_once 'php/mobileHeaderFooter.php'; ?>
+		<div data-role="page" id="resume"> <!-- Introduction -->
+			<?php print mobileHeader( "resume" ); ?>
+			<div data-role="content" id="introduction_section"></div>
+			<div data-role="footer" data-id="main" position="fixed">
+				<?php print navForFooter( "resume" ); ?>
+			</div>
 		</div>
-		<div data-role="content" id="introduction_section">
-		</div>
-		<div data-role="footer" data-id="main" position="fixed">
-			<?php navForFooter( "resume" ); ?>
-		</div>
-	</div>
 <?php endif ?>
 
 </div> <!-- container -->
