@@ -13,7 +13,7 @@ var Resume = { };
  * Use this Minimal Section as the prototype to Object.create() new Section objects
  */
 var MinimalSection = Object.create( Object.prototype, {
-	id: { value: "minimal_section" },
+	id: { value: "content_minimal" },
 	option: { value: "Minimal" },
 	title: { value: "Minimal Section" },
 	templateIdSelector: { value: "#paragraph-section-template" },
@@ -26,7 +26,7 @@ var MinimalSection = Object.create( Object.prototype, {
  */
 var Introduction = Object.create( MinimalSection, {
 	id: {
-		value: "introduction_section"
+		value: "content_introduction"
 	},
 	option: {
 		value: "Introduction"
@@ -52,7 +52,7 @@ var Introduction = Object.create( MinimalSection, {
  */
 var SummaryOfQualifications = Object.create( MinimalSection, {
 	id: {
-		value: "summary_of_qualifications"
+		value: "content_summary"
 	},
 	option: {
 		value: "Summary"
@@ -84,7 +84,7 @@ var SummaryOfQualifications = Object.create( MinimalSection, {
  */
 var TechnicalExperience = Object.create( MinimalSection, {
 	id: {
-		value: "technical_experience"
+		value: "content_technical_skills"
 	},
 	option: {
 		value: "Technologies"
@@ -144,7 +144,7 @@ TechnicalExperience.bulletPoints = [
  */
 var RepresentativeAccomplishments = Object.create( MinimalSection, {
 	id: {
-		value: "representative_accomplishments"
+		value: "content_accomplishments"
 	},
 	option: {
 		value: "Accomplishments"
@@ -206,7 +206,7 @@ RepresentativeAccomplishments.bulletPoints = [
  */
 var CertificationsAndEducation = Object.create( MinimalSection, {
 	id: {
-		value: "certifications_and_education"
+		value: "content_education"
 	},
 	option: {
 		value: "Education"
@@ -266,7 +266,7 @@ CertificationsAndEducation.bulletPoints = [
  */
 var Volunteering = Object.create( MinimalSection, {
 	id: {
-		value: "volunteering_section"
+		value: "content_volunteering"
 	},
 	option: {
 		value: "Volunteering"

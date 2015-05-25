@@ -266,13 +266,13 @@ print '<link rel="stylesheet" type="text/css" ' .
 	<!-- while on desktop browsers we display all sections at once. -->
 	<?php if ( $gadgetType === IdMyGadget::GADGET_TYPE_DESKTOP ): ?>
 		<div id="content">
-			<div id="introduction_section" class="section hide"></div>
-			<div id="summary_of_qualifications" class="section hide"></div>
-			<div id="technical_experience" class="section hide"></div>
-			<div id="representative_accomplishments" class="section hide"></div>
-			<div id="professional_experience" class="section hide"></div>
-			<div id="certifications_and_education" class="section hide"></div>
-			<div id="volunteering" class="section hide"></div>
+			<div id="content_introduction" class="section hide"></div>
+			<div id="content_summary" class="section hide"></div>
+			<div id="content_technical_skills" class="section hide"></div>
+			<div id="content_accomplishments" class="section hide"></div>
+			<div id="content_experience" class="section hide"></div>
+			<div id="content_education" class="section hide"></div>
+			<div id="content_volunteering" class="section hide"></div>
 		</div>  <!-- content -->
 		<div id="footer">
 			<hr />
@@ -290,37 +290,37 @@ print '<link rel="stylesheet" type="text/css" ' .
 		<?php require_once 'php/mobileHeaderFooter.php'; ?>
 		<div data-role="page" id="resume"> <!-- Introduction -->
 			<?php print mobileHeader( "resume" ); ?>
-			<div data-role="content" id="introduction_section"></div>
+			<div data-role="content" id="content_introduction"></div>
 			<?php print mobileFooter( "resume" ); ?>
 		</div>
 		<div data-role="page" id="summary"> <!-- SummaryOfQualifications -->
 			<?php print mobileHeader( "summary" ); ?>
-			<div data-role="content" id="summary_of_qualifications"></div>
+			<div data-role="content" id="content_summary"></div>
 			<?php print mobileFooter( "summary" ); ?>
 		</div>
 		<div data-role="page" id="skills"> <!-- TechnicalExperience -->
 			<?php print mobileHeader( "skills" ); ?>
-			<div data-role="content" id="technical_experience"></div>
+			<div data-role="content" id="content_technical_skills"></div>
 			<?php print mobileFooter( "skills" ); ?>
 		</div>
 		<div data-role="page" id="accomplishments"> <!-- RepresentativeAccomplishments -->
 			<?php print mobileHeader( "accomplishments" ); ?>
-			<div data-role="content" id="representative_accomplishments"></div>
+			<div data-role="content" id="content_accomplishments"></div>
 			<?php print mobileFooter( "accomplishments" ); ?>
 		</div>
 		<div data-role="page" id="experience"> <!-- ProfessionalExperience -->
 			<?php print mobileHeader( "experience" ); ?>
-			<div data-role="content" id="professional_experience"></div>
+			<div data-role="content" id="content_experience"></div>
 			<?php print mobileFooter( "experience" ); ?>
 		</div>
 		<div data-role="page" id="education"> <!-- CertificationsAndEducation -->
 			<?php print mobileHeader( "education" ); ?>
-			<div data-role="content" id="certifications_and_education"></div>
+			<div data-role="content" id="content_education"></div>
 			<?php print mobileFooter( "education" ); ?>
 		</div>
 		<div data-role="page" id="volunteering"> <!-- Volunteering -->
 			<?php print mobileHeader( "volunteering" ); ?>
-			<div data-role="content" id="volunteering_section"></div>
+			<div data-role="content" id="content_volunteering"></div>
 			<?php print mobileFooter( "volunteering" ); ?>
 		</div>
 	<?php endif ?>

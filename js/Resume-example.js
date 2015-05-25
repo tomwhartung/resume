@@ -14,7 +14,7 @@ var Resume = { };
  */
 var MinimalSection = Object.create( Object.prototype, {
 	id: {
-		value: "minimal_section"                // id used in DOM to identify section
+		value: "content_minimal"                // id used in DOM to identify section
 	},
 	option: {
 		value: "Minimal"                        // option text used on phone menu
@@ -38,7 +38,7 @@ var MinimalSection = Object.create( Object.prototype, {
  */
 var Introduction = Object.create( MinimalSection, {
 	id: {
-		value: "introduction_section"
+		value: "content_introduction"
 	},
 	option: {
 		value: "Introduction"
@@ -62,7 +62,7 @@ var Introduction = Object.create( MinimalSection, {
  */
 var SummaryOfQualifications = Object.create( MinimalSection, {
 	id: {
-		value: "summary_of_qualifications"
+		value: "content_summary"
 	},
 	option: {
 		value: "Summary"
@@ -86,7 +86,7 @@ var SummaryOfQualifications = Object.create( MinimalSection, {
  */
 var TechnicalExperience = Object.create( MinimalSection, {
 	id: {
-		value: "technical_experience"
+		value: "content_technical_skills"
 	},
 	option: {
 		value: "Technologies"
@@ -146,7 +146,7 @@ TechnicalExperience.bulletPoints = [
  */
 var RepresentativeAccomplishments = Object.create( MinimalSection, {
 	id: {
-		value: "representative_accomplishments"
+		value: "content_accomplishments"
 	},
 	option: {
 		value: "Accomplishments"
@@ -208,7 +208,7 @@ RepresentativeAccomplishments.bulletPoints = [
  */
 var CertificationsAndEducation = Object.create( MinimalSection, {
 	id: {
-		value: "certifications_and_education"
+		value: "content_education"
 	},
 	option: {
 		value: "Education"
@@ -244,7 +244,7 @@ CertificationsAndEducation.bulletPoints = [
  */
 var Volunteering = Object.create( MinimalSection, {
 	id: {
-		value: "volunteering"
+		value: "content_volunteering"
 	},
 	option: {
 		value: "Volunteering"
