@@ -90,7 +90,6 @@ print '<meta name="viewport" content="user-scalable=no, width=device-width" />';
 if ( $gadgetType === IdMyGadget::GADGET_TYPE_TABLET ||
      $gadgetType === IdMyGadget::GADGET_TYPE_PHONE )
 {
-	require_once 'php/navForMobile.php';
 	print '<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />';
 	print '<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>';
 	print '<script type="text/javascript" src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>';
@@ -119,28 +118,24 @@ print '<link rel="stylesheet" type="text/css" ' .
 <!-- ====================================================================== -->
 <script type="text/javascript" src="js/lib/handlebars.js"></script>
 <script id="paragraph-section-template" type="text/x-handlebars-template">
-	<div id="{{id}}" class="section hide">
-		<h2>{{title}}</h2>
-		<p>{{{content}}}</p>
-	</div>
+	<h2>{{title}}</h2>
+	<p>{{{content}}}</p>
 </script>
 <script id="bullet-section-template" type="text/x-handlebars-template">
-	<div id="{{id}}" class="section hide">
 	<h2>{{title}}</h2>
-		<ul>
-			{{#each bulletPoints}}
-				{{#if linkHref}}
-					<li><a class="bold" href="{{linkHref}}" target="_blank">{{bold}}</a>
-						{{text}}
-					</li>
-				{{else}}
-					<li><span class="bold">{{bold}}</span>
-						{{text}}
-					</li>
-				{{/if}}
-			{{/each}}
-		</ul>
-	</div>
+	<ul>
+		{{#each bulletPoints}}
+			{{#if linkHref}}
+				<li><a class="bold" href="{{linkHref}}" target="_blank">{{bold}}</a>
+					{{text}}
+				</li>
+			{{else}}
+				<li><span class="bold">{{bold}}</span>
+					{{text}}
+				</li>
+			{{/if}}
+		{{/each}}
+	</ul>
 </script>
 <?php  if ( $gadgetType === IdMyGadget::GADGET_TYPE_PHONE ): ?>
 	<script id="phone-menu-template" type="text/x-handlebars-template">
@@ -178,45 +173,43 @@ print '<link rel="stylesheet" type="text/css" ' .
 	</script>
 <?php  else: ?>
 <script id="experience-section-template" type="text/x-handlebars-template">
-	<div id="{{id}}" class="section hide">
-		<h2>{{title}}</h2>
-		<ul>
-		{{#each jobs}}
-			<li id="{{id}}">
-				{{#if title}}
-					<div><span class="bold">{{title}}</span></div>
-				{{/if}}
-				{{#if companyHref}}
-					<a href="{{companyHref}}" target="_blank">{{companyName}}</a>,&nbsp;{{location}}
-				{{else}}
-					<span class="underline">{{companyName}}</span>,&nbsp;{{location}}
-				{{/if}}
-				<div>{{dateRange}}</div>
-				<div class="underline" onclick="showListItemsForJob('{{id}}');">
-					<a class="show-button">Show Accomplishments</a>
-				</div><!-- .show-button -->
-				<div class="list-items">
-					<ul>{{{listItems}}}</ul>
-					<img src="images/more-plain.jpg" border="0"
-						value="More" alt="More" name="more"
-						title="Show more details for this position"
-						onmouseover="this.src='images/more-hover.jpg'; return true;"
-						onmouseout="this.src='images/more-plain.jpg'; return true;"
-						onclick="toggleMoreOrLessListItems('{{id}}');" \>
-				</div><!-- .list-items -->
-				<div class="more-items">
-					<ul>{{{moreItems}}}</ul>
-					<img src="images/less-plain.jpg" border="0"
-						value="Less" alt="Less" name="less"
-						title="Show fewer bullet items for this position"
-						onmouseover="this.src='images/less-hover.jpg'; return true;"
-						onmouseout="this.src='images/less-plain.jpg'; return true;"
-						onclick="toggleMoreOrLessListItems('{{id}}');" \>
-				</div><!-- .more-items -->
-			</li>
-		{{/each}}
-		</ul>
-	</div>
+	<h2>{{title}}</h2>
+	<ul>
+	{{#each jobs}}
+		<li id="{{id}}">
+			{{#if title}}
+				<div><span class="bold">{{title}}</span></div>
+			{{/if}}
+			{{#if companyHref}}
+				<a href="{{companyHref}}" target="_blank">{{companyName}}</a>,&nbsp;{{location}}
+			{{else}}
+				<span class="underline">{{companyName}}</span>,&nbsp;{{location}}
+			{{/if}}
+			<div>{{dateRange}}</div>
+			<div class="underline" onclick="showListItemsForJob('{{id}}');">
+				<a class="show-button">Show Accomplishments</a>
+			</div><!-- .show-button -->
+			<div class="list-items">
+				<ul>{{{listItems}}}</ul>
+				<img src="images/more-plain.jpg" border="0"
+					value="More" alt="More" name="more"
+					title="Show more details for this position"
+					onmouseover="this.src='images/more-hover.jpg'; return true;"
+					onmouseout="this.src='images/more-plain.jpg'; return true;"
+					onclick="toggleMoreOrLessListItems('{{id}}');" \>
+			</div><!-- .list-items -->
+			<div class="more-items">
+				<ul>{{{moreItems}}}</ul>
+				<img src="images/less-plain.jpg" border="0"
+					value="Less" alt="Less" name="less"
+					title="Show fewer bullet items for this position"
+					onmouseover="this.src='images/less-hover.jpg'; return true;"
+					onmouseout="this.src='images/less-plain.jpg'; return true;"
+					onclick="toggleMoreOrLessListItems('{{id}}');" \>
+			</div><!-- .more-items -->
+		</li>
+	{{/each}}
+	</ul>
 </script>
 <?php  endif ?>
 <?php  if ( $gadgetType === IdMyGadget::GADGET_TYPE_PHONE ): ?>
@@ -242,22 +235,20 @@ print '<link rel="stylesheet" type="text/css" ' .
 	</script>
 <?php endif ?>
 <script id="education-section-template" type="text/x-handlebars-template">
-	<div id="{{id}}" class="section hide">
-		<h2>{{title}}</h2>
-		<ul>
-			{{#each bulletPoints}}
-				<li>
-					<span class="bold">
-						<a href="{{linkHref}}" target="_blank">{{linkText}}</a>
-					</span><br />
-					<a href="{{schoolHref}}" target="_blank">{{schoolText}}</a>
-					{{location}}<br />
-					Completed: {{completedDate}}<br />
-					<ul>{{{listItems}}}</ul>
-				</li>
-			{{/each}}
-		</ul>
-		</div>
+	<h2>{{title}}</h2>
+	<ul>
+		{{#each bulletPoints}}
+			<li>
+				<span class="bold">
+					<a href="{{linkHref}}" target="_blank">{{linkText}}</a>
+				</span><br />
+				<a href="{{schoolHref}}" target="_blank">{{schoolText}}</a>
+				{{location}}<br />
+				Completed: {{completedDate}}<br />
+				<ul>{{{listItems}}}</ul>
+			</li>
+		{{/each}}
+	</ul>
 </script>
 </head>
 
@@ -270,19 +261,32 @@ print '<link rel="stylesheet" type="text/css" ' .
 	<?php endif; ?>
 	<!-- Set up a div element for each section. -->
 	<!-- All content in the div for each section is generated by JavaScript using handlebars -->
-	<!-- Note that on mobile devices each section is a page, while -->
-	<!-- on desktop browsers we display all sections. -->
-	<div id="content">
-<?php
-if ( $gadgetType === IdMyGadget::GADGET_TYPE_DESKTOP ): ?>
-	<div id="introduction_section" class="section hide"></div>
-	<div id="summary_of_qualifications" class="section hide"></div>
-	<div id="technical_experience" class="section hide"></div>
-	<div id="representative_accomplishments" class="section hide"></div>
-	<div id="professional_experience" class="section hide"></div>
-	<div id="certifications_and_education" class="section hide"></div>
-	<div id="volunteering" class="section hide"></div>
+	<!-- Note that on mobile devices each section is a page (screen/window/menu option) -->
+	<!-- while on desktop browsers we display all sections at once. -->
+	<?php if ( $gadgetType === IdMyGadget::GADGET_TYPE_DESKTOP ): ?>
+		<div id="content">
+			<div id="introduction_section" class="section hide"></div>
+			<div id="summary_of_qualifications" class="section hide"></div>
+			<div id="technical_experience" class="section hide"></div>
+			<div id="representative_accomplishments" class="section hide"></div>
+			<div id="professional_experience" class="section hide"></div>
+			<div id="certifications_and_education" class="section hide"></div>
+			<div id="volunteering" class="section hide"></div>
+		</div>  <!-- content -->
+		<div id="footer">
+			<hr />
+			<ul>
+				<li class="footer_links"><a href="http://tomwhartung.com">tomwhartung.com</a></li>
+				<li class="footer_links"><a href="http://seeourminds.com">seeourminds.com</a></li>
+				<li class="footer_links"><a href="http://joomoowebsites.com">joomoowebsites.com</a></li>
+				<li class="footer_links"><a href="http://tomhartung.com">tomhartung.com</a></li>
+			</ul>
+			<hr />
+			<p class="footer">&copy; 2001-2014 Tom W. Hartung, P. O. Box 18216, Denver, CO 80218, 303-863-1757</p>
+			<hr />
+		</div> <!-- footer -->
 <?php  else: ?>
+	<?php require_once 'php/navForMobile.php'; ?>
 	<div data-role="page" id="resume"> <!-- Introduction -->
 		<div data-role="header">
 			<?php navForHeader( "resume" ); ?>
@@ -296,20 +300,6 @@ if ( $gadgetType === IdMyGadget::GADGET_TYPE_DESKTOP ): ?>
 	</div>
 <?php endif ?>
 
-	</div>  <!-- content -->
-
-		<div id="footer">
-			<hr />
-			<ul>
-				<li class="footer_links"><a href="http://tomwhartung.com">tomwhartung.com</a></li>
-				<li class="footer_links"><a href="http://seeourminds.com">seeourminds.com</a></li>
-				<li class="footer_links"><a href="http://joomoowebsites.com">joomoowebsites.com</a></li>
-				<li class="footer_links"><a href="http://tomhartung.com">tomhartung.com</a></li>
-			</ul>
-			<hr />
-			<p class="footer">&copy; 2001-2014 Tom W. Hartung, P. O. Box 18216, Denver, CO 80218, 303-863-1757</p>
-			<hr />
-		</div> <!-- footer -->
 </div> <!-- container -->
 </body>
 </html>
