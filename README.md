@@ -62,9 +62,9 @@ they contain the content of your resume.
 
 To verify that you have everything set up properly, access the
 following file in your web browser:
-[http://example.com/resume]
+[http://example.com/resume](http://example.com/resume)
 For example, if you are setting this up on your localhost, go to
-[http://localhost/resume]
+[http://localhost/resume](http://localhost/resume)
 
 ## Conclusion:
 This is still a Work In Progress, so no conclusions are available
