@@ -266,7 +266,7 @@ CertificationsAndEducation.bulletPoints = [
  */
 var Volunteering = Object.create( MinimalSection, {
 	id: {
-		value: "volunteering"
+		value: "volunteering_section"
 	},
 	option: {
 		value: "Volunteering"
