@@ -75,7 +75,7 @@ ProfessionalExperience.JoomooWebsites_2 = Object.create( ProfessionalExperience.
 		'<li>Wrote idMyGadget, an adapter API providing a consistent interface to ' +
 			'multiple device detection packages, allowing users to choose the proper balance between ' +
 			'functionality and licensing requirements.</li>' +
-		'<li>Updating resume to use new idMyGadget code (and quite possibly jQuery Mobile).</li>'
+		'<li>Updating resume to use new idMyGadget code and jQuery Mobile for mobile devices only.</li>'
 	}
 });
 //
