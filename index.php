@@ -292,7 +292,37 @@ print '<link rel="stylesheet" type="text/css" ' .
 			<div data-role="content" id="introduction_section"></div>
 			<?php print mobileFooter( "resume" ); ?>
 		</div>
-<?php endif ?>
+		<div data-role="page" id="summary"> <!-- SummaryOfQualifications -->
+			<?php print mobileHeader( "summary" ); ?>
+			<div data-role="content" id="summary_of_qualifications"></div>
+			<?php print mobileFooter( "summary" ); ?>
+		</div>
+		<div data-role="page" id="skills"> <!-- TechnicalExperience -->
+			<?php print mobileHeader( "skills" ); ?>
+			<div data-role="content" id="technical_experience"></div>
+			<?php print mobileFooter( "skills" ); ?>
+		</div>
+		<div data-role="page" id="accomplishments"> <!-- RepresentativeAccomplishments -->
+			<?php print mobileHeader( "accomplishments" ); ?>
+			<div data-role="content" id="representative_accomplishments"></div>
+			<?php print mobileFooter( "accomplishments" ); ?>
+		</div>
+		<div data-role="page" id="experience"> <!-- ProfessionalExperience -->
+			<?php print mobileHeader( "experience" ); ?>
+			<div data-role="content" id="professional_experience"></div>
+			<?php print mobileFooter( "experience" ); ?>
+		</div>
+		<div data-role="page" id="education"> <!-- CertificationsAndEducation -->
+			<?php print mobileHeader( "education" ); ?>
+			<div data-role="content" id="certifications_and_education"></div>
+			<?php print mobileFooter( "education" ); ?>
+		</div>
+		<div data-role="page" id="volunteering"> <!-- Volunteering -->
+			<?php print mobileHeader( "volunteering" ); ?>
+			<div data-role="content" id="volunteering_section"></div>
+			<?php print mobileFooter( "volunteering" ); ?>
+		</div>
+	<?php endif ?>
 
 </div> <!-- container -->
 </body>
