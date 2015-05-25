@@ -290,9 +290,7 @@ print '<link rel="stylesheet" type="text/css" ' .
 		<div data-role="page" id="resume"> <!-- Introduction -->
 			<?php print mobileHeader( "resume" ); ?>
 			<div data-role="content" id="introduction_section"></div>
-			<div data-role="footer" data-id="main" position="fixed">
-				<?php print navForFooter( "resume" ); ?>
-			</div>
+			<?php print mobileFooter( "resume" ); ?>
 		</div>
 <?php endif ?>
 
