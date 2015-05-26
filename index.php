@@ -295,27 +295,27 @@ print '<link rel="stylesheet" type="text/css" ' .
 	<?php if ( $gadgetType === IdMyGadget::GADGET_TYPE_DESKTOP ||
 	           $gadgetType === IdMyGadget::GADGET_TYPE_TABLET   ): ?>
 		<div id="content">
-			<div id="content_introduction" class="section">
+			<section id="content_introduction" class="section">
 				<h2>Introduction</h2>
-			</div>
-			<div id="content_summary" class="section">
+			</section>
+			<section id="content_summary" class="section">
 				<h2>Summary of Qualifications</h2>
-			</div>
-			<div id="content_technical_skills" class="section">
+			</section>
+			<section id="content_technical_skills" class="section">
 				<h2>Technical Experience</h2>
-			</div>
-			<div id="content_accomplishments" class="section">
+			</section>
+			<section id="content_accomplishments" class="section">
 				<h2>Representative Accomplishments</h2>
-			</div>
-			<div id="content_experience" class="section">
+			</section>
+			<section id="content_experience" class="section">
 				<h2>Professional Experience</h2>
-			</div>
-			<div id="content_education" class="section">
+			</section>
+			<section id="content_education" class="section">
 				<h2>Certifications and Education</h2>
-			</div>
-			<div id="content_volunteering" class="section">
+			</section>
+			<section id="content_volunteering" class="section">
 				<h2>Volunteering</h2>
-			</div>
+			</section>
 		</div>  <!-- content -->
 		<footer>
 			<hr />
