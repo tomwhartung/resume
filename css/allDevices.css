@@ -86,10 +86,10 @@ a.show-button:hover {
 li div.hide  {
 	display: none;
 }
-div#footer {
-	display: inline;
-	margin-top: 3.0em;
+footer {
+	margin: 2em 0em 2em;
 	text-align: center;
+	width: 100%;
 }
 li.footer_links {
 	display: inline;
