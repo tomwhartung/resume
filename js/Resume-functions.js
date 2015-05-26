@@ -51,10 +51,10 @@ $(document).ready(function() {
 	//   initially we want to hide the more-items div that contains details about each job.
 	// Note that we can hide these elements only after renering the resume
 	//
-	if ( typeof(showOnlySection) == 'function' ) {
-		showOnlySection( Resume.sections[0].id );
-		togglePhoneMenu();
-	} else {
+//	if ( typeof(showOnlySection) == 'function' ) {
+//		showOnlySection( Resume.sections[0].id );
+//		togglePhoneMenu();
+//	} else {
 		for ( index = 0; index < ProfessionalExperience.jobs.length; index++ ) {
 			id = ProfessionalExperience.jobs[index].id;
 			listItemsSelector = '#' + id + ' div.list-items';
@@ -89,7 +89,7 @@ $(document).ready(function() {
 				}
 			}
 		}
-	}
+//	}
 });
 /**
  * Jobs are now shown with no items (accomplishments and tasks)

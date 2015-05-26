@@ -139,18 +139,6 @@ print '<link rel="stylesheet" type="text/css" ' .
 	</ul>
 </script>
 <?php  if ( $gadgetType === IdMyGadget::GADGET_TYPE_PHONE ): ?>
-	<script id="phone-menu-template" type="text/x-handlebars-template">
-		<div id="phone-menu" class="section">
-			<ul>
-				{{#each sections}}
-					<li><a onClick="showOnlySection('{{id}}')">{{option}}</a>
-					</li>
-				{{/each}}
-			</ul>
-		</div><!-- phone-menu -->
-	</script>
-<?php  endif ?>
-<?php  if ( $gadgetType === IdMyGadget::GADGET_TYPE_PHONE ): ?>
 	<script id="experience-section-template" type="text/x-handlebars-template">
 		<div id="{{id}}" class="section hide">
 			<h2>{{title}}</h2>
@@ -254,7 +242,7 @@ print '<link rel="stylesheet" type="text/css" ' .
 <body>
 <div id="container">
 	<?php if ( $gadgetType === IdMyGadget::GADGET_TYPE_DESKTOP ||
-	           $gadgetType === IdMyGadget::GADGET_TYPE_TABLET  ): ?>
+	           $gadgetType === IdMyGadget::GADGET_TYPE_TABLET   ): ?>
 		<div id='header'>
 			<h1>The Resume of <?php echo $myName ?></h1>
 		</div>  <!-- header -->
@@ -264,7 +252,7 @@ print '<link rel="stylesheet" type="text/css" ' .
 	<!-- Note that on mobile devices each section is a page (screen/window/menu option) -->
 	<!-- while on desktop browsers we display all sections at once. -->
 	<?php if ( $gadgetType === IdMyGadget::GADGET_TYPE_DESKTOP ||
-	           $gadgetType === IdMyGadget::GADGET_TYPE_TABLET ): ?>
+	           $gadgetType === IdMyGadget::GADGET_TYPE_TABLET   ): ?>
 		<div id="content">
 			<div id="content_introduction" class="section hide">
 				<h2>Introduction</h2>
