@@ -128,8 +128,8 @@ print '<link rel="stylesheet" type="text/css" ' .
 		{{#each bulletPoints}}
 			{{#if linkHref}}
 				<div data-role="collapsible" data-collapsed="true">
-					<a class="bold" href="{{linkHref}}" target="_blank">{{bold}}</a>
-					{{text}}
+					<h3><a class="bold" href="{{linkHref}}" target="_blank">{{bold}}</a></h3>
+					<p>{{text}}</p>
 				</div>
 			{{else}}
 				<div data-role="collapsible" data-collapsed="true">
