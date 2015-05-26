@@ -125,19 +125,25 @@ print '<link rel="stylesheet" type="text/css" ' .
 </script>
 <?php  if ( $gadgetType === IdMyGadget::GADGET_TYPE_PHONE ): ?>
 	<script id="bullet-section-template" type="text/x-handlebars-template">
-		{{#each bulletPoints}}
-			{{#if linkHref}}
-				<div data-role="collapsible" data-collapsed="true">
-					<h4><a class="bold" href="{{linkHref}}" target="_blank">{{bold}}</a></h4>
-					<p>{{text}}</p>
-				</div>
-			{{else}}
-				<div data-role="collapsible" data-collapsed="true">
-					<h4>{{bold}}</h4>
-					<p>{{text}}</p>
-				</div>
-			{{/if}}
-		{{/each}}
+		<ul>
+			{{#each bulletPoints}}
+				{{#if linkHref}}
+					<div data-role="collapsible" data-collapsed="true">
+						<h4><a class="bold" href="{{linkHref}}" target="_blank">{{bold}}</a></h4>
+						<p>{{text}}</p>
+					</div>
+				{{else}}
+					{{#if bold}}
+						<div data-role="collapsible" data-collapsed="true">
+							<h4>{{bold}}</h4>
+							<p>{{text}}</p>
+						</div>
+					{{else}}
+							<li>{{text}}</li>
+					{{/if}}
+				{{/if}}
+			{{/each}}
+		</ul>
 	</script>
 <?php  else: ?>
 	<script id="bullet-section-template" type="text/x-handlebars-template">
