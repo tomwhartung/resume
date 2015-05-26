@@ -331,41 +331,41 @@ print '<link rel="stylesheet" type="text/css" ' .
 		</footer>
 	<?php  else: ?>
 		<?php require_once 'php/mobileHeaderFooter.php'; ?>
-		<div data-role="page" id="resume"> <!-- Introduction -->
+		<section data-role="page" id="resume"> <!-- Introduction -->
 			<?php print mobileHeader( "resume" ); ?>
 			<div data-role="content" id="content_introduction"></div>
 			<?php print mobileFooter( "resume" ); ?>
-		</div>
-		<div data-role="page" id="summary"> <!-- SummaryOfQualifications -->
+		</section>
+		<section data-role="page" id="summary"> <!-- SummaryOfQualifications -->
 			<?php print mobileHeader( "summary" ); ?>
 			<div data-role="content" id="content_summary"></div>
 			<?php print mobileFooter( "summary" ); ?>
-		</div>
-		<div data-role="page" id="skills"> <!-- TechnicalExperience -->
+		</section>
+		<section data-role="page" id="skills"> <!-- TechnicalExperience -->
 			<?php print mobileHeader( "skills" ); ?>
 			<div data-role="content" id="content_technical_skills"></div>
 			<?php print mobileFooter( "skills" ); ?>
-		</div>
-		<div data-role="page" id="accomplishments"> <!-- RepresentativeAccomplishments -->
+		</section>
+		<section data-role="page" id="accomplishments"> <!-- RepresentativeAccomplishments -->
 			<?php print mobileHeader( "accomplishments" ); ?>
 			<div data-role="content" id="content_accomplishments"></div>
 			<?php print mobileFooter( "accomplishments" ); ?>
-		</div>
-		<div data-role="page" id="experience"> <!-- ProfessionalExperience -->
+		</section>
+		<section data-role="page" id="experience"> <!-- ProfessionalExperience -->
 			<?php print mobileHeader( "experience" ); ?>
 			<div data-role="content" id="content_experience"></div>
 			<?php print mobileFooter( "experience" ); ?>
-		</div>
-		<div data-role="page" id="education"> <!-- CertificationsAndEducation -->
+		</section>
+		<section data-role="page" id="education"> <!-- CertificationsAndEducation -->
 			<?php print mobileHeader( "education" ); ?>
 			<div data-role="content" id="content_education"></div>
 			<?php print mobileFooter( "education" ); ?>
-		</div>
-		<div data-role="page" id="volunteering"> <!-- Volunteering -->
+		</section>
+		<section data-role="page" id="volunteering"> <!-- Volunteering -->
 			<?php print mobileHeader( "volunteering" ); ?>
 			<div data-role="content" id="content_volunteering"></div>
 			<?php print mobileFooter( "volunteering" ); ?>
-		</div>
+		</section>
 	<?php endif ?>
 
 </div> <!-- container -->
