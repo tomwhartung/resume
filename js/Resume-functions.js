@@ -18,8 +18,8 @@ Resume.populateSections = function() {
 
 	for ( var index = 0; index < Resume.sections.length; index++ ) {
 		thisSection = Resume.sections[index];
-		console.log( 'populateSections: thisSection.id = ' + thisSection.id );
-		console.log( 'populateSections: thisSection.templateIdSelector = ' + thisSection.templateIdSelector );
+	//	console.log( 'populateSections: thisSection.id = ' + thisSection.id );
+	//	console.log( 'populateSections: thisSection.templateIdSelector = ' + thisSection.templateIdSelector );
 		if ( thisSection.hasOwnProperty('templateIdSelector') ) {
 			templateForSection = $(thisSection.templateIdSelector).html();
 			sectionTemplate = Handlebars.compile( templateForSection );     // TODO: inefficient...
@@ -32,8 +32,7 @@ Resume.populateSections = function() {
 		} else {
 			sectionHtml = paragraphSectionTemplate( thisSection );
 		}
-		console.log( "populateSections: sectionHtml = " + sectionHtml );
-	//	resumeHtml += sectionHtml;
+	//	console.log( "populateSections: sectionHtml = " + sectionHtml );
 		$('#' + thisSection.id).append( sectionHtml );
 	}
 };
