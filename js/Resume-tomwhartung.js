@@ -14,7 +14,6 @@ var Resume = { };
  */
 var MinimalSection = Object.create( Object.prototype, {
 	id: { value: "content_minimal" },
-	option: { value: "Minimal" },
 	templateIdSelector: { value: "#paragraph-section-template" },
 	isProfessionalExperience: { value: false },
 	content: { value: "Use this Minimal Section for testing and to make other sections." }
@@ -26,9 +25,6 @@ var MinimalSection = Object.create( Object.prototype, {
 var Introduction = Object.create( MinimalSection, {
 	id: {
 		value: "content_introduction"
-	},
-	option: {
-		value: "Introduction"
 	},
 	templateIdSelector: {
 		value: "#paragraph-section-template"
@@ -49,9 +45,6 @@ var Introduction = Object.create( MinimalSection, {
 var SummaryOfQualifications = Object.create( MinimalSection, {
 	id: {
 		value: "content_summary"
-	},
-	option: {
-		value: "Summary"
 	},
 	templateIdSelector: {
 		value: "#paragraph-section-template"
@@ -78,9 +71,6 @@ var SummaryOfQualifications = Object.create( MinimalSection, {
 var TechnicalExperience = Object.create( MinimalSection, {
 	id: {
 		value: "content_technical_skills"
-	},
-	option: {
-		value: "Technologies"
 	},
 	templateIdSelector: {
 		value: "#bullet-section-template"
@@ -135,9 +125,6 @@ TechnicalExperience.bulletPoints = [
 var RepresentativeAccomplishments = Object.create( MinimalSection, {
 	id: {
 		value: "content_accomplishments"
-	},
-	option: {
-		value: "Accomplishments"
 	},
 	templateIdSelector: {
 		value: "#bullet-section-template"
@@ -195,9 +182,6 @@ var CertificationsAndEducation = Object.create( MinimalSection, {
 	id: {
 		value: "content_education"
 	},
-	option: {
-		value: "Education"
-	},
 	templateIdSelector: {
 		value: "#education-section-template"
 	},
@@ -251,9 +235,6 @@ CertificationsAndEducation.bulletPoints = [
 var Volunteering = Object.create( MinimalSection, {
 	id: {
 		value: "content_volunteering"
-	},
-	option: {
-		value: "Volunteering"
 	},
 	templateIdSelector: {
 		value: "#bullet-section-template"

@@ -9,9 +9,6 @@ var ProfessionalExperience = Object.create( Object.prototype, {
 	id: {
 		value: "content_experience"
 	},
-	option: {
-		value: "Experience"
-	},
 	isProfessionalExperience: {
 		value: true
 	},

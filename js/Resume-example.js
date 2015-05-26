@@ -16,9 +16,6 @@ var MinimalSection = Object.create( Object.prototype, {
 	id: {
 		value: "content_minimal"                // id used in DOM to identify section
 	},
-	option: {
-		value: "Minimal"                        // option text used on phone menu
-	},
 	templateIdSelector: {
 		value: "#paragraph-section-template"    // Handlebars template (see index.php)
 	},
@@ -36,9 +33,6 @@ var MinimalSection = Object.create( Object.prototype, {
 var Introduction = Object.create( MinimalSection, {
 	id: {
 		value: "content_introduction"
-	},
-	option: {
-		value: "Introduction"
 	},
 	templateIdSelector: {
 		value: "#paragraph-section-template"
@@ -58,9 +52,6 @@ var SummaryOfQualifications = Object.create( MinimalSection, {
 	id: {
 		value: "content_summary"
 	},
-	option: {
-		value: "Summary"
-	},
 	templateIdSelector: {
 		value: "#paragraph-section-template"
 	},
@@ -78,9 +69,6 @@ var SummaryOfQualifications = Object.create( MinimalSection, {
 var TechnicalExperience = Object.create( MinimalSection, {
 	id: {
 		value: "content_technical_skills"
-	},
-	option: {
-		value: "Technologies"
 	},
 	templateIdSelector: {
 		value: "#bullet-section-template"
@@ -135,9 +123,6 @@ TechnicalExperience.bulletPoints = [
 var RepresentativeAccomplishments = Object.create( MinimalSection, {
 	id: {
 		value: "content_accomplishments"
-	},
-	option: {
-		value: "Accomplishments"
 	},
 	templateIdSelector: {
 		value: "#bullet-section-template"
@@ -195,9 +180,6 @@ var CertificationsAndEducation = Object.create( MinimalSection, {
 	id: {
 		value: "content_education"
 	},
-	option: {
-		value: "Education"
-	},
 	templateIdSelector: {
 		value: "#education-section-template"
 	},
@@ -227,9 +209,6 @@ CertificationsAndEducation.bulletPoints = [
 var Volunteering = Object.create( MinimalSection, {
 	id: {
 		value: "content_volunteering"
-	},
-	option: {
-		value: "Volunteering"
 	},
 	templateIdSelector: {
 		value: "#bullet-section-template"
