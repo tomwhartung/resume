@@ -31,6 +31,6 @@ a, li, p {
 	margin-top:  0.5em;
 	line-height: 1.75em;
 }
-a, a:link, a:hover, a:visited  {
+a, a:link, a:hover, a.show-button:hover, a:visited  {
 	color: skyblue;      /* make links easier to see */
 }
