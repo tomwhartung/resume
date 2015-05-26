@@ -123,21 +123,39 @@ print '<link rel="stylesheet" type="text/css" ' .
 <script id="paragraph-section-template" type="text/x-handlebars-template">
 	<p>{{{content}}}</p>
 </script>
-<script id="bullet-section-template" type="text/x-handlebars-template">
-	<ul>
+<?php  if ( $gadgetType === IdMyGadget::GADGET_TYPE_PHONE ): ?>
+	<script id="bullet-section-template" type="text/x-handlebars-template">
 		{{#each bulletPoints}}
 			{{#if linkHref}}
-				<li><a class="bold" href="{{linkHref}}" target="_blank">{{bold}}</a>
+				<div data-role="collapsible" data-collapsed="true">
+					<a class="bold" href="{{linkHref}}" target="_blank">{{bold}}</a>
 					{{text}}
-				</li>
+				</div>
 			{{else}}
-				<li><span class="bold">{{bold}}</span>
-					{{text}}
-				</li>
+				<div data-role="collapsible" data-collapsed="true">
+					<h3>{{bold}}</h3>
+					<p>{{text}}</p>
+				</div>
 			{{/if}}
 		{{/each}}
-	</ul>
-</script>
+	</script>
+<?php  else: ?>
+	<script id="bullet-section-template" type="text/x-handlebars-template">
+		<ul>
+			{{#each bulletPoints}}
+				{{#if linkHref}}
+					<li><a class="bold" href="{{linkHref}}" target="_blank">{{bold}}</a>
+						{{text}}
+					</li>
+				{{else}}
+					<li><span class="bold">{{bold}}</span>
+						{{text}}
+					</li>
+				{{/if}}
+			{{/each}}
+		</ul>
+	</script>
+<?php  endif ?>
 <?php  if ( $gadgetType === IdMyGadget::GADGET_TYPE_PHONE ): ?>
 	<script id="experience-section-template" type="text/x-handlebars-template">
 		<div id="{{id}}" class="section hide">
@@ -161,44 +179,44 @@ print '<link rel="stylesheet" type="text/css" ' .
 		</div>
 	</script>
 <?php  else: ?>
-<script id="experience-section-template" type="text/x-handlebars-template">
-	<ul>
-	{{#each jobs}}
-		<li id="{{id}}">
-			{{#if title}}
-				<div><span class="bold">{{title}}</span></div>
-			{{/if}}
-			{{#if companyHref}}
-				<a href="{{companyHref}}" target="_blank">{{companyName}}</a>,&nbsp;{{location}}
-			{{else}}
-				<span class="underline">{{companyName}}</span>,&nbsp;{{location}}
-			{{/if}}
-			<div>{{dateRange}}</div>
-			<div class="underline" onclick="showListItemsForJob('{{id}}');">
-				<a class="show-button">Show Accomplishments</a>
-			</div><!-- .show-button -->
-			<div class="list-items">
-				<ul>{{{listItems}}}</ul>
-				<img src="images/more-plain.jpg" border="0"
-					value="More" alt="More" name="more"
-					title="Show more details for this position"
-					onmouseover="this.src='images/more-hover.jpg'; return true;"
-					onmouseout="this.src='images/more-plain.jpg'; return true;"
-					onclick="toggleMoreOrLessListItems('{{id}}');" \>
-			</div><!-- .list-items -->
-			<div class="more-items">
-				<ul>{{{moreItems}}}</ul>
-				<img src="images/less-plain.jpg" border="0"
-					value="Less" alt="Less" name="less"
-					title="Show fewer bullet items for this position"
-					onmouseover="this.src='images/less-hover.jpg'; return true;"
-					onmouseout="this.src='images/less-plain.jpg'; return true;"
-					onclick="toggleMoreOrLessListItems('{{id}}');" \>
-			</div><!-- .more-items -->
-		</li>
-	{{/each}}
-	</ul>
-</script>
+	<script id="experience-section-template" type="text/x-handlebars-template">
+		<ul>
+		{{#each jobs}}
+			<li id="{{id}}">
+				{{#if title}}
+					<div><span class="bold">{{title}}</span></div>
+				{{/if}}
+				{{#if companyHref}}
+					<a href="{{companyHref}}" target="_blank">{{companyName}}</a>,&nbsp;{{location}}
+				{{else}}
+					<span class="underline">{{companyName}}</span>,&nbsp;{{location}}
+				{{/if}}
+				<div>{{dateRange}}</div>
+				<div class="underline" onclick="showListItemsForJob('{{id}}');">
+					<a class="show-button">Show Accomplishments</a>
+				</div><!-- .show-button -->
+				<div class="list-items">
+					<ul>{{{listItems}}}</ul>
+					<img src="images/more-plain.jpg" border="0"
+						value="More" alt="More" name="more"
+						title="Show more details for this position"
+						onmouseover="this.src='images/more-hover.jpg'; return true;"
+						onmouseout="this.src='images/more-plain.jpg'; return true;"
+						onclick="toggleMoreOrLessListItems('{{id}}');" \>
+				</div><!-- .list-items -->
+				<div class="more-items">
+					<ul>{{{moreItems}}}</ul>
+					<img src="images/less-plain.jpg" border="0"
+						value="Less" alt="Less" name="less"
+						title="Show fewer bullet items for this position"
+						onmouseover="this.src='images/less-hover.jpg'; return true;"
+						onmouseout="this.src='images/less-plain.jpg'; return true;"
+						onclick="toggleMoreOrLessListItems('{{id}}');" \>
+				</div><!-- .more-items -->
+			</li>
+		{{/each}}
+		</ul>
+	</script>
 <?php  endif ?>
 <?php  if ( $gadgetType === IdMyGadget::GADGET_TYPE_PHONE ): ?>
 	<script id="single-job-section-template" type="text/x-handlebars-template">
