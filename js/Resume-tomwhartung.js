@@ -250,8 +250,14 @@ Volunteering.point_DenverFilmSociety = {
 	linkHref: "http://denverfilm.org/index.aspx",
 	text: "Volunteer Usher since 2011",
 };
+Volunteering.point_Bonfils = {
+	bold: "Bonfils:",
+	linkHref: "http://www.bonfils.org/",
+	text: "Blood Donor Since 2012",
+};
 Volunteering.bulletPoints = [
-	Volunteering.point_DenverFilmSociety
+	Volunteering.point_DenverFilmSociety,
+	Volunteering.point_Bonfils
 ];
 /**
  * List of sections (mobile pages) in this resume.
