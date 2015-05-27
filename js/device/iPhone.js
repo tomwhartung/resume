@@ -3,10 +3,20 @@
  */
 "use strict";
 
+// alert( 'Hi from iPhone.js!' );
+
+function generateSingleJobPages() {
+	var templateForSingleJob = '';
+	var jobPagesHtml = '';
+//	alert( 'Hi from generateSingleJobPages' );
+	jobPagesHtml = 'This is to be the jobPagesHtml that we return from  generateSingleJobPages';
+	return jobPagesHtml;
+}
+
 /*
  * works OK but we want to toggle them.
  */
-function showJobListItems( id ) {
+function showJobListItems_obsolete_I_think( id ) {
 	var index;
 	var thisJob;
     var jobToShow;
@@ -24,7 +34,7 @@ function showJobListItems( id ) {
 //	alert( 'selector = ' + selector + '; listItems = ' + listItems );
 	$(selector).append( '<ul>' + listItems + '</ul>' );
 }
-function toggleJobListItems( id ) {
+function toggleJobListItems_obsolete_I_think( id ) {
 	var index;
 	var thisJob;
 	var listItems;

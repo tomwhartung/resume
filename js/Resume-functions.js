@@ -24,8 +24,12 @@ Resume.populateSections = function() {
 			templateForSection = $(thisSection.templateIdSelector).html();
 			sectionTemplate = Handlebars.compile( templateForSection );     // TODO: inefficient...
 			if ( thisSection.hasOwnProperty('isProfessionalExperience') &&
-				 thisSection.isProfessionalExperience === true ) {
+			     thisSection.isProfessionalExperience === true ) {
 				sectionHtml = sectionTemplate( thisSection );
+				if ( typeof generateSingleJobPages == 'function' ) {
+					alert( 'confirmed that generateSingleJobPages is a function' );
+					sectionHtml += generateSingleJobPages();
+				}
 			} else {
 				sectionHtml = sectionTemplate( thisSection );
 			}
@@ -43,18 +47,8 @@ $(document).ready(function() {
 	var listItemsSelector;
 	var moreItemsSelector;
 	Resume.populateSections();
-	//
-	// If we have a showOnlySection function (i.e., if we are on a phone)
-	//   all sections are hidden, so call showOnlySection to show the Introduction
-	// else
-	//   initially we want to hide the more-items div that contains details about each job.
-	// Note that we can hide these elements only after renering the resume
-	//
-//	if ( typeof(showOnlySection) == 'function' ) {
-//		showOnlySection( Resume.sections[0].id );
-//		togglePhoneMenu();
-//	} else {
-		for ( index = 0; index < ProfessionalExperience.jobs.length; index++ ) {
+
+	for ( index = 0; index < ProfessionalExperience.jobs.length; index++ ) {
 			id = ProfessionalExperience.jobs[index].id;
 			listItemsSelector = '#' + id + ' div.list-items';
 			$(listItemsSelector).hide();
@@ -88,7 +82,6 @@ $(document).ready(function() {
 				}
 			}
 		}
-//	}
 });
 /**
  * Jobs are now shown with no items (accomplishments and tasks)
