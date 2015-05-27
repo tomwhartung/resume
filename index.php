@@ -15,11 +15,11 @@ define( "STYLE_SHEET_TABLET",        "device/tablet.css" );
 define( "STYLE_SHEET_ANDROID_PHONE", "device/androidPhone.css" );
 define( "STYLE_SHEET_APPLE_PHONE",   "device/iPhone.css" );
 
-define( "JS_DEVICE_DIRECTORY",		"js/device/" );
-define( "JS_DEVICE_DESKTOP",		"desktop.js" );
-define( "JS_DEVICE_TABLET",			"tablet.js" );
-define( "JS_DEVICE_ANDROID_PHONE",	"androidPhone.js" );
-define( "JS_DEVICE_APPLE_PHONE",	"iPhone.js" );
+define( "JS_DEVICE_DIRECTORY",     "js/device/" );
+define( "JS_DEVICE_DESKTOP",       "desktop.js" );
+define( "JS_DEVICE_TABLET",        "tablet.js" );
+define( "JS_DEVICE_ANDROID_PHONE", "androidPhone.js" );
+define( "JS_DEVICE_APPLE_PHONE",   "iPhone.js" );
 //
 // Instantiate an IdMyGadget object and use it to determine key factors about 
 // the device accessing the page.
@@ -164,11 +164,9 @@ print '<link rel="stylesheet" type="text/css" ' .
 <?php  endif ?>
 <?php  if ( $gadgetType === IdMyGadget::GADGET_TYPE_PHONE ): ?>
 	<script id="experience-section-template" type="text/x-handlebars-template">
-		<div id="{{id}}" class="section hide">
-			<h2>{{title}}</h2>
-			<ul>
-				{{#each jobs}}
-					<li id="{{id}}" onclick="toggleJobListItems('{{id}}');">
+		<ul data-role="listview">
+			{{#each jobs}}
+					<li id="{{id}}">
 						{{#if title}}
 							<div><span class="bold">{{title}}</span></div>
 						{{/if}}
@@ -179,6 +177,25 @@ print '<link rel="stylesheet" type="text/css" ' .
 							<span class="underline">{{companyName}}</span>,&nbsp;{{location}}
 						{{/if}}
 						<div class="date-range">{{dateRange}}</div>
+					</li>
+			{{/each}}
+		</ul>
+	</script>
+	<script id="single-job-section-template" type="text/x-handlebars-template">
+		<div id="{{id}}" class="section hide">
+			<h2>{{title}}</h2>
+			<ul>
+				{{#each jobs}}
+					<li id="{{id}}">
+						<span class="bold">
+							<a href="{{companyHref}}" target="_blank">{{companyName}}</a>,
+						</span>
+						{{location}}<br />
+						{{#if title}}
+							{{title}}<br />
+						{{/if}}
+						{{dateRange}}<br />
+						<ul>{{{listItems}}}</ul>
 					</li>
 				{{/each}}
 			</ul>
@@ -199,7 +216,7 @@ print '<link rel="stylesheet" type="text/css" ' .
 				{{/if}}
 				<div>{{dateRange}}</div>
 				<div class="underline" onclick="showListItemsForJob('{{id}}');">
-					<a class="show-button">Show Accomplishments</a>
+					<a class="show-button">Details</a>
 				</div><!-- .show-button -->
 				<div class="list-items">
 					<ul>{{{listItems}}}</ul>
@@ -224,28 +241,6 @@ print '<link rel="stylesheet" type="text/css" ' .
 		</ul>
 	</script>
 <?php  endif ?>
-<?php  if ( $gadgetType === IdMyGadget::GADGET_TYPE_PHONE ): ?>
-	<script id="single-job-section-template" type="text/x-handlebars-template">
-		<div id="{{id}}" class="section hide">
-			<h2>{{title}}</h2>
-			<ul>
-				{{#each jobs}}
-					<li id="{{id}}">
-						<span class="bold">
-							<a href="{{companyHref}}" target="_blank">{{companyName}}</a>,
-						</span>
-						{{location}}<br />
-						{{#if title}}
-							{{title}}<br />
-						{{/if}}
-						{{dateRange}}<br />
-						<ul>{{{listItems}}}</ul>
-					</li>
-				{{/each}}
-			</ul>
-		</div>
-	</script>
-<?php endif ?>
 <?php  if ( $gadgetType === IdMyGadget::GADGET_TYPE_PHONE ): ?>
 	<script id="education-section-template" type="text/x-handlebars-template">
 		{{#each bulletPoints}}
