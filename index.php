@@ -168,10 +168,10 @@ print '<link rel="stylesheet" type="text/css" ' .
 			{{#each jobs}}
 				<li id="{{id}}">
 					{{#if title}}
-						<h4><a class="bold">{{title}}</a></h4>
+						<h4><a href="#{{id}}-page" class="bold">{{title}}</a></h4>
 						<p><span class="underline">{{companyName}}</span>,&nbsp;{{location}}</p>
 					{{else}}
-						<a class="underline">{{companyName}}</a>,&nbsp;{{location}}
+						<a href="#{{id}}-page" class="underline">{{companyName}}</a>,&nbsp;{{location}}
 					{{/if}}
 					<div class="date-range">{{dateRange}}</div>
 				</li>
@@ -179,10 +179,10 @@ print '<link rel="stylesheet" type="text/css" ' .
 		</ul>
 	</script>
 	<script id="single-job-section-template" type="text/x-handlebars-template">
-		<div id="{{id}}" class="section hide">
-			<h2>{{title}}</h2>
-			<ul>
-				{{#each jobs}}
+		{{#each jobs}}
+			<section data-role="page" id="{{id}}-page">
+				<h2>{{title}}</h2>
+				<ul>
 					<li id="{{id}}">
 						<span class="bold">
 							<a href="{{companyHref}}" target="_blank">{{companyName}}</a>,
@@ -194,9 +194,9 @@ print '<link rel="stylesheet" type="text/css" ' .
 						{{dateRange}}<br />
 						<ul>{{{listItems}}}</ul>
 					</li>
-				{{/each}}
-			</ul>
-		</div>
+				</ul>
+			</section>
+		{{/each}}
 	</script>
 <?php  else: ?>
 	<script id="experience-section-template" type="text/x-handlebars-template">
