@@ -164,20 +164,17 @@ print '<link rel="stylesheet" type="text/css" ' .
 <?php  endif ?>
 <?php  if ( $gadgetType === IdMyGadget::GADGET_TYPE_PHONE ): ?>
 	<script id="experience-section-template" type="text/x-handlebars-template">
-		<ul data-role="listview">
+		<ul data-role="listview" data-inset="true">
 			{{#each jobs}}
-					<li id="{{id}}">
-						{{#if title}}
-							<div><span class="bold">{{title}}</span></div>
-						{{/if}}
-						{{#if companyHref}}
-							<a href="{{companyHref}}" target="_blank">
-								{{companyName}}</a>,&nbsp;{{location}}
-						{{else}}
-							<span class="underline">{{companyName}}</span>,&nbsp;{{location}}
-						{{/if}}
-						<div class="date-range">{{dateRange}}</div>
-					</li>
+				<li id="{{id}}">
+					{{#if title}}
+						<h4><a class="bold">{{title}}</a></h4>
+						<p><span class="underline">{{companyName}}</span>,&nbsp;{{location}}</p>
+					{{else}}
+						<a class="underline">{{companyName}}</a>,&nbsp;{{location}}
+					{{/if}}
+					<div class="date-range">{{dateRange}}</div>
+				</li>
 			{{/each}}
 		</ul>
 	</script>
