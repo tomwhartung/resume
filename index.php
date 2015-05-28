@@ -199,7 +199,7 @@ print '<link rel="stylesheet" type="text/css" ' .
 					</ul>
 				</div>
 				<div data-role="footer" data-theme="b">
-					<p>Single job page footer.  Please remove this place holder text.</p>
+					<h4 class="back-button" style="text-align:left;"><a data-role="button" data-rel="back" class="back-button">Back</a></h4>
 				</div>
 			</section>
 	</script>

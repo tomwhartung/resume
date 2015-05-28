@@ -105,3 +105,6 @@ li ul {
 	margin: 0.4em;
 	padding: 0.4em;
 }
+.back-button {
+	text-align: left; /* apparently we also need to use an inline style... */
+}
