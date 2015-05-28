@@ -86,22 +86,6 @@ h2 {
 #header ul.hide, #content div.hide  {
 	display: none;
 }
-#header div.leftButton {
-	position: absolute;			/* remove from document flow */
-	top: 0.75em;
-	left: 0.75em;
-	height: 2.0em;				/* big enough to tap easily */
-	font-weight: bold;
-	text-align: center;
-	color: white;
-	text-shadow: rgba(0,0,0,0.6) 0px -1px 0px;	/* 0.6 = alpha value (opacity) */
-	line-height: 1.625em;						/* don't want it flush against top */
-	border-width: 0 0.5em 0 0.5em;				/* 0 top and bottom, 0.5em left and right */
-	-webkit-border-image: url(../../images/button.png) 0 8 0 8;
-}
-#header div.pressed {
-	-webkit-border-image: url(../../images/button_clicked.png) 0 8 0 8;
-}
 div#content {
 	text-align:  left;
 }
