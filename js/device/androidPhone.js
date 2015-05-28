@@ -3,14 +3,13 @@
  */
 "use strict";
 
-// alert( 'Hi from androidPhone.js!' );
-
 function generateSingleJobPages() {
 	var templateForSingleJobPage;
 	var singleJobPageTemplate;
 	var thisJob = '';
 	var thisJobPageHtml = '';
 	var allJobPagesHtml = '';
+
 	templateForSingleJobPage = $('#single-job-section-template').html();
 	singleJobPageTemplate = Handlebars.compile( templateForSingleJobPage );
 
@@ -19,7 +18,7 @@ function generateSingleJobPages() {
 		thisJobPageHtml = singleJobPageTemplate( thisJob );
 		allJobPagesHtml += thisJobPageHtml;
 	}
-	alert( 'generateSingleJobPages returning:<br />' + allJobPagesHtml);
+
 	return allJobPagesHtml;
 }
 

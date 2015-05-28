@@ -3,22 +3,22 @@
  */
 "use strict";
 
-// alert( 'Hi from iPhone.js!' );
-
 function generateSingleJobPages() {
-	var templateForSingleJobPage = $('#single-job-section-template').html();
+	var templateForSingleJobPage;
 	var singleJobPageTemplate;
-	var thisJobsData = '';
+	var thisJob = '';
 	var thisJobPageHtml = '';
 	var allJobPagesHtml = '';
-	alert( 'Hi from generateSingleJobPages' );
+
+	templateForSingleJobPage = $('#single-job-section-template').html();
 	singleJobPageTemplate = Handlebars.compile( templateForSingleJobPage );
 
 	for ( var index = 0; index < ProfessionalExperience.jobs.length; index++ ) {
-		thisJobsData = ProfessionalExperience.jobs[index];
-		thisJobPageHtml = singleJobPageTemplate( thisJobsData );
+		thisJob = ProfessionalExperience.jobs[index];
+		thisJobPageHtml = singleJobPageTemplate( thisJob );
 		allJobPagesHtml += thisJobPageHtml;
 	}
+
 	return allJobPagesHtml;
 }
 
@@ -28,7 +28,7 @@ function generateSingleJobPages() {
 function showJobListItems_obsolete_I_think( id ) {
 	var index;
 	var thisJob;
-    var jobToShow;
+	var jobToShow;
 	var listItems;
 	var selector;
 	for ( index = 0; index < ProfessionalExperience.jobs.length; index++ ) {
