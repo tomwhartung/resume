@@ -222,13 +222,13 @@ print '<link rel="stylesheet" type="text/css" ' .
 					<ul>{{{listItems}}}</ul>
 					<a class="more-button" alt="More Details"
 						title="Show more details for this position"
-						onclick="toggleMoreOrLessListItems('{{id}}');">More Details</a>
+						onclick="toggleMoreOrFewerListItems('{{id}}');">More Details</a>
 				</div><!-- .list-items -->
 				<div class="more-items">
 					<ul>{{{moreItems}}}</ul>
 					<a class="fewer-button" alt="Fewer Details"
 						title="Show fewer details for this position"
-						onclick="toggleMoreOrLessListItems('{{id}}');">Fewer Details</a>
+						onclick="toggleMoreOrFewerListItems('{{id}}');">Fewer Details</a>
 				</div><!-- .more-items -->
 			</li>
 		{{/each}}

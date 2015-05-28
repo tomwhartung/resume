@@ -96,12 +96,11 @@ function showListItemsForJob( id ) {
 	showButtonSelector = '#' + id + ' a.show-button';
 	$(showButtonSelector).remove();
 	$(listItemsSelector).slideDown("slow");
-//	$(showButtonSelector).slideUp("slow");
 }
 /**
  * Toggle display of more or less list items for job identified by id
  */
-function toggleMoreOrLessListItems( id ) {
+function toggleMoreOrFewerListItems( id ) {
 	var index;
 	var listItemsSelector;
 	var moreItemsSelector;
@@ -109,7 +108,7 @@ function toggleMoreOrLessListItems( id ) {
 		if ( id === ProfessionalExperience.jobs[index].id ) {
 			listItemsSelector = '#' + id + ' div.list-items';
 			moreItemsSelector = '#' + id + ' div.more-items';
-		//	alert( 'toggleMoreOrLessListItems: moreItemsSelector = ' + moreItemsSelector +
+		//	alert( 'toggleMoreOrFewerListItems: moreItemsSelector = ' + moreItemsSelector +
 		//			'; listItemsSelector ' + listItemsSelector );
 			switch( ProfessionalExperience.jobs[index].moreOrLessToggleEffect ) {
 				case ( ToggleEffectEnum.bothFast ): {
