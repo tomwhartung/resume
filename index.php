@@ -169,11 +169,11 @@ print '<link rel="stylesheet" type="text/css" ' .
 				<li id="{{id}}">
 					{{#if title}}
 						<h4><a href="#{{id}}-page" class="bold">{{title}}</a></h4>
-						<p><span class="underline">{{companyName}}</span>,&nbsp;{{location}}</p>
+						<p><span class="underline">{{companyName}}</span>,&nbsp;{{location}}
 					{{else}}
-						<a href="#{{id}}-page" class="underline">{{companyName}}</a>,&nbsp;{{location}}
+						<p><a href="#{{id}}-page" class="underline">{{companyName}}</a>,&nbsp;{{location}}
 					{{/if}}
-					<div class="date-range">{{dateRange}}</div>
+					<span class="ul-li-aside date-range">{{dateRange}}</span></p>
 				</li>
 			{{/each}}
 		</ul>
