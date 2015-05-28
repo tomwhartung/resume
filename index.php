@@ -214,7 +214,7 @@ print '<link rel="stylesheet" type="text/css" ' .
 				<div>{{dateRange}}</div>
 				<div class="underline" onclick="showListItemsForJob('{{id}}');">
 					<a class="show-button">Show Details</a>
-				</div><!-- .show-button -->
+				</div>
 				<div class="list-items">
 					<ul>{{{listItems}}}</ul>
 					<a class="more-button" alt="More Details"
