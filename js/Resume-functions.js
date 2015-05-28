@@ -93,9 +93,10 @@ function showListItemsForJob( id ) {
 	var listItemsSelector;
 	var showButtonSelector;
 	listItemsSelector = '#' + id + ' div.list-items';
-	showButtonSelector = '#' + id + ' div.show-button';
+	showButtonSelector = '#' + id + ' a.show-button';
+	$(showButtonSelector).remove();
 	$(listItemsSelector).slideDown("slow");
-	$(showButtonSelector).slideUp("slow");
+//	$(showButtonSelector).slideUp("slow");
 }
 /**
  * Toggle display of more or less list items for job identified by id
