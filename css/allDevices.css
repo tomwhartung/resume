@@ -76,10 +76,11 @@ ul.no-bullets, ul.debugging  {
 .underline {
 	text-decoration: underline;
 }
-.show-button {
+.show-button, .more-button, .fewer-button {
 	font-size: 0.8em;
 }
-a.show-button:hover {
+a.show-button:hover,
+a.more-button:hover, a.fewer-button:hover {
 	color:       #000000;
 	font-size:   0.9em;
 }

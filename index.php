@@ -216,25 +216,19 @@ print '<link rel="stylesheet" type="text/css" ' .
 				{{/if}}
 				<div>{{dateRange}}</div>
 				<div class="underline" onclick="showListItemsForJob('{{id}}');">
-					<a class="show-button">Details</a>
+					<a class="show-button">Show Details</a>
 				</div><!-- .show-button -->
 				<div class="list-items">
 					<ul>{{{listItems}}}</ul>
-					<img src="images/more-plain.jpg" border="0"
-						value="More" alt="More" name="more"
+					<a class="more-button" alt="More Details"
 						title="Show more details for this position"
-						onmouseover="this.src='images/more-hover.jpg'; return true;"
-						onmouseout="this.src='images/more-plain.jpg'; return true;"
-						onclick="toggleMoreOrLessListItems('{{id}}');" \>
+						onclick="toggleMoreOrLessListItems('{{id}}');">More Details</a>
 				</div><!-- .list-items -->
 				<div class="more-items">
 					<ul>{{{moreItems}}}</ul>
-					<img src="images/less-plain.jpg" border="0"
-						value="Less" alt="Less" name="less"
-						title="Show fewer bullet items for this position"
-						onmouseover="this.src='images/less-hover.jpg'; return true;"
-						onmouseout="this.src='images/less-plain.jpg'; return true;"
-						onclick="toggleMoreOrLessListItems('{{id}}');" \>
+					<a class="fewer-button" alt="Fewer Details"
+						title="Show fewer details for this position"
+						onclick="toggleMoreOrLessListItems('{{id}}');">Fewer Details</a>
 				</div><!-- .more-items -->
 			</li>
 		{{/each}}
