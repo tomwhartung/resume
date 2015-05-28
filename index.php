@@ -168,7 +168,7 @@ print '<link rel="stylesheet" type="text/css" ' .
 			{{#each jobs}}
 				<li id="{{id}}">
 					{{#if title}}
-						<h4><a href="#{{id}}-page" class="bold">{{title}}</a></h4>
+						<h4><a href="#{{id}}_page" class="bold">{{title}}</a></h4>
 						<p><span class="underline">{{companyName}}</span>,&nbsp;{{location}}
 					{{else}}
 						<p><a href="#{{id}}-page" class="underline">{{companyName}}</a>,&nbsp;{{location}}
@@ -179,24 +179,29 @@ print '<link rel="stylesheet" type="text/css" ' .
 		</ul>
 	</script>
 	<script id="single-job-section-template" type="text/x-handlebars-template">
-		{{#each jobs}}
-			<section data-role="page" id="{{id}}-page">
-				<h2>{{title}}</h2>
-				<ul>
-					<li id="{{id}}">
-						<span class="bold">
-							<a href="{{companyHref}}" target="_blank">{{companyName}}</a>,
-						</span>
-						{{location}}<br />
-						{{#if title}}
-							{{title}}<br />
-						{{/if}}
-						{{dateRange}}<br />
-						<ul>{{{listItems}}}</ul>
-					</li>
-				</ul>
+			<section data-role="page" id="{{id}}_page">
+				<div data-role="header" data-theme="b">
+					<h2>{{title}}</h2>
+				</div>
+				<div data-role="content">
+					<ul>
+						<li id="{{id}}">
+							<span class="bold">
+								<a href="{{companyHref}}" target="_blank">{{companyName}}</a>,
+							</span>
+							{{location}}<br />
+							{{#if title}}
+								{{title}}<br />
+							{{/if}}
+							{{dateRange}}<br />
+							<ul>{{{listItems}}}</ul>
+						</li>
+					</ul>
+				</div>
+				<div data-role="footer" data-theme="b">
+					<p>Single job page footer.  Please remove this place holder text.</p>
+				</div>
 			</section>
-		{{/each}}
 	</script>
 <?php  else: ?>
 	<script id="experience-section-template" type="text/x-handlebars-template">
@@ -302,7 +307,7 @@ print '<link rel="stylesheet" type="text/css" ' .
 			<section id="content_volunteering" class="section">
 				<h2>Volunteering</h2>
 			</section>
-		</div>  <!-- content -->
+		</div>  <!-- #content -->
 		<footer>
 			<hr />
 			<ul>

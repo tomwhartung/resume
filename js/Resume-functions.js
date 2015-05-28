@@ -27,8 +27,8 @@ Resume.populateSections = function() {
 			     thisSection.isProfessionalExperience === true ) {
 				sectionHtml = sectionTemplate( thisSection );
 				if ( typeof generateSingleJobPages == 'function' ) {
-					alert( 'confirmed that generateSingleJobPages is a function' );
-					sectionHtml += generateSingleJobPages();
+				//	alert( 'confirmed that generateSingleJobPages is a function' );
+					$("#container").append( generateSingleJobPages() );
 				}
 			} else {
 				sectionHtml = sectionTemplate( thisSection );

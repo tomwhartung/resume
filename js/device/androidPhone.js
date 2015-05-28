@@ -6,11 +6,21 @@
 // alert( 'Hi from androidPhone.js!' );
 
 function generateSingleJobPages() {
-	var templateForSingleJob = '';
-	var jobPagesHtml = '';
-//	alert( 'Hi from generateSingleJobPages' );
-	jobPagesHtml = 'This is to be the jobPagesHtml that we return from  generateSingleJobPages';
-	return jobPagesHtml;
+	var templateForSingleJobPage;
+	var singleJobPageTemplate;
+	var thisJob = '';
+	var thisJobPageHtml = '';
+	var allJobPagesHtml = '';
+	templateForSingleJobPage = $('#single-job-section-template').html();
+	singleJobPageTemplate = Handlebars.compile( templateForSingleJobPage );
+
+	for ( var index = 0; index < ProfessionalExperience.jobs.length; index++ ) {
+		thisJob = ProfessionalExperience.jobs[index];
+		thisJobPageHtml = singleJobPageTemplate( thisJob );
+		allJobPagesHtml += thisJobPageHtml;
+	}
+	alert( 'generateSingleJobPages returning:<br />' + allJobPagesHtml);
+	return allJobPagesHtml;
 }
 
 /*
@@ -19,7 +29,7 @@ function generateSingleJobPages() {
 function showJobListItems_obsolete_I_think( id ) {
 	var index;
 	var thisJob;
-    var jobToShow;
+	var jobToShow;
 	var listItems;
 	var selector;
 	for ( index = 0; index < ProfessionalExperience.jobs.length; index++ ) {

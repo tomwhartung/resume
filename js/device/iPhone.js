@@ -6,11 +6,20 @@
 // alert( 'Hi from iPhone.js!' );
 
 function generateSingleJobPages() {
-	var templateForSingleJob = '';
-	var jobPagesHtml = '';
-//	alert( 'Hi from generateSingleJobPages' );
-	jobPagesHtml = 'This is to be the jobPagesHtml that we return from  generateSingleJobPages';
-	return jobPagesHtml;
+	var templateForSingleJobPage = $('#single-job-section-template').html();
+	var singleJobPageTemplate;
+	var thisJobsData = '';
+	var thisJobPageHtml = '';
+	var allJobPagesHtml = '';
+	alert( 'Hi from generateSingleJobPages' );
+	singleJobPageTemplate = Handlebars.compile( templateForSingleJobPage );
+
+	for ( var index = 0; index < ProfessionalExperience.jobs.length; index++ ) {
+		thisJobsData = ProfessionalExperience.jobs[index];
+		thisJobPageHtml = singleJobPageTemplate( thisJobsData );
+		allJobPagesHtml += thisJobPageHtml;
+	}
+	return allJobPagesHtml;
 }
 
 /*
