@@ -38,13 +38,10 @@ Resume.populateSections = function() {
 	//
 	// Unless each job has its own page, hide the list items
 	// Always hide the more items
-	// Show only jobs with displayLeve = 1
 	//
 	var id;
-	var jobSelector;
 	var listItemsSelector;
 	var moreItemsSelector;
-	var displayShowMoreJobsButton = false;
 	for ( var index = 0; index < ProfessionalExperience.jobs.length; index++ ) {
 		id = ProfessionalExperience.jobs[index].id;
 		if ( hideListItems ) {
@@ -53,7 +50,22 @@ Resume.populateSections = function() {
 		}
 		moreItemsSelector = '#' + id + ' div.more-items';
 		$(moreItemsSelector).hide();
-		if ( ProfessionalExperience.jobs[index].displayLevel !== 1 ) {
+	}
+};
+
+var initialDisplayLevel = 1;
+var currentDisplayLevel = initialDisplayLevel;
+
+Resume.hideAllOlderJobs = function () {
+	//
+	// Show only jobs with displayLevel < initial
+	//
+	var id;
+	var jobSelector;
+	var displayShowMoreJobsButton = false;
+	for ( var index = 0; index < ProfessionalExperience.jobs.length; index++ ) {
+		id = ProfessionalExperience.jobs[index].id;
+		if ( initialDisplayLevel < ProfessionalExperience.jobs[index].displayLevel ) {
 			jobSelector = '#' + id;
 			$(jobSelector).hide();
 			displayShowMoreJobsButton = true;
@@ -63,10 +75,34 @@ Resume.populateSections = function() {
 		$(".showMoreJobsButton").show();
 	}
 };
+function showMoreJobs() {
+	var id;
+	var jobSelector;
+	var displayLevel;
+	var displayShowMoreJobsButton = false;
+	currentDisplayLevel++;
+
+	for ( var index = 0; index < ProfessionalExperience.jobs.length; index++ ) {
+		displayLevel = ProfessionalExperience.jobs[index].displayLevel;
+		if ( displayLevel === currentDisplayLevel ) {
+			id = ProfessionalExperience.jobs[index].id;
+			jobSelector = '#' + id;
+			$(jobSelector).show();
+		}
+		else if ( displayLevel > currentDisplayLevel ) {  // at least one is still hidden
+			displayShowMoreJobsButton = true;
+		}
+	}
+	if ( displayShowMoreJobsButton ) {
+		$(".showMoreJobsButton").show();
+	} else {
+		$(".showMoreJobsButton").hide();
+	}
+}
 
 $(document).ready(function() {
 	Resume.populateSections();
-
+	Resume.hideAllOlderJobs();
 });
 /**
  * Jobs are now shown with no items (accomplishments and tasks)
