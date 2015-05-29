@@ -198,14 +198,16 @@ print '<link rel="stylesheet" type="text/css" ' .
 							{{title}}<br />
 						{{/if}}
 						{{dateRange}}<br />
+						<div class="list-items">
 							<ul>{{{listItems}}}</ul>
-						</li>
-					</ul>
-				</div>
-				<div data-role="footer" data-theme="b">
-					<h4 class="back-button" style="text-align:left;"><a data-role="button" data-rel="back" class="back-button">Back</a></h4>
-				</div>
-			</section>
+						</div><!-- .list-items -->
+					</li>
+				</ul>
+			</div>
+			<div data-role="footer" data-theme="b">
+				<h4 class="back-button" style="text-align:left;"><a data-role="button" data-rel="back" class="back-button">Back</a></h4>
+			</div>
+		</section>
 	</script>
 <?php  else: ?>
 	<script id="experience-section-template" type="text/x-handlebars-template">
