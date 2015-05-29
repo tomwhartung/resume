@@ -3,35 +3,6 @@
  * Based on a style sheet from Chapter 2 of Building iPhone Apps by Jonathan Stark (O'Reilly)
  * This file is virtually identical to androidPhone.css, and that is OK.
  */
-body {
-	background-color: #ddd;
-	color: #222;
-	font-family: Helvetica, Verdana, Arial, sans-serif;
-	font-size: 14px;    /* Leave as px for now ... */
-	margin: 0.0em;
-	padding: 0.0em;
-}
-/*
- * Header styles
- */
-#header h1 {
-	margin: 0.0em;
-	padding: 0.0em;
-}
-#header h1 a {
-	background-color: #ccc;
-	border-bottom: 1px solid #666;
-	color: #222;
-	display: block;
-	font-size: 20px;    /* Leave as px for now ... */
-	font-weight: bold;
-	padding: 0.625em 0.0em;
-	text-align: center;
-	text-decoration: none;
-}
-h2 {
-	font-size: 1.5em;
-}
 div#content {
 	text-align:  left;
 }
