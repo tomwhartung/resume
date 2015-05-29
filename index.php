@@ -166,7 +166,7 @@ print '<link rel="stylesheet" type="text/css" ' .
 	<script id="experience-section-template" type="text/x-handlebars-template">
 		<ul data-role="listview" data-inset="true">
 			{{#each jobs}}
-				<li id="{{id}}" class="hide">
+				<li id="{{id}}">
 					{{#if title}}
 						<h4><a href="#{{id}}_page" data-transition="slide" class="bold">{{title}}</a></h4>
 						<p><span class="underline">{{companyName}}</span>,&nbsp;{{location}}
