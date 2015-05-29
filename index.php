@@ -166,7 +166,7 @@ print '<link rel="stylesheet" type="text/css" ' .
 	<script id="experience-section-template" type="text/x-handlebars-template">
 		<ul data-role="listview" data-inset="true">
 			{{#each jobs}}
-				<li id="{{id}}">
+				<li id="{{id}}" class="hide">
 					{{#if title}}
 						<h4><a href="#{{id}}_page" data-transition="slide" class="bold">{{title}}</a></h4>
 						<p><span class="underline">{{companyName}}</span>,&nbsp;{{location}}
@@ -177,6 +177,9 @@ print '<link rel="stylesheet" type="text/css" ' .
 				</li>
 			{{/each}}
 		</ul>
+		<div class="showMoreJobsButton hide">
+			<a class="showMoreJobsButton" onclick="showMoreJobs();">Show More Jobs</a>
+		</div>
 	</script>
 	<script id="single-job-section-template" type="text/x-handlebars-template">
 		<section data-role="page" id="{{id}}_page">
@@ -250,6 +253,9 @@ print '<link rel="stylesheet" type="text/css" ' .
 			</li>
 		{{/each}}
 		</ul>
+		<div class="showMoreJobsButton hide">
+			<a class="showMoreJobsButton" onclick="showMoreJobs();">Show More Jobs</a>
+		</div>
 	</script>
 <?php  endif ?>
 <?php  if ( $gadgetType === IdMyGadget::GADGET_TYPE_PHONE ): ?>

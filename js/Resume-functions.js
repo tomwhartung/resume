@@ -38,10 +38,13 @@ Resume.populateSections = function() {
 	//
 	// Unless each job has its own page, hide the list items
 	// Always hide the more items
+	// Show only jobs with displayLeve = 1
 	//
 	var id;
+	var jobSelector;
 	var listItemsSelector;
 	var moreItemsSelector;
+	var displayShowMoreJobsButton = false;
 	for ( var index = 0; index < ProfessionalExperience.jobs.length; index++ ) {
 		id = ProfessionalExperience.jobs[index].id;
 		if ( hideListItems ) {
@@ -50,6 +53,14 @@ Resume.populateSections = function() {
 		}
 		moreItemsSelector = '#' + id + ' div.more-items';
 		$(moreItemsSelector).hide();
+		if ( ProfessionalExperience.jobs[index].displayLevel !== 1 ) {
+			jobSelector = '#' + id;
+			$(jobSelector).hide();
+			displayShowMoreJobsButton = true;
+		}
+	}
+	if ( displayShowMoreJobsButton ) {
+		$(".showMoreJobsButton").show();
 	}
 };
 
