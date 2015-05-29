@@ -179,21 +179,25 @@ print '<link rel="stylesheet" type="text/css" ' .
 		</ul>
 	</script>
 	<script id="single-job-section-template" type="text/x-handlebars-template">
-			<section data-role="page" id="{{id}}_page">
-				<div data-role="header" data-theme="b">
+		<section data-role="page" id="{{id}}_page">
+			<div data-role="header" data-theme="b">
+				{{#if title}}
 					<h2>{{title}}</h2>
-				</div>
-				<div data-role="content">
-					<ul>
-						<li id="{{id}}">
-							<span class="bold">
-								<a href="{{companyHref}}" target="_blank">{{companyName}}</a>,
-							</span>
-							{{location}}<br />
-							{{#if title}}
-								{{title}}<br />
-							{{/if}}
-							{{dateRange}}<br />
+				{{else}}
+					<h2>{{dateRange}}</h2>
+				{{/if}}
+			</div>
+			<div data-role="content">
+				<ul>
+					<li id="{{id}}">
+						<span class="bold">
+							<a href="{{companyHref}}" target="_blank">{{companyName}}</a>,
+						</span>
+						{{location}}<br />
+						{{#if title}}
+							{{title}}<br />
+						{{/if}}
+						{{dateRange}}<br />
 							<ul>{{{listItems}}}</ul>
 						</li>
 					</ul>
