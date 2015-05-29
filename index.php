@@ -168,7 +168,7 @@ print '<link rel="stylesheet" type="text/css" ' .
 			{{#each jobs}}
 				<li id="{{id}}">
 					{{#if title}}
-						<h4><a href="#{{id}}_page" class="bold">{{title}}</a></h4>
+						<h4><a href="#{{id}}_page" data-transition="slide" class="bold">{{title}}</a></h4>
 						<p><span class="underline">{{companyName}}</span>,&nbsp;{{location}}
 					{{else}}
 						<p><a href="#{{id}}-page" class="underline">{{companyName}}</a>,&nbsp;{{location}}
