@@ -108,3 +108,6 @@ li ul {
 .back-button {
 	text-align: left; /* apparently we also need to use an inline style... */
 }
+a.ui-link:visited {
+	color: black;
+}
