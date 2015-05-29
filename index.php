@@ -200,7 +200,16 @@ print '<link rel="stylesheet" type="text/css" ' .
 						{{dateRange}}<br />
 						<div class="list-items">
 							<ul>{{{listItems}}}</ul>
+							<a class="more-button" alt="More Details"
+								title="Show more details for this position"
+								onclick="toggleMoreOrFewerListItems('{{id}}');">More</a>
 						</div><!-- .list-items -->
+						<div class="more-items">
+							<ul>{{{moreItems}}}</ul>
+							<a class="fewer-button" alt="Fewer Details"
+								title="Show fewer details for this position"
+								onclick="toggleMoreOrFewerListItems('{{id}}');">Less</a>
+						</div><!-- .more-items -->
 					</li>
 				</ul>
 			</div>
