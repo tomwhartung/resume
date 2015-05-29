@@ -15,46 +15,47 @@ Resume.populateSections = function() {
 	var templateForParagraphSection = $("#paragraph-section-template").html();
 	var paragraphSectionTemplate = Handlebars.compile( templateForParagraphSection );
 	var sectionHtml = "";
+	var hideListItems = true;
 
 	for ( var index = 0; index < Resume.sections.length; index++ ) {
 		thisSection = Resume.sections[index];
-	//	console.log( 'populateSections: thisSection.id = ' + thisSection.id );
-	//	console.log( 'populateSections: thisSection.templateIdSelector = ' + thisSection.templateIdSelector );
 		if ( thisSection.hasOwnProperty('templateIdSelector') ) {
 			templateForSection = $(thisSection.templateIdSelector).html();
 			sectionTemplate = Handlebars.compile( templateForSection );     // TODO: inefficient...
+			sectionHtml = sectionTemplate( thisSection );
 			if ( thisSection.hasOwnProperty('isProfessionalExperience') &&
 			     thisSection.isProfessionalExperience === true ) {
-				sectionHtml = sectionTemplate( thisSection );
-				if ( typeof generateSingleJobPages == 'function' ) {
-				//	alert( 'confirmed that generateSingleJobPages is a function' );
+				if ( typeof generateSingleJobPages === 'function' ) {
 					$("#container").append( generateSingleJobPages() );
+					hideListItems = false;  // each job has its page, do not hide the items
 				}
-			} else {
-				sectionHtml = sectionTemplate( thisSection );
 			}
 		} else {
 			sectionHtml = paragraphSectionTemplate( thisSection );
 		}
-	//	console.log( "populateSections: sectionHtml = " + sectionHtml );
 		$('#' + thisSection.id).append( sectionHtml );
+	}
+	//
+	// Unless each job has its own page, hide the list items
+	// Always hide the more items
+	//
+	var id;
+	var listItemsSelector;
+	var moreItemsSelector;
+	for ( var index = 0; index < ProfessionalExperience.jobs.length; index++ ) {
+		id = ProfessionalExperience.jobs[index].id;
+		if ( hideListItems ) {
+			listItemsSelector = '#' + id + ' div.list-items';
+			$(listItemsSelector).hide();
+		}
+		moreItemsSelector = '#' + id + ' div.more-items';
+		$(moreItemsSelector).hide();
 	}
 };
 
 $(document).ready(function() {
-	var index;
-	var id;
-	var listItemsSelector;
-	var moreItemsSelector;
 	Resume.populateSections();
 
-	for ( index = 0; index < ProfessionalExperience.jobs.length; index++ ) {
-		id = ProfessionalExperience.jobs[index].id;
-		listItemsSelector = '#' + id + ' div.list-items';
-		moreItemsSelector = '#' + id + ' div.more-items';
-		$(listItemsSelector).hide();
-		$(moreItemsSelector).hide();
-		}
 });
 /**
  * Jobs are now shown with no items (accomplishments and tasks)
