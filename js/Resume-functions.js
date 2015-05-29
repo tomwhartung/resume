@@ -49,38 +49,11 @@ $(document).ready(function() {
 	Resume.populateSections();
 
 	for ( index = 0; index < ProfessionalExperience.jobs.length; index++ ) {
-			id = ProfessionalExperience.jobs[index].id;
-			listItemsSelector = '#' + id + ' div.list-items';
-			$(listItemsSelector).hide();
-			moreItemsSelector = '#' + id + ' div.more-items';
-//			alert( 'toggling initial display of more-items; ' +
-//					'ProfessionalExperience.jobs[index].moreOrLessToggleEffect = ' +
-//					  ProfessionalExperience.jobs[index].moreOrLessToggleEffect );
-			switch( ProfessionalExperience.jobs[index].moreOrLessToggleEffect ) {
-				case ( ToggleEffectEnum.bothFast ):
-				case ( ToggleEffectEnum.bothSlow ): {
-					$(moreItemsSelector).animate({
-						height: 'toggle',
-						opacity: 'toggle'
-					}, 'fast' );
-					break;
-				}
-				case ( ToggleEffectEnum.fadeFast ):
-				case ( ToggleEffectEnum.fadeSlow ): {
-					$(moreItemsSelector).animate({ opacity: 'toggle' }, 'fast' );
-					break;
-				}
-				case ( ToggleEffectEnum.slideFast ):
-				case ( ToggleEffectEnum.slideSlow ): {
-					$(moreItemsSelector).slideToggle( 'fast' );
-					break;
-				}
-				case ( ToggleEffectEnum.instant ):
-				default: {
-					$(moreItemsSelector).toggle();
-					break;
-				}
-			}
+		id = ProfessionalExperience.jobs[index].id;
+		listItemsSelector = '#' + id + ' div.list-items';
+		moreItemsSelector = '#' + id + ' div.more-items';
+		$(listItemsSelector).hide();
+		$(moreItemsSelector).hide();
 		}
 });
 /**
