@@ -45,6 +45,7 @@ ProfessionalExperience.MinimalJob = Object.create( Object.prototype, {
 	location: { value: 'Denver, CO' },
 	title: { value: '' },
 	dateRange: { value: '' },
+	displayLevel: { value: 1 },  // display one level of jobs at a time (make them dig for the old ones)
 	moreOrLessToggleEffect: { value: ToggleEffectEnum.default },
 	listItems: { value: '' },
 	moreItems: { value: '' }
@@ -61,6 +62,7 @@ ProfessionalExperience.JoomooWebsites_2 = Object.create( ProfessionalExperience.
 	location: { value: 'Denver, CO' },
 	title: { value: 'CEO (Sole Proprietor)' },
 	dateRange: { value: 'May, 2015 through present' },
+	displayLevel: { value: 1 },
 	listItems: { value:
 		'<li>Wrote idMyGadget, an adapter API providing a consistent interface to ' +
 			'multiple device detection packages.</li>'
@@ -84,6 +86,7 @@ ProfessionalExperience.Kforce = Object.create( Object.prototype, {
 	location: { value: 'Denver, CO' },
 	title: { value: 'Web Developer' },
 	dateRange: { value: 'November, 2014 through April 2015' },
+	displayLevel: { value: 1 },
 	moreOrLessToggleEffect: { value: ToggleEffectEnum.default },
 	listItems: { value:
 		'<li>Worked on a confidential contract for a large healthcare provider.</li>' +
@@ -112,6 +115,7 @@ ProfessionalExperience.JoomooWebsites_1 = Object.create( ProfessionalExperience.
 	location: { value: 'Denver, CO' },
 	title: { value: 'CEO (Sole Proprietor)' },
 	dateRange: { value: 'January, 2008 through present' },
+	displayLevel: { value: 1 },
 	listItems: { value:
 		'<li>Assisted in conversion of Joomla site containing VirtueMart shopping cart data to ' +
 			'Wordpress site containing Woocommerce data.</li>' +
@@ -144,6 +148,7 @@ ProfessionalExperience.LodoSoftwareD3 = Object.create( ProfessionalExperience.Mi
 	location: { value: 'Denver, CO' },
 	title: { value: 'Software Engineer' },
 	dateRange: { value: 'January, 2012 through February 2014' },
+	displayLevel: { value: 1 },
 	listItems: { value:
 		'<li>Used Java, Javascript, Spring, Hibernate, REST, Postman, Liquibase, MySql, ' +
 			'Sql Server, Junit, Git, Maven, Jira, CofeeScript, jQuery, Backbone, ' +
@@ -209,6 +214,7 @@ ProfessionalExperience.ConsultnetTlc = Object.create( ProfessionalExperience.Min
 	location: { value: 'Denver, CO' },
 	title: { value: 'Software Developer' },
 	dateRange: { value: 'January, 2011 through December, 2011' },
+	displayLevel: { value: 1 },
 	listItems: { value:
 		'<li>For ' +
 			'<a href="http://www.tlcdelivers.com" title="Opens link in separate window" target="_blank">' +
@@ -267,6 +273,7 @@ ProfessionalExperience.ClkClk = Object.create( ProfessionalExperience.MinimalJob
 	location: { value: 'Denver, CO' },
 	title: { value: 'Independent Contractor' },
 	dateRange: { value: 'April, 2010 through November, 2010' },
+	displayLevel: { value: 1 },
 	listItems: { value:
 		'<li>Used PHP5, MySql, Joomla, Javascript, Ajax, XHTML, and CSS to help build ' +
 			'a social networking site targeted to businesses.</li>' +
@@ -311,6 +318,7 @@ ProfessionalExperience.SeeOurMinds = Object.create( ProfessionalExperience.Minim
 	location: { value: 'Denver, CO' },
 	title: { value: 'Webmaster' },
 	dateRange: { value: 'August, 2009 through April, 2010' },
+	displayLevel: { value: 2 },
 	listItems: { value:
 		'<li>Rebranded groja.com to seeourminds.com and used PHP5, Mootools, Ajax, MySql, ' +
 			'XHTML and CSS to write custom Joomla extensions that ' +
@@ -352,6 +360,7 @@ ProfessionalExperience.HudsonIt = Object.create( ProfessionalExperience.MinimalJ
 	location: { value: 'Denver, CO' },
 	title: { value: 'Consultant' },
 	dateRange: { value: 'from July, 2009 through August, 2009' },
+	displayLevel: { value: 2 },
 	listItems: { value:
 		'<li>Helped Guest Trails (formerly The Magellan Network)  get started with Joomla ' +
 			'by installing it and LAMP on Red Hat, SuSE and Ubuntu, ' +
@@ -381,6 +390,7 @@ ProfessionalExperience.MsagDataConsultants = Object.create( ProfessionalExperien
 	location: { value: 'Denver, CO' },
 	title: { value: 'Independent Contractor' },
 	dateRange: { value: 'May, 2009 through June, 2009' },
+	displayLevel: { value: 2 },
 	listItems: { value:
 		'<li>Used Javascript, ASP, Java, CSS, HTML, Visual Basic, and Visual Studio to ' +
 			'fix browser compatibility issues in Autodesk MapGuide maps.  ' +
@@ -406,6 +416,7 @@ ProfessionalExperience.GrojaJoomla = Object.create( ProfessionalExperience.Minim
 	location: { value: 'Denver, CO' },
 	title: { value: 'Webmaster' },
 	dateRange: { value: 'January, 2008 through May, 2009' },
+	displayLevel: { value: 2 },
 	listItems: { value:
 		'<li>Designed and wrote a Joomla component using Joomla\'s MVC ' +
 			'(Model,View, Controller) API, ' +
@@ -518,6 +529,7 @@ ProfessionalExperience.MortgageCadence = Object.create( ProfessionalExperience.M
 	location: { value: 'Denver, CO' },
 	title: { value: 'Software Development Kit Developer' },
 	dateRange: { value: 'August, 2007 through December, 2007' },
+	displayLevel: { value: 2 },
 	listItems: { value:
 		'<li>Documented the Application Programming Interface (API) ' +
 			'of a Software Development Kit (SDK) written in C# ' +
@@ -558,6 +570,7 @@ ProfessionalExperience.SaiPeopleSolutions = Object.create( ProfessionalExperienc
 	location: { value: 'Denver, CO' },
 	title: { value: 'Applications Developer' },
 	dateRange: { value: 'October, 2006 through March, 2007' },
+	displayLevel: { value: 2 },
 	listItems: { value:
 		'<li>On contract at ' +
 			'<a href="http://www.verizonbusiness.com/us/" ' +
@@ -604,6 +617,7 @@ ProfessionalExperience.AdeaSolutions = Object.create( ProfessionalExperience.Min
 	location: { value: 'Boulder, CO' },
 	title: { value: 'Software Developer' },
 	dateRange: { value: 'July, 2006 through October, 2006' },
+	displayLevel: { value: 2 },
 	listItems: { value:
 		'<li>On contract at ' +
 			'<a href="http://www.ericsson.com/" ' +
@@ -649,6 +663,7 @@ ProfessionalExperience.GrojaPhpNuke = Object.create( ProfessionalExperience.Mini
 	location: { value: 'Denver, CO' },
 	title: { value: 'Webmaster' },
 	dateRange: { value: 'February, 2005 through June, 2006' },
+	displayLevel: { value: 3 },
 	listItems: { value:
 		'<li>Integrated version 1 of groja.com into ' +
 			'<a href="http://phpnuke.org" ' +
@@ -728,6 +743,7 @@ ProfessionalExperience.IdeaIntegration2004 = Object.create( ProfessionalExperien
 	location: { value: 'Englewood, CO' },
 	title: { value: 'Independent Contractor' },
 	dateRange: { value: 'October, 2004 through January, 2005' },
+	displayLevel: { value: 3 },
 	listItems: { value:
 		'<li>On contract at ' +
 			'<a href="http://www.affinitygroup.com/" ' +
@@ -770,6 +786,7 @@ ProfessionalExperience.TomhInfo = Object.create( ProfessionalExperience.MinimalJ
 	location: { value: 'Denver, CO' },
 	title: { value: 'Webmaster' },
 	dateRange: { value: 'July, 2004 through September, 2004' },
+	displayLevel: { value: 3 },
 	listItems: { value:
 		'<li>Updated tomh.info to use CSS.</li>'
 	},
@@ -797,6 +814,7 @@ ProfessionalExperience.BroadbandServices = Object.create( ProfessionalExperience
 	location: { value: 'Highlands Ranch, CO' },
 	title: { value: 'Software Engineer, MapVantage Group' },
 	dateRange: { value: 'September, 2002 through June, 2004' },
+	displayLevel: { value: 3 },
 	listItems: { value:
 		'<li>Analyzed Autocad drawing files containing maps of cable television optical fiber ' +
 			'network equipment using Perl and the Feature Manipulation Engine ' +
@@ -855,6 +873,7 @@ ProfessionalExperience.GrojaPreCms = Object.create( ProfessionalExperience.Minim
 	location: { value: 'Denver, CO' },
 	title: { value: 'Webmaster' },
 	dateRange: { value: 'June, 2001 through August, 2002' },
+	displayLevel: { value: 3 },
 	listItems: { value:
 		'<li>Conceived, designed, wrote, tested, documented, implemented, and maintained the ' +
 			'groja.com and tomh.info websites using PHP, HTML, and JavaScript on Linux ' +
@@ -897,6 +916,7 @@ ProfessionalExperience.IdeaIntegration1998 = Object.create( ProfessionalExperien
 	location: { value: 'Denver, CO' },
 	title: { value: 'Consultant, promoted to Senior Consultant' },
 	dateRange: { value: 'August, 1998 through June, 2001' },
+	displayLevel: { value: 3 },
 	listItems: { value:
 		'<li>On contract at ' +
 			'<a href="http://www.MapQuest.com" ' +
@@ -1023,6 +1043,7 @@ ProfessionalExperience.AnalystsInternational = Object.create( ProfessionalExperi
 	location: { value: 'Boulder, CO' },
 	title: { value: 'Technical Staff' },
 	dateRange: { value: 'March, 1998 through August, 1998' },
+	displayLevel: { value: 4 },
 	listItems: { value:
 		'<li>On contract at ' +
 			'<a href="http://www.qwest.com" ' +
@@ -1064,6 +1085,7 @@ ProfessionalExperience.MapQuest = Object.create( ProfessionalExperience.MinimalJ
 	location: { value: 'Denver, CO' },
 	title: { value: 'Internet Engineer' },
 	dateRange: { value: 'August, 1996 through November, 1997' },
+	displayLevel: { value: 4 },
 	listItems: { value:
 		'<li>Designed, wrote, enhanced, and maintained the geocentric advertising feature along ' +
 			'with related data handling programs, using C/C++, Perl4, CGI/HTML, and proprietary ' +
@@ -1121,6 +1143,7 @@ ProfessionalExperience.EvolvingSystems = Object.create( ProfessionalExperience.M
 	location: { value: 'Greenwood Village, CO' },
 	title: { value: 'Configuration Management Analyst II, promoted to Configuration Management Analyst III' },
 	dateRange: { value: 'November, 1991 through July, 1996' },
+	displayLevel: { value: 4 },
 	listItems: { value:
 		'<li>Conceived, designed, developed, documented, and maintained ' +
 			'configuration management programs and scripts written  in Perl4, Awk, and ' +
@@ -1192,6 +1215,7 @@ ProfessionalExperience.Unisys = Object.create( ProfessionalExperience.MinimalJob
 	location: { value: 'Camarillo, CA' },
 	title: { value: 'Senior Product Information Analyst (Technical Writer)' },
 	dateRange: { value: 'February, 1990 through July, 1991' },
+	displayLevel: { value: 4 },
 	listItems: { value:
 		'<li>Documented message-based and event-driven ' +
 			'Application Programming Interface (API) for developers ' +
@@ -1229,6 +1253,7 @@ ProfessionalExperience.PandeIncorporated = Object.create( ProfessionalExperience
 	location: { value: 'Gardena, CA' },
 	title: { value: 'Systems Engineer' },
 	dateRange: { value: 'June, 1989 through February, 1990' },
+	displayLevel: { value: 4 },
 	listItems: { value:
 		'<li>On contract at ' +
 			'<a href="http://www.toshibatecusa.com/" ' +
@@ -1274,6 +1299,7 @@ ProfessionalExperience.GraduateSchool = Object.create( ProfessionalExperience.Mi
 	location: { value: 'Richmond, VA' },
 	title: { value: 'Graduate Student' },
 	dateRange: { value: 'May, 1986 through May, 1989' },
+	displayLevel: { value: 5 },
 	listItems: { value:
 		'<li>Programmed in IBM 8100 (minicomputer) Assembler for' +
 			'<a href="http://www.owens-minor.com/" ' +
@@ -1368,6 +1394,7 @@ ProfessionalExperience.BankOfVirginia = Object.create( ProfessionalExperience.Mi
 	location: { value: 'Richmond, VA' },
 	title: { value: 'Programmer Analyst, promoted to Senior Programmer Analyst' },
 	dateRange: { value: 'December, 1979 through April, 1986' },
+	displayLevel: { value: 5 },
 	listItems: { value:
 		'<li>Designed, developed, documented, and maintained programs ' +
 			'in Cobol for management information (financial reporting) ' +
@@ -1408,6 +1435,7 @@ ProfessionalExperience.CityOfRichmond = Object.create( ProfessionalExperience.Mi
 	location: { value: 'Richmond, VA' },
 	title: { value: 'Programmer, promoted to Senior Programmer' },
 	dateRange: { value: 'January, 1978 through December, 1979' },
+	displayLevel: { value: 5 },
 	listItems: { value:
 		'<li>Wrote and maintained programs for the Utilities, Welfare, and other systems ' +
 			'using Cobol, Assembler, JCL, CICS, VSAM, ISAM, Roscoe, and Dyl260, ' +
@@ -1436,6 +1464,7 @@ ProfessionalExperience.OverniteTransportation = Object.create( ProfessionalExper
 	location: { value: 'Richmond, VA' },
 	title: { value: 'Programmer Trainee, promoted to Programmer' },
 	dateRange: { value: 'March, 1976 through December, 1977' },
+	displayLevel: { value: 5 },
 	listItems: { value:
 		'<li>Maintained and documented programs for the Vehicle Accident, Claims, and ' +
 			'other systems in NCR Cobol and NCR Assembler (Neat/3) running on NCR minicomputers.</li>'
