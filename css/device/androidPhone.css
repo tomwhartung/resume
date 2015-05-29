@@ -32,60 +32,6 @@ body {
 h2 {
 	font-size: 1.5em;
 }
-/*
- * Navigation
- */
-#header ul {
-	list-style: none;
-	margin: 0.625em;
-	padding: 0;
-}
-#header ul li a {
-	background-color: #FFFFFF;
-	border: 1px solid #999999;
-	color: #222222;
-	display: block;
-	font-size: 1.2em;
-	font-weight: bold;
-	margin-bottom: -1px;
-	padding: 0.75em 0.625em;
-	text-decoration: none;
-}
-/*
- * Indent content a tad bit from the edge
- */
-#content {
-	padding: 0.625em;
-}
-/*
- * Niceties: drop shadow for header text and gradient for header background
- * Note: gradient can be used anywhere in lieu of a URL
- *    type: linear (or radial)
- *    start: left top (or left bottom, right top, or right bottom)
- *    end: left bottom (or left top, right top, or right bottom)
- *    start color and end color
- */
-#header h1 a {
-	text-shadow: 0.0em 1px 0.0em #fff;	/* horiz offset, vert offset, blur, color */
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#ccc), to(#999));
-}
-/*
- * Round off corners of navigation elements
- */
-#header ul li:first-child a {
-	-webkit-border-top-left-radius: 0.5em;
-	-webkit-border-top-right-radius: 0.5em;
-}
-#header ul li:last-child a {
-    -webkit-border-bottom-left-radius: 0.5em;
-	-webkit-border-bottom-right-radius: 0.5em;
-}
-/*
- * Used to toggle display of menu
- */
-#header ul.hide, #content div.hide  {
-	display: none;
-}
 div#content {
 	text-align:  left;
 }
