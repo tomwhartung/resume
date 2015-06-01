@@ -75,7 +75,11 @@ Resume.hideAllOlderJobs = function () {
 		$(".showMoreJobsButton").show();
 	}
 };
-function showMoreJobs() {
+/**
+ * When the user clicks the button, show more jobs
+ * @returns nada
+ */
+$(".showMoreJobsButton").on( "click", function () {
 	var id;
 	var jobSelector;
 	var displayLevel;
@@ -98,7 +102,7 @@ function showMoreJobs() {
 	} else {
 		$(".showMoreJobsButton").hide();
 	}
-}
+});
 
 $(document).ready(function() {
 	Resume.populateSections();
