@@ -29,3 +29,13 @@ a, li, p {
 	margin-top:  0.25em;
 	line-height: 1.25em;
 }
+a.showMoreJobsButton {
+	border-color: black;
+	color: black;
+}
+a.show-button:hover,
+a.more-button:hover,
+a.fewer-button:hover {
+	color:       #000000;
+}
+

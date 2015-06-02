@@ -28,3 +28,12 @@ li ul {
 a.ui-link:visited {
 	color: black;
 }
+a.show-button:hover,
+a.more-button:hover,
+a.fewer-button:hover {
+	color:       #000000;
+}
+a.showMoreJobsButton {
+	border-color: black;
+	color: black;
+}

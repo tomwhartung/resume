@@ -32,7 +32,12 @@ a, li, p {
 	line-height: 1.75em;
 }
 a, a:link, a:hover, a:visited,
-a.show-button:hover,a.more-button:hover,
-a.fewer-button:hover, {
+a.show-button,a.more-button, a.fewer-button, 
+a.show-button:hover, a.more-button:hover, a.fewer-button:hover, 
+a.show-button:visited, a.more-button:visited, a.fewer-button:visited {
 	color: skyblue;      /* make links easier to see */
+}
+a.showMoreJobsButton {
+	border-color: white;
+	color: white;
 }
