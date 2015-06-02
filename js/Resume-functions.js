@@ -92,7 +92,7 @@ $(document).ready(function() {
 			if ( displayLevel === currentDisplayLevel ) {
 				id = ProfessionalExperience.jobs[index].id;
 				jobSelector = '#' + id;
-				$(jobSelector).show();
+				$(jobSelector).slideDown();
 			}
 			else if ( displayLevel > currentDisplayLevel ) {  // at least one is still hidden
 				moreJobsToShow = true;
