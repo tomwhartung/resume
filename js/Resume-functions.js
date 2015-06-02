@@ -3,7 +3,17 @@
  * Please include this file immediately after Resume.js .
  */
 "use strict";
-
+/**
+ * Use the json data to populate the sections.
+ * The handlebars templates in index.php provide the
+ * markup for each section.
+ * This is where we associate the data with those templates
+ * to generate the content of the document.
+ */
+$(document).ready(function() {
+	Resume.populateSections();
+	Resume.hideAllOlderJobs();
+});
 /**
  * Loop through the sections, populating the skeleton created in index.php
  * with the content defined in the JavaScript objects in Resume.js .
@@ -105,24 +115,21 @@ $(document).ready(function() {
 		}
 	});
 });
-$(document).ready(function() {
-	Resume.populateSections();
-	Resume.hideAllOlderJobs();
-});
 /**
- * Jobs are now shown with no items (accomplishments and tasks)
+ * Jobs are shown with no items (accomplishments and tasks)
  * This function shows the list items for the selected job
- * 
- * @param {type} id of job
+ *
  */
-function showListItemsForJob( id ) {
-	var listItemsSelector;
-	var showButtonSelector;
-	listItemsSelector = '#' + id + ' div.list-items';
-	showButtonSelector = '#' + id + ' a.show-button';
-	$(showButtonSelector).remove();
-	$(listItemsSelector).slideDown("slow");
-}
+$(document).ready(function() {
+	$(document.body).on( "click", "a.show-button", function( event ) {
+		var showButtonSelector;
+		var listItemsSelector;
+		showButtonSelector = '#' + this.id;
+		listItemsSelector = '#' + this.id + '-list-items';
+		$(showButtonSelector).remove();
+		$(listItemsSelector).slideDown("slow");
+	});
+});
 /**
  * Toggle display of more or less list items for job identified by id
  */
