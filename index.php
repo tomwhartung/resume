@@ -254,7 +254,7 @@ print '<link rel="stylesheet" type="text/css" ' .
 		{{/each}}
 		</ul>
 		<div class="showMoreJobsButton hide">
-			<a class="showMoreJobsButton" onclick="showMoreJobs();">Show More Jobs</a>
+			<a class="showMoreJobsButton">Show More Jobs</a>
 		</div>
 	</script>
 <?php  endif ?>

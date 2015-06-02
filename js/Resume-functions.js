@@ -62,16 +62,16 @@ Resume.hideAllOlderJobs = function () {
 	//
 	var id;
 	var jobSelector;
-	var displayShowMoreJobsButton = false;
+	var moreJobsToShow = false;
 	for ( var index = 0; index < ProfessionalExperience.jobs.length; index++ ) {
 		id = ProfessionalExperience.jobs[index].id;
 		if ( initialDisplayLevel < ProfessionalExperience.jobs[index].displayLevel ) {
 			jobSelector = '#' + id;
 			$(jobSelector).hide();
-			displayShowMoreJobsButton = true;
+			moreJobsToShow = true;
 		}
 	}
-	if ( displayShowMoreJobsButton ) {
+	if ( moreJobsToShow ) {
 		$(".showMoreJobsButton").show();
 	}
 };
@@ -79,31 +79,32 @@ Resume.hideAllOlderJobs = function () {
  * When the user clicks the button, show more jobs
  * @returns nada
  */
-$(".showMoreJobsButton").on( "click", function () {
-	var id;
-	var jobSelector;
-	var displayLevel;
-	var displayShowMoreJobsButton = false;
-	currentDisplayLevel++;
+$(document).ready(function() {
+	$(document.body).on( "click", "a.showMoreJobsButton", function( event ) {
+		var id;
+		var jobSelector;
+		var displayLevel;
+		var moreJobsToShow = false;
+		currentDisplayLevel++;
 
-	for ( var index = 0; index < ProfessionalExperience.jobs.length; index++ ) {
-		displayLevel = ProfessionalExperience.jobs[index].displayLevel;
-		if ( displayLevel === currentDisplayLevel ) {
-			id = ProfessionalExperience.jobs[index].id;
-			jobSelector = '#' + id;
-			$(jobSelector).show();
+		for ( var index = 0; index < ProfessionalExperience.jobs.length; index++ ) {
+			displayLevel = ProfessionalExperience.jobs[index].displayLevel;
+			if ( displayLevel === currentDisplayLevel ) {
+				id = ProfessionalExperience.jobs[index].id;
+				jobSelector = '#' + id;
+				$(jobSelector).show();
+			}
+			else if ( displayLevel > currentDisplayLevel ) {  // at least one is still hidden
+				moreJobsToShow = true;
+			}
 		}
-		else if ( displayLevel > currentDisplayLevel ) {  // at least one is still hidden
-			displayShowMoreJobsButton = true;
+		if ( moreJobsToShow ) {
+			$(".showMoreJobsButton").show();
+		} else {
+			$(".showMoreJobsButton").hide();
 		}
-	}
-	if ( displayShowMoreJobsButton ) {
-		$(".showMoreJobsButton").show();
-	} else {
-		$(".showMoreJobsButton").hide();
-	}
+	});
 });
-
 $(document).ready(function() {
 	Resume.populateSections();
 	Resume.hideAllOlderJobs();
