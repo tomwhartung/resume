@@ -236,9 +236,9 @@ print '<link rel="stylesheet" type="text/css" ' .
 				{{/if}}
 				<div>{{dateRange}}</div>
 				<div class="underline">
-					<a id="{{id}}-show" class="show-button">Show Details</a>
+					<a id="{{id}}-show-button" class="show-button">Show Details</a>
 				</div>
-				<div id="{{id}}-show-list-items" class="list-items">
+				<div id="{{id}}-list-items" class="list-items">
 					<ul>{{{listItems}}}</ul>
 					<a class="more-button" alt="More Details"
 						title="Show more details for this position"

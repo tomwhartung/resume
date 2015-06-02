@@ -125,7 +125,7 @@ $(document).ready(function() {
 		var showButtonSelector;
 		var listItemsSelector;
 		showButtonSelector = '#' + this.id;
-		listItemsSelector = '#' + this.id + '-list-items';
+		listItemsSelector = showButtonSelector.replace( "show-button", 'list-items' );
 		$(showButtonSelector).remove();
 		$(listItemsSelector).slideDown("slow");
 	});
