@@ -76,11 +76,11 @@ ul.no-bullets, ul.debugging  {
 .underline {
 	text-decoration: underline;
 }
-.show-button, .more-button, .fewer-button {
+.show-button, .more-items-button, .fewer-items-button {
 	font-size: 0.8em;
 }
 a.show-button:hover,
-a.more-button:hover, a.fewer-button:hover {
+a.more-items-button:hover, a.fewer-items-button:hover {
 	font-size:   0.9em;
 }
 li.hide, div.hide  {

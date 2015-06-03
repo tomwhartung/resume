@@ -29,8 +29,8 @@ a.ui-link:visited {
 	color: black;
 }
 a.show-button:hover,
-a.more-button:hover,
-a.fewer-button:hover {
+a.more-items-button:hover,
+a.fewer-items-button:hover {
 	color:       #000000;
 }
 a.showMoreJobsButton {

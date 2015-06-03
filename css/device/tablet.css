@@ -32,9 +32,9 @@ a, li, p {
 	line-height: 1.75em;
 }
 a, a:link, a:hover, a:visited,
-a.show-button,a.more-button, a.fewer-button, 
-a.show-button:hover, a.more-button:hover, a.fewer-button:hover, 
-a.show-button:visited, a.more-button:visited, a.fewer-button:visited {
+a.show-button,a.more-items-button, a.fewer-items-button, 
+a.show-button:hover, a.more-items-button:hover, a.fewer-items-button:hover, 
+a.show-button:visited, a.more-items-button:visited, a.fewer-items-button:visited {
 	color: skyblue;      /* make links easier to see */
 }
 a.showMoreJobsButton {
