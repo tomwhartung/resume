@@ -204,12 +204,14 @@ print '<link rel="stylesheet" type="text/css" ' .
 						<div id="{{id}}-list-items" class="list-items">
 							<ul>{{{listItems}}}</ul>
 							<a id="{{id}}-more-items-button" class="more-items-button" alt="More Details"
-								title="Show more details for this position">More...</a>
+								title="Show more details for this position"
+								onclick="moreItemsButtonClicked();">More...</a>
 						</div><!-- .list-items -->
 						<div id="{{id}}-more-items" class="more-items">
 							<ul>{{{moreItems}}}</ul>
 							<a id="{{id}}-fewer-items-button" class="fewer-items-button" alt="Fewer Details"
-								title="Show fewer details for this position">Less...</a>
+								title="Show fewer details for this position"
+								onclick="fewerItemsButtonClicked();">Less...</a>
 						</div><!-- .more-items -->
 					</li>
 				</ul>

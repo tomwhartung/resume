@@ -91,6 +91,7 @@ Resume.hideAllOlderJobs = function () {
  */
 $(document).ready(function() {
 	$(document.body).on( "click", "a.showMoreJobsButton", function( event ) {
+		alert( 'Alert me if they want to see more jobs!' );
 		var id;
 		var jobSelector;
 		var displayLevel;
@@ -136,99 +137,40 @@ $(document).ready(function() {
  */
 $(document).ready(function() {
 	$(document.body).on( "click", "a.more-items-button", function( event ) {
+		moreItemsButtonClicked( this );
+	});
+	$(document.body).on( "click", "a.fewer-items-button", function( event ) {
+		fewerItemsButtonClicked( this );
+	});
+});
+/**
+ * Testing with the actual device shows ...
+ */
+function moreItemsButtonClicked( that ) {
+	//	alert( 'Hi from moreItemsButtonClicked !' );
 		var moreItemsButtonSelector;
 		var listItemsSelector;
 		var moreItemsSelector;
-		moreItemsButtonSelector = '#' + this.id;
+		moreItemsButtonSelector = '#' + that.id;
 		listItemsSelector = moreItemsButtonSelector.replace( 'more-items-button', 'list-items' );
 		moreItemsSelector = moreItemsButtonSelector.replace( 'more-items-button', 'more-items' );
+	//	alert( 'moreItemsButtonSelector: ' + moreItemsButtonSelector + "\n" +
+	//			'listItemsSelector ' + listItemsSelector + "\n" +
+	//			'moreItemsSelector ' + moreItemsSelector );
 		$(listItemsSelector).slideUp("slow");
 		$(moreItemsSelector).slideDown("slow");
-	});
-	$(document.body).on( "click", "a.fewer-items-button", function( event ) {
+}
+function fewerItemsButtonClicked( that ) {
+	//	alert( 'Hi from fewerItemsButtonClicked !' );
 		var fewerItemsButtonSelector;
 		var listItemsSelector;
 		var moreItemsSelector;
-		fewerItemsButtonSelector = '#' + this.id;
+		fewerItemsButtonSelector = '#' + that.id;
 		listItemsSelector = fewerItemsButtonSelector.replace( 'fewer-items-button', 'list-items' );
 		moreItemsSelector = fewerItemsButtonSelector.replace( 'fewer-items-button', 'more-items' );
 	//	alert( 'fewerItemsButtonSelector: ' + fewerItemsButtonSelector + "\n" +
-	//			  'listItemsSelector ' + listItemsSelector + "\n" +
-	//			  'moreItemsSelector ' + moreItemsSelector );
+	//			'listItemsSelector ' + listItemsSelector + "\n" +
+	//			'moreItemsSelector ' + moreItemsSelector );
 		$(moreItemsSelector).slideUp("slow");
 		$(listItemsSelector).slideDown("slow");
-	});
-});
-
-/**
- * Toggle display of more or less list items for job identified by id
- */
-function toggleMoreOrFewerListItems_old_delete_me( id ) {
-	var index;
-	var listItemsSelector;
-	var moreItemsSelector;
-	for ( index = 0; index < ProfessionalExperience.jobs.length; index++ ) {
-		if ( id === ProfessionalExperience.jobs[index].id ) {
-			listItemsSelector = '#' + id + ' div.list-items';
-			moreItemsSelector = '#' + id + ' div.more-items';
-		//	alert( 'toggleMoreOrFewerListItems: moreItemsSelector = ' + moreItemsSelector +
-		//			'; listItemsSelector ' + listItemsSelector );
-			switch( ProfessionalExperience.jobs[index].moreOrLessToggleEffect ) {
-				case ( ToggleEffectEnum.bothFast ): {
-					$(listItemsSelector).animate({
-						height: 'toggle',
-						opacity: 'toggle'
-					}, 'fast' );
-					$(moreItemsSelector).animate({
-						height: 'toggle',
-						opacity: 'toggle'
-					}, 'fast' );
-					break;
-				}
-				case ( ToggleEffectEnum.bothSlow ): {
-					$(listItemsSelector).animate({
-						height: 'toggle',
-						opacity: 'toggle'
-					}, 'slow' );
-					$(moreItemsSelector).animate({
-						height: 'toggle',
-						opacity: 'toggle'
-					}, 'slow' );
-					break;
-				}
-				case ( ToggleEffectEnum.fadeFast ): {
-					$(listItemsSelector).animate({ opacity: 'toggle' }, 'fast' );
-					$(moreItemsSelector).animate({ opacity: 'toggle' }, 'fast' );
-					break;
-				}
-				case ( ToggleEffectEnum.fadeSlow ): {
-					$(listItemsSelector).animate({ opacity: 'toggle' }, 'slow' );
-					$(moreItemsSelector).animate({ opacity: 'toggle' }, 'slow' );
-					break;
-				}
-				case ( ToggleEffectEnum.slideFast ): {
-					$(listItemsSelector).slideToggle( 'fast' );
-					$(moreItemsSelector).slideToggle( 'fast' );
-					break;
-				}
-				case ( ToggleEffectEnum.slideSlow ): {
-					$(listItemsSelector).slideToggle( 'slow' );
-					$(moreItemsSelector).slideToggle( 'slow' );
-					break;
-				}
-				case ( ToggleEffectEnum.instant ):
-				default: {
-					$(listItemsSelector).toggle();
-					$(moreItemsSelector).toggle();
-					break;
-				}
-			}
-			if ( ProfessionalExperience.jobs[index].hasOwnProperty('moreItemsDisplayed') &&
-				 ProfessionalExperience.jobs[index].moreItemsDisplayed === true ) {
-				ProfessionalExperience.jobs[index].moreItemsDisplayed = false;
-			} else {
-				ProfessionalExperience.jobs[index].moreItemsDisplayed = true;
-			}
-		}
-	}
 }
