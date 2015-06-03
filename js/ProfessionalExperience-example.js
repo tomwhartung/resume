@@ -23,20 +23,6 @@ var ProfessionalExperience = Object.create( Object.prototype, {
 	}
 });
 /**
- * Create an "Enum" defining different types of transitions so we can change it easily
- * @type type
- */
-var ToggleEffectEnum = {
-	bothFast: 'bf',   // both = fade and slide
-	bothSlow: 'bs',   // both = fade and slide
-	fadeFast: 'ff',
-	fadeSlow: 'fs',
-	instant: 'i',
-	slideFast: 'sf',
-	slideSlow: 'ss',
-	default: 'bs'
-};
-/**
  * Bare-bones job object containing default values, that we can use to create other job objects
  */
 ProfessionalExperience.MinimalJob = Object.create( Object.prototype, {
@@ -46,7 +32,6 @@ ProfessionalExperience.MinimalJob = Object.create( Object.prototype, {
 	location: { value: 'Denver, CO' },
 	title: { value: '' },
 	dateRange: { value: '' },
-	moreOrLessToggleEffect: { value: ToggleEffectEnum.default },
 	listItems: { value: '' },
 	moreItems: { value: '' }
 });

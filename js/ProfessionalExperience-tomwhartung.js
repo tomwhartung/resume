@@ -22,20 +22,6 @@ var ProfessionalExperience = Object.create( Object.prototype, {
 	}
 });
 /*
- * Create an "Enum" defining different types of transitions so we can change it easily
- * @type type
- */
-var ToggleEffectEnum = {
-	bothFast: 'bf',   // both = fade and slide
-	bothSlow: 'bs',   // both = fade and slide
-	fadeFast: 'ff',
-	fadeSlow: 'fs',
-	instant: 'i',
-	slideFast: 'sf',
-	slideSlow: 'ss',
-	default: 'bs'
-};
-/*
  * Bare-bones job object containing default values, that we can use to create other job objects
  */
 ProfessionalExperience.MinimalJob = Object.create( Object.prototype, {
@@ -46,7 +32,6 @@ ProfessionalExperience.MinimalJob = Object.create( Object.prototype, {
 	title: { value: '' },
 	dateRange: { value: '' },
 	displayLevel: { value: 1 },  // display one level of jobs at a time (make them dig for the old ones)
-	moreOrLessToggleEffect: { value: ToggleEffectEnum.default },
 	listItems: { value: '' },
 	moreItems: { value: '' }
 });
@@ -87,7 +72,6 @@ ProfessionalExperience.Kforce = Object.create( Object.prototype, {
 	title: { value: 'Web Developer' },
 	dateRange: { value: 'November, 2014 through April 2015' },
 	displayLevel: { value: 1 },
-	moreOrLessToggleEffect: { value: ToggleEffectEnum.default },
 	listItems: { value:
 		'<li>Worked on a confidential contract for a large healthcare provider.</li>' +
 		'<li>Used PHP, JavaScript, HTML5, and CSS to customize Wordpress themes and plugins.</li>' +
@@ -368,7 +352,6 @@ ProfessionalExperience.HudsonIt = Object.create( ProfessionalExperience.MinimalJ
 		'<li>Wrote a module in PHP5 allowing users to change content ' +
 			'in the front end.</li>'
 	},
-//	moreOrLessToggleEffect: { value: ToggleEffectEnum.instant },
 	moreItems: { value:
 		'<li>Introduced Guest Trails (formerly The Magellan Network) to Joomla, helping them ' +
 			'get started with the Content Management System (CMS).</li>' +
@@ -396,7 +379,6 @@ ProfessionalExperience.MsagDataConsultants = Object.create( ProfessionalExperien
 			'fix browser compatibility issues in Autodesk MapGuide maps.  ' +
 			'Changed maps to use a Java-based viewer.</li>'
 	},
-//	moreOrLessToggleEffect: { value: ToggleEffectEnum.slideFast },
 	moreItems: { value:
 		'<li>Used Javascript, ASP, Java, CSS, HTML, Visual Basic, and Visual Studio to fix ' +
 			'browser compatibility issues in Autodesk MapGuide maps.</li>' +
@@ -448,7 +430,6 @@ ProfessionalExperience.GrojaJoomla = Object.create( ProfessionalExperience.Minim
 			 'target="_blank">describing the site\'s core classes</a>.</li>' +
 		'<li>Ensured that all original extensions work properly on all popular browsers.</li>'
 	},
-//	moreOrLessToggleEffect: { value: ToggleEffectEnum.slideSlow },
 	moreItems: { value:
 		'<li>Designed and wrote a Joomla component using Joomla\'s MVC (Model,View, Controller) ' +
 			'API, integrating and converting existing code from PHP4 to PHP5.  ' +
