@@ -125,15 +125,45 @@ $(document).ready(function() {
 		var showButtonSelector;
 		var listItemsSelector;
 		showButtonSelector = '#' + this.id;
-		listItemsSelector = showButtonSelector.replace( "show-button", 'list-items' );
+		listItemsSelector = showButtonSelector.replace( 'show-button', 'list-items' );
 		$(showButtonSelector).remove();
 		$(listItemsSelector).slideDown("slow");
 	});
 });
 /**
+ * When they click on the more items button, show more items
+ * When they click on the fewer items button, show fewer items
+ */
+$(document).ready(function() {
+	$(document.body).on( "click", "a.more-items-button", function( event ) {
+		var moreItemsButtonSelector;
+		var listItemsSelector;
+		var moreItemsSelector;
+		moreItemsButtonSelector = '#' + this.id;
+		listItemsSelector = moreItemsButtonSelector.replace( 'more-items-button', 'list-items' );
+		moreItemsSelector = moreItemsButtonSelector.replace( 'more-items-button', 'more-items' );
+		$(listItemsSelector).slideUp("slow");
+		$(moreItemsSelector).slideDown("slow");
+	});
+	$(document.body).on( "click", "a.fewer-items-button", function( event ) {
+		var fewerItemsButtonSelector;
+		var listItemsSelector;
+		var moreItemsSelector;
+		fewerItemsButtonSelector = '#' + this.id;
+		listItemsSelector = fewerItemsButtonSelector.replace( 'fewer-items-button', 'list-items' );
+		moreItemsSelector = fewerItemsButtonSelector.replace( 'fewer-items-button', 'more-items' );
+	//	alert( 'fewerItemsButtonSelector: ' + fewerItemsButtonSelector + "\n" +
+	//			  'listItemsSelector ' + listItemsSelector + "\n" +
+	//			  'moreItemsSelector ' + moreItemsSelector );
+		$(moreItemsSelector).slideUp("slow");
+		$(listItemsSelector).slideDown("slow");
+	});
+});
+
+/**
  * Toggle display of more or less list items for job identified by id
  */
-function toggleMoreOrFewerListItems( id ) {
+function toggleMoreOrFewerListItems_old_delete_me( id ) {
 	var index;
 	var listItemsSelector;
 	var moreItemsSelector;

@@ -201,17 +201,15 @@ print '<link rel="stylesheet" type="text/css" ' .
 							{{title}}<br />
 						{{/if}}
 						{{dateRange}}<br />
-						<div class="list-items">
+						<div id="{{id}}-list-items" class="list-items">
 							<ul>{{{listItems}}}</ul>
-							<a class="more-button" alt="More Details"
-								title="Show more details for this position"
-								onclick="toggleMoreOrFewerListItems('{{id}}');">More...</a>
+							<a id="{{id}}-more-items-button" class="more-items-button" alt="More Details"
+								title="Show more details for this position">More...</a>
 						</div><!-- .list-items -->
-						<div class="more-items">
+						<div id="{{id}}-more-items" class="more-items">
 							<ul>{{{moreItems}}}</ul>
-							<a class="fewer-button" alt="Fewer Details"
-								title="Show fewer details for this position"
-								onclick="toggleMoreOrFewerListItems('{{id}}');">Less...</a>
+							<a id="{{id}}-fewer-items-button" class="fewer-items-button" alt="Fewer Details"
+								title="Show fewer details for this position">Less...</a>
 						</div><!-- .more-items -->
 					</li>
 				</ul>
@@ -240,15 +238,13 @@ print '<link rel="stylesheet" type="text/css" ' .
 				</div>
 				<div id="{{id}}-list-items" class="list-items">
 					<ul>{{{listItems}}}</ul>
-					<a class="more-button" alt="More Details"
-						title="Show more details for this position"
-						onclick="toggleMoreOrFewerListItems('{{id}}');">More Details</a>
+					<a id="{{id}}-more-items-button" class="more-items-button" alt="More Details"
+						title="Show more details for this position">More Details</a>
 				</div><!-- .list-items -->
-				<div class="more-items">
+				<div id="{{id}}-more-items" class="more-items">
 					<ul>{{{moreItems}}}</ul>
-					<a class="fewer-button" alt="Fewer Details"
-						title="Show fewer details for this position"
-						onclick="toggleMoreOrFewerListItems('{{id}}');">Fewer Details</a>
+					<a id="{{id}}-fewer-items-button" class="fewer-items-button" alt="Fewer Details"
+						title="Show fewer details for this position">Fewer Details</a>
 				</div><!-- .more-items -->
 			</li>
 		{{/each}}
