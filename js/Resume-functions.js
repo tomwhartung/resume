@@ -137,40 +137,36 @@ $(document).ready(function() {
  */
 $(document).ready(function() {
 	$(document.body).on( "click", "a.more-items-button", function( event ) {
-		moreItemsButtonClicked( this );
+		Resume.moreItemsButtonClicked( this );
 	});
 	$(document.body).on( "click", "a.fewer-items-button", function( event ) {
-		fewerItemsButtonClicked( this );
+		Resume.fewerItemsButtonClicked( this );
 	});
 });
 /**
- * Testing with the actual device shows ...
+ * Testing with actual iPhones showed that removing the onclick attributes of the
+ * More and Less buttons caused that functionality to break.
+ * So I added those attributes back in, and refactored the functionality of
+ * the event handlers above into these new functions.
+ * Sorry for any confusion....
  */
-function moreItemsButtonClicked( that ) {
-	//	alert( 'Hi from moreItemsButtonClicked !' );
-		var moreItemsButtonSelector;
-		var listItemsSelector;
-		var moreItemsSelector;
-		moreItemsButtonSelector = '#' + that.id;
-		listItemsSelector = moreItemsButtonSelector.replace( 'more-items-button', 'list-items' );
-		moreItemsSelector = moreItemsButtonSelector.replace( 'more-items-button', 'more-items' );
-	//	alert( 'moreItemsButtonSelector: ' + moreItemsButtonSelector + "\n" +
-	//			'listItemsSelector ' + listItemsSelector + "\n" +
-	//			'moreItemsSelector ' + moreItemsSelector );
-		$(listItemsSelector).slideUp("slow");
-		$(moreItemsSelector).slideDown("slow");
+Resume.moreItemsButtonClicked = function( that ) {
+	var moreItemsButtonSelector;
+	var listItemsSelector;
+	var moreItemsSelector;
+	moreItemsButtonSelector = '#' + that.id;
+	listItemsSelector = moreItemsButtonSelector.replace( 'more-items-button', 'list-items' );
+	moreItemsSelector = moreItemsButtonSelector.replace( 'more-items-button', 'more-items' );
+	$(listItemsSelector).slideUp("slow");
+	$(moreItemsSelector).slideDown("slow");
 }
-function fewerItemsButtonClicked( that ) {
-	//	alert( 'Hi from fewerItemsButtonClicked !' );
-		var fewerItemsButtonSelector;
-		var listItemsSelector;
-		var moreItemsSelector;
-		fewerItemsButtonSelector = '#' + that.id;
-		listItemsSelector = fewerItemsButtonSelector.replace( 'fewer-items-button', 'list-items' );
-		moreItemsSelector = fewerItemsButtonSelector.replace( 'fewer-items-button', 'more-items' );
-	//	alert( 'fewerItemsButtonSelector: ' + fewerItemsButtonSelector + "\n" +
-	//			'listItemsSelector ' + listItemsSelector + "\n" +
-	//			'moreItemsSelector ' + moreItemsSelector );
-		$(moreItemsSelector).slideUp("slow");
-		$(listItemsSelector).slideDown("slow");
+Resume.fewerItemsButtonClicked = function( that ) {
+	var fewerItemsButtonSelector;
+	var listItemsSelector;
+	var moreItemsSelector;
+	fewerItemsButtonSelector = '#' + that.id;
+	listItemsSelector = fewerItemsButtonSelector.replace( 'fewer-items-button', 'list-items' );
+	moreItemsSelector = fewerItemsButtonSelector.replace( 'fewer-items-button', 'more-items' );
+	$(moreItemsSelector).slideUp("slow");
+	$(listItemsSelector).slideDown("slow");
 }
