@@ -91,7 +91,6 @@ Resume.hideAllOlderJobs = function () {
  */
 $(document).ready(function() {
 	$(document.body).on( "click", "a.show-more-jobs-button", function( event ) {
-		alert( 'Alert me if they want to see more jobs!' );
 		var id;
 		var jobSelector;
 		var displayLevel;
