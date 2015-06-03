@@ -177,8 +177,8 @@ print '<link rel="stylesheet" type="text/css" ' .
 				</li>
 			{{/each}}
 		</ul>
-		<div class="showMoreJobsButton hide">
-			<a class="showMoreJobsButton">Show More Jobs</a>
+		<div class="show-more-jobs-button hide">
+			<a class="show-more-jobs-button">Show More Jobs</a>
 		</div>
 	</script>
 	<script id="single-job-section-template" type="text/x-handlebars-template">
@@ -251,8 +251,8 @@ print '<link rel="stylesheet" type="text/css" ' .
 			</li>
 		{{/each}}
 		</ul>
-		<div class="showMoreJobsButton hide">
-			<a class="showMoreJobsButton">Show More Jobs</a>
+		<div class="show-more-jobs-button hide">
+			<a class="show-more-jobs-button">Show More Jobs</a>
 		</div>
 	</script>
 <?php  endif ?>

@@ -82,7 +82,7 @@ Resume.hideAllOlderJobs = function () {
 		}
 	}
 	if ( moreJobsToShow ) {
-		$(".showMoreJobsButton").show();
+		$(".show-more-jobs-button").show();
 	}
 };
 /**
@@ -90,7 +90,7 @@ Resume.hideAllOlderJobs = function () {
  * @returns nada
  */
 $(document).ready(function() {
-	$(document.body).on( "click", "a.showMoreJobsButton", function( event ) {
+	$(document.body).on( "click", "a.show-more-jobs-button", function( event ) {
 		alert( 'Alert me if they want to see more jobs!' );
 		var id;
 		var jobSelector;
@@ -110,9 +110,9 @@ $(document).ready(function() {
 			}
 		}
 		if ( moreJobsToShow ) {
-			$(".showMoreJobsButton").show();
+			$(".show-more-jobs-button").show();
 		} else {
-			$(".showMoreJobsButton").hide();
+			$(".show-more-jobs-button").hide();
 		}
 	});
 });

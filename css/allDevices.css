@@ -100,12 +100,12 @@ li.footer_links {
 p.footer {
 	text-align: center;
 }
-.showMoreJobsButton {
+.show-more-jobs-button {
 	margin-top: 1.0em;
 	text-align: center;
 	width: 100%;
 }
-a.showMoreJobsButton {
+a.show-more-jobs-button {
 	border-radius: 1em;
 	border-style: solid;
 	border-width: 0.3em;

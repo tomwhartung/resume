@@ -33,7 +33,7 @@ a.more-items-button:hover,
 a.fewer-items-button:hover {
 	color:       #000000;
 }
-a.showMoreJobsButton {
+a.show-more-jobs-button {
 	border-color: black;
 	color: black;
 }
