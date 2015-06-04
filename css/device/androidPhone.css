@@ -25,7 +25,7 @@ li ul {
 .back-button {
 	text-align: left; /* apparently we also need to use an inline style... */
 }
-a.ui-link:visited {
+a.ui-link:visited, a.bold:visited {
 	color: black;
 }
 a.show-button:hover,
