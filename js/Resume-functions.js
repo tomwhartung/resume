@@ -12,7 +12,7 @@
  */
 $(document).ready(function() {
 	Resume.populateSections();
-	Resume.hideAllOlderJobs();
+	Resume.hideJobsWithHighDisplayLevels();
 });
 /**
  * Loop through the sections, populating the skeleton created in index.php
@@ -62,11 +62,10 @@ Resume.populateSections = function() {
 		$(moreItemsSelector).hide();
 	}
 };
-
-Resume.hideAllOlderJobs = function () {
-	//
-	// Show only jobs with displayLevel < initial
-	//
+/**
+ * Show only jobs with displayLevel greater than ProfessionalExperience.initialDisplayLevel
+ */
+Resume.hideJobsWithHighDisplayLevels = function () {
 	var id;
 	var jobSelector;
 	var moreJobsToShow = false;
