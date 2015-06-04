@@ -114,7 +114,6 @@ $(document).ready(function() {
 /**
  * Jobs are shown with no items (accomplishments and tasks)
  * This function shows the list items for the selected job
- *
  */
 $(document).ready(function() {
 	$(document.body).on( "click", "a.show-button", function( event ) {
