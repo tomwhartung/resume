@@ -63,9 +63,6 @@ Resume.populateSections = function() {
 	}
 };
 
-var initialDisplayLevel = 1;
-var currentDisplayLevel = initialDisplayLevel;
-
 Resume.hideAllOlderJobs = function () {
 	//
 	// Show only jobs with displayLevel < initial
@@ -75,7 +72,7 @@ Resume.hideAllOlderJobs = function () {
 	var moreJobsToShow = false;
 	for ( var index = 0; index < ProfessionalExperience.jobs.length; index++ ) {
 		id = ProfessionalExperience.jobs[index].id;
-		if ( initialDisplayLevel < ProfessionalExperience.jobs[index].displayLevel ) {
+		if ( ProfessionalExperience.initialDisplayLevel < ProfessionalExperience.jobs[index].displayLevel ) {
 			jobSelector = '#' + id;
 			$(jobSelector).hide();
 			moreJobsToShow = true;
@@ -95,16 +92,16 @@ $(document).ready(function() {
 		var jobSelector;
 		var displayLevel;
 		var moreJobsToShow = false;
-		currentDisplayLevel++;
+		ProfessionalExperience.currentDisplayLevel++;
 
 		for ( var index = 0; index < ProfessionalExperience.jobs.length; index++ ) {
 			displayLevel = ProfessionalExperience.jobs[index].displayLevel;
-			if ( displayLevel === currentDisplayLevel ) {
+			if ( displayLevel == ProfessionalExperience.currentDisplayLevel ) {
 				id = ProfessionalExperience.jobs[index].id;
 				jobSelector = '#' + id;
 				$(jobSelector).slideDown();
 			}
-			else if ( displayLevel > currentDisplayLevel ) {  // at least one is still hidden
+			else if ( displayLevel > ProfessionalExperience.currentDisplayLevel ) {  // at least one is still hidden
 				moreJobsToShow = true;
 			}
 		}

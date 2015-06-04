@@ -15,6 +15,14 @@ var ProfessionalExperience = Object.create( Object.prototype, {
 	templateIdSelector: {
 		value: "#experience-section-template"
 	},
+	initialDisplayLevel: {
+		value: 1
+	},
+	currentDisplayLevel: {
+		value: 1,
+		configurable: true,
+		writable: true
+	},
 	content: {
 		value: "",
 		configurable: true,
