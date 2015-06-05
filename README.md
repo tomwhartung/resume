@@ -1,5 +1,39 @@
 
 ## Introduction:
+I have spent some time updating this to:
+
+* use the [new idMyGadget](https://github.com/tomwhartung/idMyGadget),
+which now offers a common interface to three device detectors, and
+* use jQuery Mobile for the interface on mobile phones
+
+You can see the finished product here:
+[Tom W. Hartung's Mobile Friendly Resume](http://tomwhartung.com/resume) .
+
+To fully appreciate the result, you must access it on
+both your phone and a desktop or tablet!
+
+## Overview:
+Note that all resume data is in json.
+
+### My Resume's Data
+The files
+[js/Resume-tomwhartung.js](https://github.com/tomwhartung/resume/blob/master/js/Resume-tomwhartung.js)
+and
+[js/ProfessionalExperience-tomwhartung.js](https://github.com/tomwhartung/resume/blob/master/js/ProfessionalExperience-tomwhartung.js)
+contain the data used in [my resume](http://tomwhartung.com/resume) .
+
+On my web server I link these to js/Resume.js and js/ProfessionalExperience.js .
+
+### Example Resume Data
+The files
+[js/Resume-example.js](https://github.com/tomwhartung/resume/blob/master/js/Resume-example.js)
+and
+[js/ProfessionalExperience-example.js](https://github.com/tomwhartung/resume/blob/master/js/ProfessionalExperience-example.js)
+contain some minimal example data that you can use to construct your very own mobile-friendly resume.
+
+Detailed instructions follow!
+
+## How To:
 Follow these steps to implement your own mobile friendly resume
 on a LAMP (Linux Apache MySql PHP) server.
 
@@ -67,8 +101,8 @@ For example, if you are setting this up on your localhost, go to
 [http://localhost/resume](http://localhost/resume)
 
 ## Conclusion:
-This is still a Work In Progress, so no conclusions are available
-right now.
+This project in general, and documentation in particular,
+is still a Work In Progress, so no conclusions are available right now.
 
 ## References:
 TBD
