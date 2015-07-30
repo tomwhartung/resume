@@ -38,7 +38,8 @@ var Introduction = Object.create( MinimalSection, {
 		value: "#paragraph-section-template"
 	},
 	content: {
-		value: "Using Resume-example.js as an example, add your details to Resume.js ."
+		value: '<span class="bold">*** Fix js/Resume.js ***</span><br />' +
+			"Using js/Resume-example.js as an example, create js/Resume.js and add your own information to it."
 	},
 });
 

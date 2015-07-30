@@ -53,16 +53,16 @@ ProfessionalExperience.FixMe = Object.create( ProfessionalExperience.MinimalJob,
 	companyName: { value: 'Fix Me' },
 	companyHref: { value: 'http://www.example.com' },
 	location: { value: 'Springfield, USA' },
-	title: { value: 'Web Person' },
+	title: { value: '*** Fix js/ProfessionalExperience.js ***' },
 	dateRange: { value: 'May, 2015 through present' },
 	displayLevel: { value: 1 },
 	listItems: { value:
-		'<li>Using ProfessionalExperience-example.js as an example, add details about ' +
-			'your work experience to ProfessionalExperience.js .</li>'
+		'<li>Using ProfessionalExperience-example.js as an example, create js/ProfessionalExperience.js and ' +
+			'add details about your own work experience to it.</li>'
 	},
 	moreItems: { value: 
-		'<li>Using ProfessionalExperience-example.js as an example, add details about ' +
-			'your work experience to ProfessionalExperience.js .</li>'
+		'<li>Using ProfessionalExperience-example.js as an example, create js/ProfessionalExperience.js and ' +
+			'add details about your own work experience to it.</li>'
 	}
 });
 
