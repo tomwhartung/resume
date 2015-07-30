@@ -7,5 +7,5 @@
 *.swp
 /nbproject/
 
-## ProfessionalExperience.js
-## Resume.js
+js/ProfessionalExperience.js
+js/Resume.js
