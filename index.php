@@ -1,3 +1,13 @@
+<?php
+//
+// Ensure that we have idGadget code available!
+// If not, redirect user to RTFM!
+//
+if ( ! file_exists('idMyGadget') )
+{
+	header('Location:https://github.com/tomwhartung/resume/blob/master/README.md');
+}
+?>
 <!DOCTYPE html>
 <html lang='en'>
 <?php
@@ -21,8 +31,8 @@ define( "JS_DEVICE_TABLET",        "tablet.js" );
 define( "JS_DEVICE_ANDROID_PHONE", "androidPhone.js" );
 define( "JS_DEVICE_APPLE_PHONE",   "iPhone.js" );
 //
-// Instantiate an IdMyGadget object and use it to determine key factors about
-// the device the user is using to access the page.
+// If it's installed, instantiate an IdMyGadget object and
+// use it to determine key factors about // the device the user is using to access the page.
 //
 $newIncludePath = get_include_path() . ":idMyGadget";
 set_include_path( $newIncludePath );
