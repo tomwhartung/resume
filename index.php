@@ -94,12 +94,12 @@ $professionalExperienceFileName = 'js/ProfessionalExperience.js';
 
 if ( ! file_exists($resumeFileName) )
 {
-	$myName = '*** FIX ME ***';
+	$myName = '*** FIX ONE OR BOTH JAVASCRIPT FILES ***';
 	$resumeFileName = 'js/Resume-fixMe.js';
 }
 if ( ! file_exists($professionalExperienceFileName) )
 {
-	$myName = '*** FIX ME ***';
+	$myName = '*** FIX ONE OR BOTH JAVASCRIPT FILES ***';
 	$professionalExperienceFileName = 'js/ProfessionalExperience-fixMe.js';
 }
 
