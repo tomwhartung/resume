@@ -1,16 +1,18 @@
 
 ## Introduction:
-I have spent some time updating this to:
 
-* use the [new idMyGadget](https://github.com/tomwhartung/idMyGadget),
-which now offers a common interface to three device detectors, and
-* use jQuery Mobile for the interface on mobile phones
+This is a mobile friendly resume, that uses device detection rather than media queries.
 
-You can see the finished product here:
+This resume uses the idMyGadget adapter API to detect the type of device that is accessing the site and adjusts the content that it delivers accordingly.
+
+If you installed this code and are being redirected here, it is because you have not installed idMyGadget!  (It is a subtle hint to RTFM ;-) .)
+
+* For information about idMyGadget, see [the idMyGadget project on github](https://github.com/tomwhartung/idMyGadget) .
+
+* You can see an example of the finished product here:
 [Tom W. Hartung's Mobile Friendly Resume](http://tomwhartung.com/resume) .
 
-To fully appreciate the result, you must access it on
-both your phone and a desktop or tablet!
+Note that to fully appreciate the result, you must access it on both your phone and a desktop or tablet!
 
 ## Overview:
 Note that all resume data is in json.
@@ -58,7 +60,7 @@ If you are using Windows, you will need a terminal application,
 such as Cygwin, to run these commands.
 
 ## Installation and Setup:
-Install idMyGadget source and initialize one of the gadget detectors.
+Install idMyGadget source and initialize one or more of the gadget detectors.
 ```
 cd /var/www
 git clone git@github.com:tomwhartung/idMyGadget.git
