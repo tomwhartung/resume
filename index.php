@@ -80,6 +80,29 @@ else
 	$styleSheetName = STYLE_SHEET_MEDIA_QUERIES;
 	$deviceJsFile = JS_DEVICE_DESKTOP;
 }
+//
+// If Resume.js or ProfessionalExperience.js or both are missing
+//    Substitute Resume-fixMe.js and ProfessionalExperience-fixMe.js
+// Explanation:
+//    When we initially pull code, there is no Resume.js or ProfessionalExperience.js
+//    This can cause just a blank screen to be displayed.
+//    The *-fixMe.js files display breif instructions on how to set this resume up
+//       so that it displays the correct information
+//
+$resumeFileName = 'js/Resume.js';
+$professionalExperienceFileName = 'js/ProfessionalExperience.js';
+
+if ( ! file_exists($resumeFileName) )
+{
+	$myName = '*** FIX ME ***';
+	$resumeFileName = 'js/Resume-fixMe.js';
+}
+if ( ! file_exists($professionalExperienceFileName) )
+{
+	$myName = '*** FIX ME ***';
+	$professionalExperienceFileName = 'js/ProfessionalExperience-fixMe.js';
+}
+
 print '<head>';
 print '<title>' . $myName . '</title>';
 print '<meta charset="utf-8" />';
@@ -109,8 +132,8 @@ print '<link rel="stylesheet" type="text/css" ' .
 <script type="text/javascript" src="js/lib/tomsUtilities.js"></script>
 <script type="text/javascript" src="js/device/allDevices.js"></script>
 <script type="text/javascript" src="<?php echo JS_DEVICE_DIRECTORY . $deviceJsFile ?>"></script>
-<script type="text/javascript" src="js/ProfessionalExperience.js"></script>
-<script type="text/javascript" src="js/Resume.js"></script>
+<script type="text/javascript" src="<?php echo $professionalExperienceFileName ?>"></script>
+<script type="text/javascript" src="<?php echo $resumeFileName ?>"></script>
 <script type="text/javascript" src="js/Resume-functions.js"></script>
 
 <!-- =============================================================================== -->
