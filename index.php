@@ -59,13 +59,11 @@ $gadgetBrand = $deviceData["gadgetBrand"];
 
 if ( $gadgetType === IdMyGadget::GADGET_TYPE_DESKTOP )
 {
-	$gadgetString = "Desktop";
 	$styleSheetName = STYLE_SHEET_DESKTOP;
 	$deviceJsFile = JS_DEVICE_DESKTOP;
 }
 else if ( $gadgetType === IdMyGadget::GADGET_TYPE_TABLET )
 {
-	$gadgetString = "Tablet";
 	$styleSheetName = STYLE_SHEET_TABLET;
 	$deviceJsFile = JS_DEVICE_TABLET;
 }
@@ -73,20 +71,17 @@ else if ( $gadgetType === IdMyGadget::GADGET_TYPE_PHONE )
 {
 	if ( $gadgetModel === IdMyGadget::GADGET_MODEL_APPLE_PHONE )
 	{
-		$gadgetString = "iPhone";
 		$styleSheetName = STYLE_SHEET_APPLE_PHONE;
 		$deviceJsFile = JS_DEVICE_APPLE_PHONE;
 	}
 	else
 	{
-		$gadgetString = "Android Phone";
 		$styleSheetName = STYLE_SHEET_ANDROID_PHONE;
 		$deviceJsFile = JS_DEVICE_ANDROID_PHONE;
 	}
 }
 else
 {
-	$gadgetString = "Unrecognized";
 	$styleSheetName = STYLE_SHEET_MEDIA_QUERIES;
 	$deviceJsFile = JS_DEVICE_DESKTOP;
 }
