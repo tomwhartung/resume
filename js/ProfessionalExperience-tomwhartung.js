@@ -57,14 +57,40 @@ ProfessionalExperience.JoomooWebsites_2 = Object.create( ProfessionalExperience.
 	dateRange: { value: 'May, 2015 through present' },
 	displayLevel: { value: 1 },
 	listItems: { value:
-		'<li>Wrote idMyGadget, an adapter API providing a consistent interface to ' +
-			'multiple device detection packages.</li>'
+		'<li>Wrote idMyGadget, a PHP Adapter API providing a consistent interface to ' +
+			'multiple device detection packages.</li>' +
+		'<li>Updated resume to use the new idMyGadget code.</li>' +
+		'<li>Integrated idMyGadget with the default Jomomla templates protostar and Beez3, ' +
+			'adding many additional options to the two new templates\' configuration pages in ' +
+			'the joomla administration back end.</li>' +
+		'<li>Integrated idMyGadget with the default Joomla menu, using jQuery Mobile to ' +
+			'implement a pop-up menu that is accessible by clicking on a hamburger icon.</li>' +
+		'<li>Integrating idMyGadget with two Wordpress themes.</li>'
 	},
 	moreItems: { value: 
 		'<li>Wrote idMyGadget, an adapter API providing a consistent interface to ' +
 			'multiple device detection packages, allowing users to choose the proper balance between ' +
 			'functionality and licensing requirements.</li>' +
-		'<li>Updating resume to use new idMyGadget code and jQuery Mobile for mobile devices only.</li>'
+		'<li>Updated resume to use the new idMyGadget code.  ' +
+			'When accessed on a mobile device, the code uses jQuery Mobile to present the resume ' +
+			'in sections, each of which is accessible via a menu option in either the ' +
+			'header or footer of the page.</li>' +
+		'<li>Integrated idMyGadget with the default Jomomla templates protostar and Beez3, ' +
+			'adding many additional options to the two new templates\' configuration pages in ' +
+			'the joomla administration back end.</li>' +
+		'<li>Integrated idMyGadget with the default Joomla menu, using jQuery Mobile to ' +
+			'implement a pop-up menu that is accessible by clicking on a hamburger icon.</li>' +
+		'<li>Took an ' +
+			'<a href="https://www.edx.org/course/learn-html5-w3c-w3cx-html5-1x-0" target="_blank">' +
+				'online class in HTML5</a>, ' +
+			'offered by ' +
+			'<a href="http://w3c.org" target="_blank">w3c.org</a> through ' +
+			'<a href="http://edx.org" target="_blank">edx.org</a>, ' +
+			'earning a Verified Certificate with a final grade of 96%.' +
+			'<li>All code implementing idMyGadget and related projects, including ' +
+				'<a href="https://github.com/tomwhartung/resume" target="_blank">this resume</a>' +
+				'is open source, andfreely available for inspection and download from ' +
+				'<a href="https://github.com/tomwhartung" target="_blank">github.com</a></li>'
 	}
 });
 //
