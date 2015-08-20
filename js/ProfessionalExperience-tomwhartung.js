@@ -59,12 +59,15 @@ ProfessionalExperience.JoomooWebsites_2 = Object.create( ProfessionalExperience.
 	listItems: { value:
 		'<li>Wrote idMyGadget, a PHP Adapter API providing a consistent interface to ' +
 			'multiple device detection packages.</li>' +
-		'<li>Updated resume to use the new idMyGadget code.</li>' +
+		'<li>Updated resume to use the new idMyGadget code, using jQuery Mobile and ' +
+			'device-specific CSS files to present different views of the resume, ' +
+			'depending on the device used to access the site.</li>' +
 		'<li>Integrated idMyGadget with the default Jomomla templates protostar and Beez3, ' +
 			'adding many additional options to the two new templates\' configuration pages in ' +
 			'the joomla administration back end.</li>' +
-		'<li>Integrated idMyGadget with the default Joomla menu, using jQuery Mobile to ' +
-			'implement a pop-up menu that is accessible by clicking on a hamburger icon.</li>' +
+		'<li>Integrated idMyGadget with the Joomla menu module, using jQuery Mobile to ' +
+			'implement a pop-up navigation menu, accessible by clicking on a hamburger icon, ' +
+			'that appears only when using a mobile device to access the site.</li>' +
 		'<li>Integrating idMyGadget with two Wordpress themes.</li>'
 	},
 	moreItems: { value: 
