@@ -88,8 +88,9 @@ ProfessionalExperience.JoomooWebsites_2 = Object.create( ProfessionalExperience.
 			'<a href="https://github.com/tomwhartung/jmws_wp_vqsg_ot_idMyGadget" ' +
 				'title="Link to the jmws_wp_vqsg_ot_idMyGadget github repository">' +
 				'minimal theme</a> ' +
-			'from the book WordPress: A Visual Quickstart Guide.  ' +
-			'This work is on-going and hence not yet online.</li>' +
+			'from the book WordPress: A Visual Quickstart Guide.' +
+			'<ul><li>This work is on-going and hence not yet online.</li></ul>' +
+			'</li>' +
 		'<li>Created the ' +
 			'<a href="https://github.com/tomwhartung/jmws_idMyGadget_for_drupal" ' +
 				'title="Link to the jmws_idMyGadget_for_drupal github repository">' +
@@ -101,8 +102,9 @@ ProfessionalExperience.JoomooWebsites_2 = Object.create( ProfessionalExperience.
 			'and ' +
 			'<a href="https://github.com/tomwhartung/jmws_drupal_bartik_idMyGadget" ' +
 				'title="Link to the jmws_drupal_bartik_idMyGadget github repository">' +
-				'bartik</a> .  ' +
-			'This work is on-going and hence not yet online.</li>'
+				'bartik</a> .' +
+			'<ul><li>This work is on-going and hence not yet online.</li></ul>' +
+			'</li>'
 	},
 	moreItems: { value: 
 		'<li>Wrote idMyGadget, an adapter API providing a consistent interface to ' +
@@ -124,6 +126,9 @@ ProfessionalExperience.JoomooWebsites_2 = Object.create( ProfessionalExperience.
 			'<a href="http://w3c.org" target="_blank">w3c.org</a> through ' +
 			'<a href="http://edx.org" target="_blank">edx.org</a>, ' +
 			'earning a Verified Certificate with a final grade of 96%.' +
+		'<li>Deployed the Joomla templates and idMyGadget module to ' +
+			'<a href="http://joomoowebsites.com/" title="Link to JooMooWebSites.com Home Page">' +
+				'JooMooWebSites.com</a>.</li>' +
 		'<li>All code implementing idMyGadget and related projects, including ' +
 				'<a href="https://github.com/tomwhartung/resume" target="_blank">this resume</a>' +
 				'is open source, and freely available for inspection and download from ' +
@@ -134,8 +139,39 @@ ProfessionalExperience.JoomooWebsites_2 = Object.create( ProfessionalExperience.
 			'<a href="http://joomoowebsites.com/" title="JooMooWebSites.com Home Page">' +
 				'JooMooWebSites.com</a>, ' +
 			'demonstrating and explaining all functionality in detail.' +
-		'<li>Prepared and gave a presentation about IdMyGadget Device Detection at the Front Range PHP Users Group </li>' +
-		'<li>Prepared and gave a presentation about the Joomla templates and modules that use IdMyGadget Device Detection at the Denver Joomla Users Group </li>'
+		'<li>Prepared and gave a presentation about IdMyGadget Device Detection at the ' +
+			'Front Range PHP Users Group.</li>' +
+		'<li>Prepared and gave a presentation about the Joomla templates and modules that use ' +
+			'IdMyGadget Device Detection at the Denver Joomla Users Group.</li>' +
+		'<li>Created the ' +
+			'<a href="https://github.com/tomwhartung/jmws_idMyGadget_for_wordpress" ' +
+				'title="Link to the jmws_idMyGadget_for_wordpress github repository">' +
+				'jmws_idMyGadget_for_wordpress github repository</a> ' +
+			'and began integrating idMyGadget with two WordPress themes: the ' +
+			'<a href="https://github.com/tomwhartung/jmws_wp_twentyfifteen_idMyGadget" ' +
+				'title="Link to the jmws_wp_twentyfifteen_idMyGadget github repository">' +
+				'twentyfifteen default WordPress theme</a> ' +
+			'and a ' +
+			'<a href="https://github.com/tomwhartung/jmws_wp_vqsg_ot_idMyGadget" ' +
+				'title="Link to the jmws_wp_vqsg_ot_idMyGadget github repository">' +
+				'minimal theme</a> ' +
+			'from the book WordPress: A Visual Quickstart Guide.' +
+			'<ul><li>This work is on-going and hence not yet online.</li></ul>' +
+			'</li>' +
+		'<li>Created the ' +
+			'<a href="https://github.com/tomwhartung/jmws_idMyGadget_for_drupal" ' +
+				'title="Link to the jmws_idMyGadget_for_drupal github repository">' +
+				'jmws_idMyGadget_for_drupal github repository</a> ' +
+			'and began integrating idMyGadget with two of the Drupal 7 default themes: ' +
+			'<a href="https://github.com/tomwhartung/jmws_drupal_stark_idMyGadget" ' +
+				'title="Link to the jmws_drupal_stark_idMyGadget github repository">' +
+				'stark</a> ' +
+			'and ' +
+			'<a href="https://github.com/tomwhartung/jmws_drupal_bartik_idMyGadget" ' +
+				'title="Link to the jmws_drupal_bartik_idMyGadget github repository">' +
+				'bartik</a> .' +
+			'<ul><li>This work is on-going and hence not yet online.</li></ul>' +
+			'</li>'
 	}
 });
 //
