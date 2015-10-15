@@ -62,13 +62,47 @@ ProfessionalExperience.JoomooWebsites_2 = Object.create( ProfessionalExperience.
 		'<li>Updated resume to use the new idMyGadget code, using jQuery Mobile and ' +
 			'device-specific CSS files to present different views of the resume, ' +
 			'depending on the device used to access the site.</li>' +
-		'<li>Integrated idMyGadget with the default Jomomla templates protostar and Beez3, ' +
+		'<li>Integrated idMyGadget with the default Jomomla templates ' +
+			'<a href="https://github.com/tomwhartung/jmws_protostar_tomh_idMyGadget" ' +
+				'title="link to jmws_protostar_tomh_idMyGadget repo on github.com">protostar</a> ' +
+			'and ' +
+			'<a href="https://github.com/tomwhartung/jmws_beez3_idMyGadget" ' +
+				'title="link to jmws_beez3_idMyGadget repo on github.com">Beez3</a>, ' +
 			'adding many additional options to the two new templates\' configuration pages in ' +
-			'the joomla administration back end.</li>' +
+			'the Joomla administration back end.</li>' +
 		'<li>Integrated idMyGadget with the Joomla menu module, using jQuery Mobile to ' +
 			'implement a pop-up navigation menu, accessible by clicking on a hamburger icon, ' +
-			'that appears only when using a mobile device to access the site.</li>' +
-		'<li>Integrating idMyGadget with two Wordpress themes.</li>'
+			'that optionally appears only when using a mobile device to access the site.</li>' +
+		'<li>Deployed the Joomla templates and idMyGadget module to ' +
+			'<a href="http://joomoowebsites.com/" title="Link to JooMooWebSites.com Home Page">' +
+				'JooMooWebSites.com</a>.</li>' +
+		'<li>Created the ' +
+			'<a href="https://github.com/tomwhartung/jmws_idMyGadget_for_wordpress" ' +
+				'title="Link to the jmws_idMyGadget_for_wordpress github repository">' +
+				'jmws_idMyGadget_for_wordpress github repository</a> ' +
+			'and began integrating idMyGadget with two WordPress themes: the ' +
+			'<a href="https://github.com/tomwhartung/jmws_wp_twentyfifteen_idMyGadget" ' +
+				'title="Link to the jmws_wp_twentyfifteen_idMyGadget github repository">' +
+				'twentyfifteen default WordPress theme</a> ' +
+			'and a ' +
+			'<a href="https://github.com/tomwhartung/jmws_wp_vqsg_ot_idMyGadget" ' +
+				'title="Link to the jmws_wp_vqsg_ot_idMyGadget github repository">' +
+				'minimal theme</a> ' +
+			'from the book WordPress: A Visual Quickstart Guide.  ' +
+			'This work is on-going and hence not yet online.</li>' +
+		'<li>Created the ' +
+			'<a href="https://github.com/tomwhartung/jmws_idMyGadget_for_drupal" ' +
+				'title="Link to the jmws_idMyGadget_for_drupal github repository">' +
+				'jmws_idMyGadget_for_drupal github repository</a> ' +
+			'and began integrating idMyGadget with two of the Drupal 7 default themes: ' +
+			'<a href="https://github.com/tomwhartung/jmws_drupal_stark_idMyGadget" ' +
+				'title="Link to the jmws_drupal_stark_idMyGadget github repository">' +
+				'stark</a> ' +
+			'and ' +
+			'<a href="https://github.com/tomwhartung/jmws_drupal_bartik_idMyGadget" ' +
+				'title="Link to the jmws_drupal_bartik_idMyGadget github repository">' +
+				'bartik</a> .  ' +
+			'This work is on-going and hence not yet online.</li>'
 	},
 	moreItems: { value: 
 		'<li>Wrote idMyGadget, an adapter API providing a consistent interface to ' +
@@ -80,7 +114,7 @@ ProfessionalExperience.JoomooWebsites_2 = Object.create( ProfessionalExperience.
 			'header or footer of the page.</li>' +
 		'<li>Integrated idMyGadget with the default Jomomla templates protostar and Beez3, ' +
 			'adding many additional options to the two new templates\' configuration pages in ' +
-			'the joomla administration back end.</li>' +
+			'the Joomla administration back end.</li>' +
 		'<li>Integrated idMyGadget with the default Joomla menu, using jQuery Mobile to ' +
 			'implement a pop-up menu that is accessible by clicking on a hamburger icon.</li>' +
 		'<li>Took an ' +
@@ -90,10 +124,18 @@ ProfessionalExperience.JoomooWebsites_2 = Object.create( ProfessionalExperience.
 			'<a href="http://w3c.org" target="_blank">w3c.org</a> through ' +
 			'<a href="http://edx.org" target="_blank">edx.org</a>, ' +
 			'earning a Verified Certificate with a final grade of 96%.' +
-			'<li>All code implementing idMyGadget and related projects, including ' +
+		'<li>All code implementing idMyGadget and related projects, including ' +
 				'<a href="https://github.com/tomwhartung/resume" target="_blank">this resume</a>' +
-				'is open source, andfreely available for inspection and download from ' +
-				'<a href="https://github.com/tomwhartung" target="_blank">github.com</a></li>'
+				'is open source, and freely available for inspection and download from ' +
+				'<a href="https://github.com/tomwhartung" target="_blank">github.com</a></li>' +
+		'<li>Documented this work by writing a detailed readme for each github repository.</li>' +
+		'<li>Wrote and posted several articles, complete with screenshots of the ' +
+			'Joomla administration panel, to ' +
+			'<a href="http://joomoowebsites.com/" title="JooMooWebSites.com Home Page">' +
+				'JooMooWebSites.com</a>, ' +
+			'demonstrating and explaining all functionality in detail.' +
+		'<li>Prepared and gave a presentation about IdMyGadget Device Detection at the Front Range PHP Users Group </li>' +
+		'<li>Prepared and gave a presentation about the Joomla templates and modules that use IdMyGadget Device Detection at the Denver Joomla Users Group </li>'
 	}
 });
 //
@@ -316,7 +358,7 @@ ProfessionalExperience.ClkClk = Object.create( ProfessionalExperience.MinimalJob
 			'(more than 13,000,000 rows) of group content in custom tables that are ' +
 			'modeled after the Joomla content tables.</li>' +
 		'<li>Wrote a web service front end to Joomla\'s com_content extension that allows ' +
-			'rendering of content outside of the joomla ' +
+			'rendering of content outside of the Joomla ' +
 			'framework in response to an Ajax request.</li>' +
 		'<li>Designed and wrote the user interface to a commissions component that displays data ' +
 			'obtained via web services.</li>' +
@@ -330,7 +372,7 @@ ProfessionalExperience.ClkClk = Object.create( ProfessionalExperience.MinimalJob
 //
 //  SeeOurMinds: SeeOurMinds.com, JoomooWebsites.com
 //  --------------------------------------------------
-//      seeourminds.com = groja.com + joomla! + web 2.0 ($0/hr.)
+//      seeourminds.com = groja.com + Joomla! + web 2.0 ($0/hr.)
 //
 ProfessionalExperience.SeeOurMinds = Object.create( ProfessionalExperience.MinimalJob, {
 	id: { value: 'see_our_minds' },
@@ -425,11 +467,11 @@ ProfessionalExperience.MsagDataConsultants = Object.create( ProfessionalExperien
 	}
 });
 //
-//  GrojaJoomla, groja.com + joomla!
+//  GrojaJoomla, groja.com + Joomla!
 //  ---------------------------------
 //
 ProfessionalExperience.GrojaJoomla = Object.create( ProfessionalExperience.MinimalJob, {
-	id: { value: 'groja_joomla' },
+	id: { value: 'groja_Joomla' },
 	companyName: { value: 'Groja.com' },
 	companyHref: { value: 'http://www.groja.com' },
 	location: { value: 'Denver, CO' },
