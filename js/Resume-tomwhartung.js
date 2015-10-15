@@ -245,6 +245,11 @@ var Volunteering = Object.create( MinimalSection, {
 		writable: true
 	}
 });
+Volunteering.point_DenverStartupWeek = {
+	bold: "Denver Startup Week:",
+	linkHref: "http://denverstartupweek.org/",
+	text: "Worked volunteer shifts at the job fair and soiree in 2015",
+};
 Volunteering.point_DenverFilmSociety = {
 	bold: "Denver Film Society:",
 	linkHref: "http://denverfilm.org/index.aspx",
@@ -256,6 +261,7 @@ Volunteering.point_Bonfils = {
 	text: "Blood Donor Since 2012",
 };
 Volunteering.bulletPoints = [
+	Volunteering.point_DenverStartupWeek,
 	Volunteering.point_DenverFilmSociety,
 	Volunteering.point_Bonfils
 ];
