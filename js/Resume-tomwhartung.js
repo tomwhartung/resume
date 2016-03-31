@@ -253,7 +253,7 @@ Volunteering.point_DenverStartupWeek = {
 Volunteering.point_DenverFilmSociety = {
 	bold: "Denver Film Society:",
 	linkHref: "http://denverfilm.org/index.aspx",
-	text: "Volunteer Usher since 2011",
+	text: "Year-Round and Film Festival Volunteer since 2011",
 };
 Volunteering.point_Bonfils = {
 	bold: "Bonfils:",
