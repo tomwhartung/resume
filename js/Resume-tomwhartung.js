@@ -245,6 +245,11 @@ var Volunteering = Object.create( MinimalSection, {
 		writable: true
 	}
 });
+Volunteering.point_CLevelAtMileHigh = {
+	bold: "C-Level at Mile Hi:",
+	linkHref: "http://clevelmilehigh.org/",
+	text: "Worked two shifts at the Colorado Technology Association (CTA) Fund Raiser in 2016",
+};
 Volunteering.point_DenverStartupWeek = {
 	bold: "Denver Startup Week:",
 	linkHref: "http://denverstartupweek.org/",
@@ -261,6 +266,7 @@ Volunteering.point_Bonfils = {
 	text: "Blood Donor Since 2012",
 };
 Volunteering.bulletPoints = [
+	Volunteering.point_CLevelAtMileHigh,
 	Volunteering.point_DenverStartupWeek,
 	Volunteering.point_DenverFilmSociety,
 	Volunteering.point_Bonfils
