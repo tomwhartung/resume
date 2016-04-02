@@ -312,6 +312,37 @@ print '<link rel="stylesheet" type="text/css" ' .
 		</ul>
 	</script>
 <?php endif ?>
+<?php  if ( $gadgetType === IdMyGadget::GADGET_TYPE_PHONE ): ?>
+	<script id="volunteer-section-template" type="text/x-handlebars-template">
+		{{#each bulletPoints}}
+			<div data-role="collapsible" data-collapsed="true">
+				<h4><a href="{{linkHref}}" class="bold" target="_blank">{{linkText}}</a></h4>
+				{{#if schoolText}}
+					<p><a href="{{schoolHref}}" target="_blank">{{schoolText}}</a></p>
+				{{/if}}
+				<p>{{location}}</p>
+				<p>Completed: {{completedDate}}</p>
+				<ul>{{{listItems}}}</ul>
+			</div>
+		{{/each}}
+	</script>
+<?php  else: ?>
+	<script id="volunteer-section-template" type="text/x-handlebars-template">
+		<ul>
+			{{#each bulletPoints}}
+				<li>
+					<span class="bold">
+						<a href="{{linkHref}}" target="_blank">{{linkText}}</a>
+					</span><br />
+					<a href="{{schoolHref}}" target="_blank">{{schoolText}}</a>
+					{{location}}<br />
+					Completed: {{completedDate}}<br />
+					<ul>{{{listItems}}}</ul>
+				</li>
+			{{/each}}
+		</ul>
+	</script>
+<?php endif ?>
 
 </head>
 
