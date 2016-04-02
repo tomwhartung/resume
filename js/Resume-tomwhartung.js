@@ -237,7 +237,7 @@ var Volunteering = Object.create( MinimalSection, {
 		value: "content_volunteering"
 	},
 	templateIdSelector: {
-		value: "#bullet-section-template"
+		value: "#volunteer-section-template"
 	},
 	content: {
 		value: "TBD (Volunteering content comprises bullet points)",
