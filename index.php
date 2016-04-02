@@ -314,33 +314,36 @@ print '<link rel="stylesheet" type="text/css" ' .
 <?php endif ?>
 <?php  if ( $gadgetType === IdMyGadget::GADGET_TYPE_PHONE ): ?>
 	<script id="volunteer-section-template" type="text/x-handlebars-template">
-		{{#each bulletPoints}}
-			<div data-role="collapsible" data-collapsed="true">
-				<h4><a href="{{linkHref}}" class="bold" target="_blank">{{linkText}}</a></h4>
-				{{#if schoolText}}
-					<p><a href="{{schoolHref}}" target="_blank">{{schoolText}}</a></p>
+		<dl>
+			{{#each bulletPoints}}
+				{{#if linkHref}}
+					<dt><h4><a class="bold" href="{{linkHref}}" target="_blank">{{bold}}</a></h4></dt>
+					<dd>{{text}}</dd>
+				{{else}}
+					{{#if bold}}
+						<dt><h4>{{bold}}</h4></dt>
+						<dd>{{text}}</dd>
+					{{else}}
+							<dt>{{text}}</dt>
+							<dd></dd>
+					{{/if}}
 				{{/if}}
-				<p>{{location}}</p>
-				<p>Completed: {{completedDate}}</p>
-				<ul>{{{listItems}}}</ul>
-			</div>
-		{{/each}}
+			{{/each}}
+		</dl>
 	</script>
 <?php  else: ?>
 	<script id="volunteer-section-template" type="text/x-handlebars-template">
-		<ul>
+		<dl>
 			{{#each bulletPoints}}
-				<li>
-					<span class="bold">
-						<a href="{{linkHref}}" target="_blank">{{linkText}}</a>
-					</span><br />
-					<a href="{{schoolHref}}" target="_blank">{{schoolText}}</a>
-					{{location}}<br />
-					Completed: {{completedDate}}<br />
-					<ul>{{{listItems}}}</ul>
-				</li>
+				{{#if linkHref}}
+					<dt><a class="bold" href="{{linkHref}}" target="_blank">{{bold}}</a></dt>
+					<dd>{{text}}</dd>
+				{{else}}
+					<dt><span class="bold">{{bold}}</span></dt>
+					<dd>{{text}}</dd>
+				{{/if}}
 			{{/each}}
-		</ul>
+		</dl>
 	</script>
 <?php endif ?>
 
