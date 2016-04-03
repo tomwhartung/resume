@@ -30,12 +30,17 @@ var Introduction = Object.create( MinimalSection, {
 		value: "#paragraph-section-template"
 	},
 	content: {
-		value: "Please " +
-			"<a href='mailto:resume@tomwhartung.com?Subject=Your%20Online%20Resume%20at%20tomwhartung.com' " +
-			  "title='Contact me'>contact me</a> " +
-			"if you would like a version of this resume in Word format, or if you know of " +
-			"any opportunities in the Denver, Colorado Metropolitan area (including Boulder) " +
-			"appropriate for someone with my background."
+		value: // opening p tag is in the template
+			"Welcome to my " +
+				'<a href="http://www.tomwhartung.com/awd-using-device-detection/" ' +
+					'title="Article about adaptive web design on my site, TomWHartung.Com" target="_blank">' +
+				"adaptive,</a> comprehensive, interactive online resume.</p>" +
+			"<p>Please " +
+				"<a href='mailto:resume@tomwhartung.com?Subject=Your%20Online%20Resume%20at%20tomwhartung.com' " +
+					"title='Contact me'>contact me</a> " +
+				"if you would like a version of this resume in Word format, or if you know of " +
+				"any opportunities in the Denver, Colorado Metropolitan area (including Boulder) " +
+				"appropriate for someone with my background."   // closing p tag is in the template
 	}
 });
 
@@ -83,15 +88,23 @@ var TechnicalExperience = Object.create( MinimalSection, {
 });
 TechnicalExperience.point_01 = {
 	bold: "Programming Languages:",
-	text: "PHP, JavaScript, Java, CoffeeScript, Bash, Ksh, Perl, Awk, C/C++, C#, Tcl/Expect, Cobol, Assemblers"
+	text: "PHP, Java, JavaScript, CoffeeScript, Bash, Ksh, Perl, Awk, C/C++, C#, Tcl/Expect, Cobol, Assemblers"
 };
-TechnicalExperience.point_05 = {
+TechnicalExperience.point_10 = {
+	bold: "Content Management Systems:",
+	text: "Joomla, WordPress, Drupal 8, Drupal 7, PHP Nuke"
+};
+TechnicalExperience.point_20 = {
 	bold: "Web Technologies:",
-	text: "Apache, Tomcat, Selenium WebDriver API, jQuery, Backbone, Underscore, Node, Mootools, REST, SOAP, LAMP, WAMP, HTML, CSS, XHTML, XML, Struts, Adobe Flex3, Freemarker Templates, Joomla, PHP Nuke, Ajax, JSP"
+	text: "HTML5, CSS, LAMP, WAMP, Apache, Tomcat, REST, SOAP, Ajax, XHTML, XML, JSP, Selenium WebDriver API, Struts, Adobe Flex3, Freemarker Templates"
+};
+TechnicalExperience.point_30 = {
+	bold: "JavaScript Libraries:",
+	text: "jQuery, jQuery Mobile, Backbone, Underscore, Node, Mootools"
 };
 TechnicalExperience.point_10 = {
 	bold: "Relational Databases:",
-	text: "MySql, Microsoft SQL Server, Oracle, LiquiBase, Sybase, Informix"
+	text: "MySql, Oracle, Microsoft SQL Server, LiquiBase, Sybase, Informix"
 };
 TechnicalExperience.point_15 = {
 	bold: "Development Tools:",
@@ -101,22 +114,28 @@ TechnicalExperience.point_20 = {
 	bold: "Operating Systems:",
 	text: "Unix (Linux, Mac OS X, Solaris, Sun-OS, AIX, HP-UX), Windows7, Windows Vista, Windows XP, Windows XP Mode, DOS, MCP, MVS"
 };
-TechnicalExperience.point_25 = {
+TechnicalExperience.point_70 = {
 	bold: "Software Life Cycle Tools:",
-	text: "Maven, Git, Jira, Ant, Subversion (SVN), Tortoise SVN, Maven, Version One, Redmine, Make, Visio, Rational Rose, Clearcase, Bugzilla, CVS, RCS, PVCS"
+	text: "Git, Jira, Ant, Subversion (SVN), Tortoise SVN, Maven, Version One, Redmine, Make, Visio, Rational Rose, Clearcase, Bugzilla, CVS, RCS, PVCS"
 };
-TechnicalExperience.point_30 = {
+TechnicalExperience.point_80 = {
+	bold: "Operating Systems:",
+	text: "Unix (Linux, Mac OS X, Solaris, Sun-OS, AIX, HP-UX), Windows7, Windows Vista, Windows XP, Windows XP Mode, DOS, MCP, MVS"
+};
+TechnicalExperience.point_90 = {
 	bold: "Other Software Packages:",
 	text: "Microsoft Office, Open Office, PHP Nuke, Autocad"
 };
 TechnicalExperience.bulletPoints = [
 	TechnicalExperience.point_01,
-	TechnicalExperience.point_05,
 	TechnicalExperience.point_10,
-	TechnicalExperience.point_15,
 	TechnicalExperience.point_20,
-	TechnicalExperience.point_25,
-	TechnicalExperience.point_30
+	TechnicalExperience.point_30,
+	TechnicalExperience.point_40,
+	TechnicalExperience.point_50,
+	TechnicalExperience.point_70,
+	TechnicalExperience.point_80,
+	TechnicalExperience.point_90
 ];
 
 /**
