@@ -53,29 +53,31 @@ ProfessionalExperience.JoomooWebsites_2 = Object.create( ProfessionalExperience.
 	companyName: { value: 'Joomoowebsites LLC' },
 	companyHref: { value: 'http://www.JoomooWebsites.com' },
 	location: { value: 'Denver, CO' },
-	title: { value: 'CEO (Sole Proprietor)' },
+	title: { value: 'R & D Software Engineer' },
 	dateRange: { value: 'May, 2015 through present' },
 	displayLevel: { value: 1 },
 	listItems: { value:
 		'<li>Wrote idMyGadget, a PHP Adapter API providing a consistent interface to ' +
-			'multiple device detection packages.</li>' +
-		'<li>Updated resume to use the new idMyGadget code, using jQuery Mobile and ' +
-			'device-specific CSS files to present different views of the resume, ' +
-			'depending on the device used to access the site.</li>' +
+				'multiple device detection packages.  ' +
+			'Updated online resume at TomWHartung.com/resume to use the new code,   ' +
+				'using jQuery Mobile and device-specific CSS files to present different views of the   ' +
+				'resume, depending on the type of device (phone, tablet, or desktop) being used to   ' +
+				'access the page.</li>' +
 		'<li>Integrated idMyGadget with the default Jomomla templates ' +
 			'<a href="https://github.com/tomwhartung/jmws_protostar_tomh_idMyGadget" ' +
 				'title="link to jmws_protostar_tomh_idMyGadget repo on github.com">protostar</a> ' +
 			'and ' +
 			'<a href="https://github.com/tomwhartung/jmws_beez3_idMyGadget" ' +
 				'title="link to jmws_beez3_idMyGadget repo on github.com">Beez3</a>, ' +
-			'adding many additional options to the two new templates\' configuration pages in ' +
-			'the Joomla administration back end.</li>' +
-		'<li>Integrated idMyGadget with the Joomla menu module, using jQuery Mobile to ' +
-			'implement a pop-up navigation menu, accessible by clicking on a hamburger icon, ' +
-			'that optionally appears only when using a mobile device to access the site.</li>' +
-		'<li>Deployed the Joomla templates and idMyGadget module to ' +
+			'and the Joomla ' +
+			'<a href="https://github.com/tomwhartung/jmws_mod_menu_idMyGadget" ' +
+				'title="link to jmws_protostar_tomh_idMyGadget repo on github.com">menu module</a>, ' +
+			'using jQuery Mobile to implement a pop-up navigation menu that is ' +
+			'accessible by clicking on a hamburger menu icon, which appears only when using a ' +
+			'mobile device to access the site.</li>' +
+		'<li>Deployed the extensions to ' +
 			'<a href="http://joomoowebsites.com/" title="Link to JooMooWebSites.com Home Page">' +
-				'JooMooWebSites.com</a>.</li>' +
+				'JooMooWebSites.com</a> with some explanatory articles.</li>' +
 		'<li>Created the ' +
 			'<a href="https://github.com/tomwhartung/jmws_idMyGadget_for_wordpress" ' +
 				'title="Link to the jmws_idMyGadget_for_wordpress github repository">' +
@@ -108,8 +110,12 @@ ProfessionalExperience.JoomooWebsites_2 = Object.create( ProfessionalExperience.
 	},
 	moreItems: { value: 
 		'<li>Wrote idMyGadget, an adapter API providing a consistent interface to ' +
-			'multiple device detection packages, allowing users to choose the proper balance between ' +
-			'functionality and licensing requirements.</li>' +
+			'multiple device detection packages, allowing users to choose the device ' +
+			'detection package giving them the optimal balance between cost, ' +
+			'functionality, and licensing requirements.</li>' +
+		'<li>Updated online resume to use the new idMyGadget code, using jQuery Mobile and ' +
+			'device-specific CSS files to present different views of the resume, ' +
+			'depending on the device used to access the page.</li>' +
 		'<li>Updated resume to use the new idMyGadget code.  ' +
 			'When accessed on a mobile device, the code uses jQuery Mobile to present the resume ' +
 			'in sections, each of which is accessible via a menu option in either the ' +
