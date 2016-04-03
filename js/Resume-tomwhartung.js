@@ -86,33 +86,29 @@ var TechnicalExperience = Object.create( MinimalSection, {
 		writable: true
 	}
 });
-TechnicalExperience.point_01 = {
+TechnicalExperience.point_10 = {
 	bold: "Programming Languages:",
 	text: "PHP, Java, JavaScript, CoffeeScript, Bash, Ksh, Perl, Awk, C/C++, C#, Tcl/Expect, Cobol, Assemblers"
 };
-TechnicalExperience.point_10 = {
+TechnicalExperience.point_20 = {
 	bold: "Content Management Systems:",
 	text: "Joomla, WordPress, Drupal 8, Drupal 7, PHP Nuke"
 };
-TechnicalExperience.point_20 = {
-	bold: "Web Technologies:",
-	text: "HTML5, CSS, LAMP, WAMP, Apache, Tomcat, REST, SOAP, Ajax, XHTML, XML, JSP, Selenium WebDriver API, Struts, Adobe Flex3, Freemarker Templates"
-};
 TechnicalExperience.point_30 = {
+	bold: "Web Technologies:",
+	text: "HTML5, CSS, LAMP, WAMP, Apache, Tomcat, REST, SOAP, Ajax, XHTML, XML, JSP, Struts, Selenium WebDriver, Adobe Flex3, Freemarker Templates"
+};
+TechnicalExperience.point_40 = {
 	bold: "JavaScript Libraries:",
 	text: "jQuery, jQuery Mobile, Backbone, Underscore, Node, Mootools"
 };
-TechnicalExperience.point_10 = {
+TechnicalExperience.point_50 = {
 	bold: "Relational Databases:",
 	text: "MySql, Oracle, Microsoft SQL Server, LiquiBase, Sybase, Informix"
 };
-TechnicalExperience.point_15 = {
+TechnicalExperience.point_60 = {
 	bold: "Development Tools:",
-	text: "NetBeans, Eclipse, JUnit, Spring, Hibernate, IntelliJ, MySql Work Bench, Sql Server Management Studio, phpMyAdmin, Vim, Cygwin"
-};
-TechnicalExperience.point_20 = {
-	bold: "Operating Systems:",
-	text: "Unix (Linux, Mac OS X, Solaris, Sun-OS, AIX, HP-UX), Windows7, Windows Vista, Windows XP, Windows XP Mode, DOS, MCP, MVS"
+	text: "NetBeans, Eclipse, Vim, Cygwin, JUnit, Spring, Hibernate, IntelliJ, phpMyAdmin, MySql Work Bench, Sql Server Management Studio"
 };
 TechnicalExperience.point_70 = {
 	bold: "Software Life Cycle Tools:",
@@ -124,15 +120,15 @@ TechnicalExperience.point_80 = {
 };
 TechnicalExperience.point_90 = {
 	bold: "Other Software Packages:",
-	text: "Microsoft Office, Open Office, PHP Nuke, Autocad"
+	text: "Microsoft Office, Open Office, Autocad"
 };
 TechnicalExperience.bulletPoints = [
-	TechnicalExperience.point_01,
 	TechnicalExperience.point_10,
 	TechnicalExperience.point_20,
 	TechnicalExperience.point_30,
 	TechnicalExperience.point_40,
 	TechnicalExperience.point_50,
+	TechnicalExperience.point_60,
 	TechnicalExperience.point_70,
 	TechnicalExperience.point_80,
 	TechnicalExperience.point_90
