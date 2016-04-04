@@ -78,26 +78,26 @@ ProfessionalExperience.JoomooWebsites_2 = Object.create( ProfessionalExperience.
 		'<li>Deployed the extensions to ' +
 			'<a href="http://joomoowebsites.com/" title="Link to JooMooWebSites.com Home Page">' +
 				'JooMooWebSites.com</a> with some explanatory articles.</li>' +
-		'<li>Created the ' +
-			'<a href="https://github.com/tomwhartung/jmws_idMyGadget_for_wordpress" ' +
-				'title="Link to the jmws_idMyGadget_for_wordpress github repository">' +
-				'jmws_idMyGadget_for_wordpress github repository</a> ' +
-			'and began integrating idMyGadget with two WordPress themes: the ' +
+		'<li>Integrated idMyGadget with the ' +
+			'<a href="https://github.com/tomwhartung/jmws_wp_twentythirteen_idMyGadget" ' +
+				'title="Link to the jmws_wp_twentyfifteen_idMyGadget github repository">' +
+				'twentythirteen</a> ' +
+			'and ' +
 			'<a href="https://github.com/tomwhartung/jmws_wp_twentyfifteen_idMyGadget" ' +
 				'title="Link to the jmws_wp_twentyfifteen_idMyGadget github repository">' +
-				'twentyfifteen default WordPress theme</a> ' +
-			'and a ' +
-			'<a href="https://github.com/tomwhartung/jmws_wp_vqsg_ot_idMyGadget" ' +
-				'title="Link to the jmws_wp_vqsg_ot_idMyGadget github repository">' +
-				'minimal theme</a> ' +
-			'from the book WordPress: A Visual Quickstart Guide.' +
-			'<ul><li>This work is on-going and hence not yet online.</li></ul>' +
-			'</li>' +
+				'twentyfifteen</a> ' +
+			'default WordPress themes, adding new options to the ' +
+			'configuration pages in the administration back end.' +
+		'<li>Deployed the themes and plugin to ' +
+			'<a href="http://TomWHartung.com/" title="Link to TomWHartung.com Home Page">' +
+				'TomWHartung.com</a> ' +
+			'with some articles explaining how the site implements Adaptive Web Design (AWD) and ' +
+			'Responsive Design With Server Side Components (RESS).</li>' +
 		'<li>Created the ' +
 			'<a href="https://github.com/tomwhartung/jmws_idMyGadget_for_drupal" ' +
 				'title="Link to the jmws_idMyGadget_for_drupal github repository">' +
 				'jmws_idMyGadget_for_drupal github repository</a> ' +
-			'and began integrating idMyGadget with two of the Drupal 7 default themes: ' +
+			'and integrated idMyGadget with the ' +
 			'<a href="https://github.com/tomwhartung/jmws_drupal_stark_idMyGadget" ' +
 				'title="Link to the jmws_drupal_stark_idMyGadget github repository">' +
 				'stark</a> ' +
@@ -105,6 +105,7 @@ ProfessionalExperience.JoomooWebsites_2 = Object.create( ProfessionalExperience.
 			'<a href="https://github.com/tomwhartung/jmws_drupal_bartik_idMyGadget" ' +
 				'title="Link to the jmws_drupal_bartik_idMyGadget github repository">' +
 				'bartik</a> .' +
+			'default Drupal themes: ' +
 			'<ul><li>This work is on-going and hence not yet online.</li></ul>' +
 			'</li>'
 	},
