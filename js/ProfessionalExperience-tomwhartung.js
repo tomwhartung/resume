@@ -230,17 +230,19 @@ ProfessionalExperience.Kforce = Object.create( Object.prototype, {
 	displayLevel: { value: 1 },
 	listItems: { value:
 		'<li>Worked on a confidential contract for a large healthcare provider.</li>' +
-		'<li>Used PHP, JavaScript, HTML5, and CSS to customize Wordpress themes and plugins.</li>' +
+		'<li>Used PHP, JavaScript, HTML5, and CSS to customize WordPress themes and plugins.</li>' +
 		'<li>Created new and ported existing websites to cloud services.</li>'
 	},
 	moreItems: { value:
 		'<li>Worked on a series of small confidential projects for a ' +
 			'large healthcare provider.</li>' +
-		'<li>Used PHP, Linux, JavaScript, HTML5, Netbeans, CSS, and vim to ' +
-			'customize Wordpress themes and plugins.</li>' +
-		'<li>Used Wordpress to create a new internal website for sharing status information.</li>' +
-		'<li>Ported existing websites to cloud services, applying finishing touches ' +
-			'as appropriate.</li>'
+		'<li>Used PHP, JavaScript, HTML5, CSS, Linux, Netbeans, and vim to ' +
+			'enhance and maintain WordPress themes and plugins.</li>' +
+		'<li>Used WordPress to create a new website for internal use, ' +
+			'deploying it to cloud services.</li>' +
+		'<li>Ported and deployed existing internal and public-facing websites to cloud services, ' +
+			'applying finishing touches as necessary.' +
+			'</li>'
 	}
 });
 
@@ -258,16 +260,16 @@ ProfessionalExperience.JoomooWebsites_1 = Object.create( ProfessionalExperience.
 	displayLevel: { value: 1 },
 	listItems: { value:
 		'<li>Assisted in conversion of Joomla site containing VirtueMart shopping cart data to ' +
-			'Wordpress site containing Woocommerce data.</li>' +
-		'<li>Used Wordpress to create tomwhartung.com.</li>' +
+			'WordPress site containing Woocommerce data.</li>' +
+		'<li>Used WordPress to create tomwhartung.com.</li>' +
 		'<li>Used Drupal to create tomhartung.com.</li>' +
 		'<li>Used the Wireless Uniform Resource Library (WURFL) to create a ' +
 			'mobile-friendly resume.</li>'
 	},
 	moreItems: { value:
 		'<li>Assisted in conversion of Joomla site containing VirtueMart shopping cart data to ' +
-			'Wordpress site containing Woocommerce data.</li>' +
-		'<li>Used Wordpress to create tomwhartung.com.</li>' +
+			'WordPress site containing Woocommerce data.</li>' +
+		'<li>Used WordPress to create tomwhartung.com.</li>' +
 		'<li>Used Drupal to create tomhartung.com.</li>' +
 		'<li>Used the Wireless Uniform Resource Library (WURFL) to create a ' +
 			'mobile-friendly resume.</li>' +
