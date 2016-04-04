@@ -63,13 +63,13 @@ ProfessionalExperience.JoomooWebsites_2 = Object.create( ProfessionalExperience.
 				'using jQuery Mobile and device-specific CSS files to present different views of the   ' +
 				'resume, depending on the type of device (phone, tablet, or desktop) being used to   ' +
 				'access the page.</li>' +
-		'<li>Integrated idMyGadget with the default Jomomla templates ' +
+		'<li>Integrated idMyGadget with the ' +
 			'<a href="https://github.com/tomwhartung/jmws_protostar_tomh_idMyGadget" ' +
 				'title="link to jmws_protostar_tomh_idMyGadget repo on github.com">protostar</a> ' +
 			'and ' +
 			'<a href="https://github.com/tomwhartung/jmws_beez3_idMyGadget" ' +
 				'title="link to jmws_beez3_idMyGadget repo on github.com">Beez3</a>, ' +
-			'and the Joomla ' +
+			'default Jomomla templates and the Joomla ' +
 			'<a href="https://github.com/tomwhartung/jmws_mod_menu_idMyGadget" ' +
 				'title="link to jmws_protostar_tomh_idMyGadget repo on github.com">menu module</a>, ' +
 			'using jQuery Mobile to implement a pop-up navigation menu that is ' +
@@ -115,17 +115,20 @@ ProfessionalExperience.JoomooWebsites_2 = Object.create( ProfessionalExperience.
 			'detection package giving them the optimal balance between cost, ' +
 			'functionality, and licensing requirements.</li>' +
 		'<li>Updated online resume to use the new idMyGadget code, using jQuery Mobile and ' +
-			'device-specific CSS files to present different views of the resume, ' +
-			'depending on the device used to access the page.</li>' +
-		'<li>Updated resume to use the new idMyGadget code.  ' +
-			'When accessed on a mobile device, the code uses jQuery Mobile to present the resume ' +
-			'in sections, each of which is accessible via a menu option in either the ' +
-			'header or footer of the page.</li>' +
-		'<li>Integrated idMyGadget with the default Jomomla templates protostar and Beez3, ' +
-			'adding many additional options to the two new templates\' configuration pages in ' +
+			'device-specific CSS files to serve different views of the resume, ' +
+			'depending on the device being used to access the page.</li>' +
+		'<li>Integrated idMyGadget with the ' +
+			'<a href="https://github.com/tomwhartung/jmws_protostar_tomh_idMyGadget" ' +
+				'title="link to jmws_protostar_tomh_idMyGadget repo on github.com">protostar</a> ' +
+			'and ' +
+			'<a href="https://github.com/tomwhartung/jmws_beez3_idMyGadget" ' +
+				'title="link to jmws_beez3_idMyGadget repo on github.com">Beez3</a>, ' +
+			'default Jomomla templates, ' +
+			'adding new options to the templates\' configuration pages in ' +
 			'the Joomla administration back end.</li>' +
 		'<li>Integrated idMyGadget with the default Joomla menu, using jQuery Mobile to ' +
-			'implement a pop-up menu that is accessible by clicking on a hamburger icon.</li>' +
+			'implement a pop-up menu that is accessible by clicking on a hamburger icon.  ' +
+			'This icon is configured to appear only when using a mobile device to access the page.</li>' +
 		'<li>Took an ' +
 			'<a href="https://www.edx.org/course/learn-html5-w3c-w3cx-html5-1x-0" target="_blank">' +
 				'online class in HTML5</a>, ' +
