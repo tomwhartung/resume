@@ -114,21 +114,29 @@ ProfessionalExperience.JoomooWebsites_2 = Object.create( ProfessionalExperience.
 			'multiple device detection packages, allowing users to choose the device ' +
 			'detection package giving them the optimal balance between cost, ' +
 			'functionality, and licensing requirements.</li>' +
-		'<li>Updated online resume to use the new idMyGadget code, using jQuery Mobile and ' +
-			'device-specific CSS files to serve different views of the resume, ' +
+		'<li>Updated online resume at TomWHartung.com/resume to use the new idMyGadget code, ' +
+			'using jQuery Mobile and device-specific CSS files to ' +
+			'serve different views of the resume, ' +
 			'depending on the device being used to access the page.</li>' +
 		'<li>Integrated idMyGadget with the ' +
 			'<a href="https://github.com/tomwhartung/jmws_protostar_tomh_idMyGadget" ' +
 				'title="link to jmws_protostar_tomh_idMyGadget repo on github.com">protostar</a> ' +
 			'and ' +
 			'<a href="https://github.com/tomwhartung/jmws_beez3_idMyGadget" ' +
-				'title="link to jmws_beez3_idMyGadget repo on github.com">Beez3</a>, ' +
+				'title="link to jmws_beez3_idMyGadget repo on github.com">Beez3</a> ' +
 			'default Jomomla templates, ' +
 			'adding new options to the templates\' configuration pages in ' +
 			'the Joomla administration back end.</li>' +
-		'<li>Integrated idMyGadget with the default Joomla menu, using jQuery Mobile to ' +
+		'<li>Integrated idMyGadget with the Joomla menu module, using jQuery Mobile to ' +
 			'implement a pop-up menu that is accessible by clicking on a hamburger icon.  ' +
 			'This icon is configured to appear only when using a mobile device to access the page.</li>' +
+		'<li>Deployed the templates and modules to ' +
+			'<a href="http://joomoowebsites.com/" title="Link to JooMooWebSites.com Home Page">' +
+				'JooMooWebSites.com</a> ' +
+			'with some explanatory articles that include screenshots of the ' +
+			'Joomla administration panel, demonstrating and explaining all functionality in detail.' +
+			'</li>' +
+		'<li>Documented this work by writing a detailed readme for each github repository.</li>' +
 		'<li>Took an ' +
 			'<a href="https://www.edx.org/course/learn-html5-w3c-w3cx-html5-1x-0" target="_blank">' +
 				'online class in HTML5</a>, ' +
@@ -136,14 +144,6 @@ ProfessionalExperience.JoomooWebsites_2 = Object.create( ProfessionalExperience.
 			'<a href="http://w3c.org" target="_blank">w3c.org</a> through ' +
 			'<a href="http://edx.org" target="_blank">edx.org</a>, ' +
 			'earning a Verified Certificate with a final grade of 96%.' +
-		'<li>Deployed the Joomla templates and idMyGadget module to ' +
-			'<a href="http://joomoowebsites.com/" title="Link to JooMooWebSites.com Home Page">' +
-				'JooMooWebSites.com</a>.</li>' +
-		'<li>All code implementing idMyGadget and related projects, including ' +
-				'<a href="https://github.com/tomwhartung/resume" target="_blank">this resume</a>' +
-				'is open source, and freely available for inspection and download from ' +
-				'<a href="https://github.com/tomwhartung" target="_blank">github.com</a></li>' +
-		'<li>Documented this work by writing a detailed readme for each github repository.</li>' +
 		'<li>Wrote and posted several articles, complete with screenshots of the ' +
 			'Joomla administration panel, to ' +
 			'<a href="http://joomoowebsites.com/" title="JooMooWebSites.com Home Page">' +
@@ -181,7 +181,11 @@ ProfessionalExperience.JoomooWebsites_2 = Object.create( ProfessionalExperience.
 				'title="Link to the jmws_drupal_bartik_idMyGadget github repository">' +
 				'bartik</a> .' +
 			'<ul><li>This work is on-going and hence not yet online.</li></ul>' +
-			'</li>'
+			'</li>' +
+		'<li>All code implementing idMyGadget and related projects, including ' +
+				'<a href="https://github.com/tomwhartung/resume" target="_blank">this resume</a>' +
+				'is open source, and freely available for inspection and download from ' +
+				'<a href="https://github.com/tomwhartung" target="_blank">github.com</a></li>'
 	}
 });
 //
