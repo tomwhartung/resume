@@ -256,7 +256,7 @@ ProfessionalExperience.JoomooWebsites_1 = Object.create( ProfessionalExperience.
 	companyHref: { value: 'http://www.JoomooWebsites.com' },
 	location: { value: 'Denver, CO' },
 	title: { value: 'CEO (Sole Proprietor)' },
-	dateRange: { value: 'January, 2008 through present' },
+	dateRange: { value: 'March, 2014 through October, 2014' },
 	displayLevel: { value: 1 },
 	listItems: { value:
 		'<li>Assisted in conversion of Joomla site containing VirtueMart shopping cart data to ' +
@@ -273,9 +273,8 @@ ProfessionalExperience.JoomooWebsites_1 = Object.create( ProfessionalExperience.
 		'<li>Used Drupal to create tomhartung.com.</li>' +
 		'<li>Used the Wireless Uniform Resource Library (WURFL) to create a ' +
 			'mobile-friendly resume.</li>' +
-		'<li>Attended meetups, workshops and webinars, and took ' +
-			'several online classes at coursera.org and edx.org.</li>' +
-		'<li>Always reading technical books, to keep up to date.</li>'
+		'<li>Attended meetups, workshops and webinars, read a variety of technical books, and took ' +
+			'several online classes at coursera.org and edx.org.</li>'
 	}
 });
 //
