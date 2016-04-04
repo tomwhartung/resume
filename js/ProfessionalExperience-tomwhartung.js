@@ -377,25 +377,20 @@ ProfessionalExperience.ConsultnetTlc = Object.create( ProfessionalExperience.Min
 				'<li>Maintained and enhanced Go Cart, an online ordering system for use by libraries.  ' +
 					'Used PHP, Java, Eclipse, Hibernate, Spring, Tomcat, Axis2, SOAP, Oracle, ' +
 					'MySql, Cygwin, Subversion (SVN), and Jira.</li>' +
-				'<li>Identified Java web services and refactored methods that access the database, ' +
-					'changing them to use Spring annotations for transactions and ' +
-					'a custom API that used Spring and Hibernate to map associations. ' +
-					'This refactoring enhanced data integrity along with the efficiency and ' +
-					'maintainability of the code.</li>' +
+				'<li>Identified Java web services called by the PHP front end that access the ' +
+					'database and refactored them to use Spring annotations for transactions, and ' +
+					'a custom API, based on Spring and Hibernate, to map associations. ' +
+					'This refactoring enhanced data integrity, efficiency, and ' +
+					'made the code easier to maintain.</li>' +
 				'<li>Wrote and ran performance and unit tests using SOAP-UI and JUnit, ' +
-					'profiled appkucatuib with YourKit, and participated in demos.</li>' +
-				'<li>Wrote the Go Cart Administrators\' and Operations Guides, and wrote and ' +
-					'posted articles to TLC\'s Knowledge Base for other developers. ' +
-					'One article describes how to set up a Windows 7 workstation to run Go-Cart and ' +
-					'another describes how to switch between using ' +
+					'profiled application with YourKit, and participated in demos.</li>' +
+				'<li>Wrote the Go Cart Administrators\' and Operations Guides.</li>' +
+				'<li>Wrote articles for other developers, one describing how to set up a Windows 7 ' +
+					'workstation to run Go-Cart and another describing how to switch between using ' +
 					'MySql and Oracle on a developer\'s workstation.</li>' +
-		'<li>Wrote the Go Cart Administrators\' and Operations Guides, and how-to articles ' +
-			'for other developers.</li>' +
-				'<li>Identified bugs, design flaws, and unused code and method parameters in the ' +
-					'existing code base.</li>' +
-				'<li>Assisted in conducting stress testing of Go-Cart.</li>' +
 				'<li>Used JMeter to write performance tests, and ran these tests to obtain ' +
 					'baseline performance data for the application.</li>' +
+				'<li>Assisted in stress testing Go-Cart.</li>' +
 				'<li>Participated in interviews of potential new hires.</li>' +
 			'</ul>' +
 		'</li>'
