@@ -73,7 +73,8 @@ ProfessionalExperience.JoomooWebsites_2 = Object.create( ProfessionalExperience.
 			'<a href="https://github.com/tomwhartung/jmws_mod_menu_idMyGadget" ' +
 				'title="link to jmws_protostar_tomh_idMyGadget repo on github.com">menu module</a>, ' +
 			'using jQuery Mobile to implement a pop-up navigation menu that is ' +
-			'accessible by clicking on a hamburger menu icon, which appears only when using a ' +
+			'accessible by clicking on a hamburger menu icon.  ' +
+			'This icon appears only when using a ' +
 			'mobile device to access the site.</li>' +
 		'<li>Deployed the extensions to ' +
 			'<a href="http://joomoowebsites.com/" title="Link to JooMooWebSites.com Home Page">' +
@@ -142,13 +143,14 @@ ProfessionalExperience.JoomooWebsites_2 = Object.create( ProfessionalExperience.
 			'adding new options to the templates\' configuration pages in ' +
 			'the Joomla administration back end.</li>' +
 		'<li>Integrated idMyGadget with the Joomla menu module, using jQuery Mobile to ' +
-			'implement a pop-up menu that is accessible by clicking on a hamburger icon.  ' +
+			'implement a pop-up menu that is accessible by clicking on a hamburger menu icon.  ' +
 			'This icon is configured to appear only when using a mobile device to access the page.</li>' +
 		'<li>Deployed the Joomla templates and modules to ' +
 			'<a href="http://joomoowebsites.com/" title="Link to JooMooWebSites.com Home Page">' +
 				'JooMooWebSites.com</a> ' +
-			'with some explanatory articles that include screenshots of the ' +
-			'Joomla administration panel, demonstrating and explaining all functionality in detail.' +
+			'with some explanatory articles.  ' +
+			'These articles include screenshots of the Joomla administration panel, ' +
+			'demonstrating and explaining all functionality in detail.' +
 			'</li>' +
 		'<li>Documented this work by writing a detailed readme for each github repository.</li>' +
 		'<li>Took an ' +
@@ -184,20 +186,29 @@ ProfessionalExperience.JoomooWebsites_2 = Object.create( ProfessionalExperience.
 			'Front Range PHP Users Group.</li>' +
 		'<li>Prepared and gave a presentation about the Joomla templates and modules that use ' +
 			'IdMyGadget Device Detection at the Denver Joomla Users Group.</li>' +
-		'<li>Created the ' +
-			'<a href="https://github.com/tomwhartung/jmws_idMyGadget_for_drupal" ' +
-				'title="Link to the jmws_idMyGadget_for_drupal github repository">' +
-				'jmws_idMyGadget_for_drupal github repository</a> ' +
-			'and integrated idMyGadget with two of the Drupal 7 default themes: ' +
-			'<a href="https://github.com/tomwhartung/jmws_drupal_stark_idMyGadget" ' +
-				'title="Link to the jmws_drupal_stark_idMyGadget github repository">' +
+		'<li>Integrated ' +
+			'<a href="https://github.com/tomwhartung/jmws_idMyGadget_for_drupal-d8" ' +
+				'title="Link to the jmws_idMyGadget_for_drupal-d8 github repository">' +
+				'idMyGadget</a> ' +
+			'with the ' +
+			'<a href="https://github.com/tomwhartung/jmws_drupal_idMyGadget_stark-d8" ' +
+				'title="Link to the jmws_drupal_idMyGadget_stark-d8 github repository">' +
 				'stark</a> ' +
 			'and ' +
-			'<a href="https://github.com/tomwhartung/jmws_drupal_bartik_idMyGadget" ' +
-				'title="Link to the jmws_drupal_bartik_idMyGadget github repository">' +
-				'bartik</a> .' +
-			'<ul><li>This work is on-going and hence not yet online.</li></ul>' +
+			'<a href="https://github.com/tomwhartung/jmws_drupal_idMyGadget_bartik-d8" ' +
+				'title="Link to the jmws_drupal_idMyGadget_bartik-d8 github repository">' +
+				'bartik</a> ' +
+				'default Drupal themes for Drupal 7 and Drupal 8.' +
 			'</li>' +
+		'<li>Deployed Drupal 8 core code and preliminary versions of the idMyGadget themes and plugin to ' +
+			'<a href="http://tomhartung.com/" ' +
+				'title="Link to TomHartung.com Home Page (this site has only minimal content)" ' +
+				'target="_blank">TomHartung.com</a> ' +
+			'This work is on-going.' +
+			'</li>' +
+		'<li>Rewriting frequently-used bash scripts, such as those used for deployment and ' +
+			'database access, in python.  ' +
+			'This work is on-going.</li>' +
 		'<li>All code implementing idMyGadget and related projects, including ' +
 				'<a href="https://github.com/tomwhartung/resume" target="_blank">this resume</a>' +
 				'is open source, and freely available for inspection and download from ' +
