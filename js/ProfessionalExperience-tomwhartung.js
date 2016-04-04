@@ -410,34 +410,33 @@ ProfessionalExperience.ClkClk = Object.create( ProfessionalExperience.MinimalJob
 	displayLevel: { value: 1 },
 	listItems: { value:
 		'<li>Used PHP5, MySql, Joomla, Javascript, Ajax, XHTML, and CSS to help build ' +
-			'a social networking site targeted to businesses.</li>' +
-		'<li>Updated Joomla\'s com_content extension to allow storage of content in custom ' +
-			'tables.</li>' +
+			'a social networking site targeted to businesses, based largely on Joomla and ' +
+			'extensions such as Jom Social.</li>' +
+		'<li>Designed and wrote a custom Joomla component to store and display data for ' +
+			'subscriptions and services.</li>' +
+		'<li>Updated Joomla\'s com_content extension to allow storage of ' +
+			'more than 13,000,000 rows of content in custom tables which are ' +
+			'similar to the Joomla content tables.</li>' +
 		'<li>Designed and wrote a web service front end to Joomla\'s com_content extension ' +
-			'that allows rendering of content response to an Ajax request.</li>' +
-		'<li>Designed and wrote the user interface to a commissions component that displays ' +
-			'data obtained via web services.</li>' +
-		'<li>Enhanced and maintained code to allow business owners and their administrators to ' +
-			'customize their page on the site and the text messages it sends to members of ' +
-			'their group.</li>'
+			'that allows rendering of content in response to an Ajax request.</li>'
 	},
 	moreItems: { value:
 		'<li>Used PHP5, MySql, Javascript, Ajax, XHTML, and CSS to help build a social ' +
 			'networking site targeted to businesses, ' +
 			'based largely on Joomla and extensions such as Jom Social.</li>' +
-		'<li>Updated Joomla\'s com_content extension to allow storage of large volumes ' +
-			'(more than 13,000,000 rows) of group content in custom tables that are ' +
-			'modeled after the Joomla content tables.</li>' +
-		'<li>Wrote a web service front end to Joomla\'s com_content extension that allows ' +
-			'rendering of content outside of the Joomla ' +
-			'framework in response to an Ajax request.</li>' +
-		'<li>Designed and wrote the user interface to a commissions component that displays data ' +
-			'obtained via web services.</li>' +
-		'<li>Enhanced and maintained existing dashboard code to allow business owners and ' +
-			'their administrators to customize their page on the site and ' +
-			'the text messages it sends to members of their group.</li>' +
 		'<li>Designed and wrote a custom Joomla component to store and display data for ' +
-			'subscriptions and services.</li>'
+			'subscriptions and services.</li>' +
+		'<li>Updated Joomla\'s com_content extension to allow storage of ' +
+			'more than 13,000,000 rows of content in custom tables which are ' +
+			'similar to the Joomla content tables.</li>' +
+		'<li>Designed and wrote a web service front end to Joomla\'s com_content extension ' +
+			'that allows rendering of content outside of the Joomla ' +
+			'framework in response to an Ajax request.</li>' +
+		'<li>Enhanced and maintained existing dashboard code to allow business owners and ' +
+			'their administrators to customize their page on the site and create ' +
+			'text (SMS) messages to send to members of their group.</li>' +
+		'<li>Designed and wrote the user interface to a commissions component that displays data ' +
+			'obtained via web services.</li>'
 	}
 });
 //
