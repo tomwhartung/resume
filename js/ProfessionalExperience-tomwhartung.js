@@ -110,7 +110,9 @@ ProfessionalExperience.JoomooWebsites_2 = Object.create( ProfessionalExperience.
 				'This work is on-going.</li>'
 	},
 	moreItems: { value: 
-		'<li>Wrote idMyGadget, an adapter API providing a consistent interface to ' +
+		'<li>Wrote ' +
+		'idMyGadget' +
+		'an adapter API providing a consistent interface to ' +
 			'multiple device detection packages, allowing users to choose the device ' +
 			'detection package giving them the optimal balance between cost, ' +
 			'functionality, and licensing requirements.</li>' +
@@ -118,7 +120,11 @@ ProfessionalExperience.JoomooWebsites_2 = Object.create( ProfessionalExperience.
 			'using jQuery Mobile and device-specific CSS files to ' +
 			'serve different views of the resume, ' +
 			'depending on the device being used to access the page.</li>' +
-		'<li>Integrated idMyGadget with the ' +
+		'<li>Integrated ' +
+			'<a href="https://github.com/tomwhartung/jmws_idMyGadget_for_joomla" ' +
+				'title="Link to the jmws_idMyGadget_for_joomla github repository">' +
+				'idMyGadget</a> ' +
+			'with the ' +
 			'<a href="https://github.com/tomwhartung/jmws_protostar_tomh_idMyGadget" ' +
 				'title="link to jmws_protostar_tomh_idMyGadget repo on github.com">protostar</a> ' +
 			'and ' +
@@ -144,35 +150,37 @@ ProfessionalExperience.JoomooWebsites_2 = Object.create( ProfessionalExperience.
 			'<a href="http://w3c.org" target="_blank">w3c.org</a> through ' +
 			'<a href="http://edx.org" target="_blank">edx.org</a>, ' +
 			'earning a Verified Certificate with a final grade of 96%.' +
-		'<li>Wrote and posted several articles, complete with screenshots of the ' +
-			'Joomla administration panel, to ' +
-			'<a href="http://joomoowebsites.com/" title="JooMooWebSites.com Home Page">' +
-				'JooMooWebSites.com</a>, ' +
-			'demonstrating and explaining all functionality in detail.' +
+		'<li>Integrated ' +
+			'<a href="https://github.com/tomwhartung/jmws_idMyGadget_for_wordpress" ' +
+				'title="Link to the jmws_idMyGadget_for_wordpress github repository">' +
+				'idMyGadget</a> ' +
+			'with the ' +
+			'<a href="https://github.com/tomwhartung/jmws_wp_twentythirteen_idMyGadget" ' +
+				'title="Link to the jmws_wp_twentythirteen_idMyGadget github repository">' +
+				'twentythirteen</a> ' +
+			'and ' +
+			'<a href="https://github.com/tomwhartung/jmws_wp_twentyfifteen_idMyGadget" ' +
+				'title="Link to the jmws_wp_twentyfifteen_idMyGadget github repository">' +
+				'twentyfifteen</a> ' +
+			'default WordPress themes, adding new options to the themes\' configuration pages in ' +
+			'the WordPress administration panel.' +
+			'</li>' +
+		'<li>Deployed the themes and plugin to ' +
+			'<a href="http://tomwhartung.com/" title="Link to TomWHartung.com Home Page">' +
+				'TomWHartung.com</a> ' +
+			'with some articles explaining how these sites implement Adaptive Web Design (AWD) and ' +
+			'Responsive Design With Server Side Components (RESS).  ' +
+			'Documentation of this work is ongoing.' +
+			'</li>' +
 		'<li>Prepared and gave a presentation about IdMyGadget Device Detection at the ' +
 			'Front Range PHP Users Group.</li>' +
 		'<li>Prepared and gave a presentation about the Joomla templates and modules that use ' +
 			'IdMyGadget Device Detection at the Denver Joomla Users Group.</li>' +
 		'<li>Created the ' +
-			'<a href="https://github.com/tomwhartung/jmws_idMyGadget_for_wordpress" ' +
-				'title="Link to the jmws_idMyGadget_for_wordpress github repository">' +
-				'jmws_idMyGadget_for_wordpress github repository</a> ' +
-			'and began integrating idMyGadget with two WordPress themes: the ' +
-			'<a href="https://github.com/tomwhartung/jmws_wp_twentyfifteen_idMyGadget" ' +
-				'title="Link to the jmws_wp_twentyfifteen_idMyGadget github repository">' +
-				'twentyfifteen default WordPress theme</a> ' +
-			'and a ' +
-			'<a href="https://github.com/tomwhartung/jmws_wp_vqsg_ot_idMyGadget" ' +
-				'title="Link to the jmws_wp_vqsg_ot_idMyGadget github repository">' +
-				'minimal theme</a> ' +
-			'from the book WordPress: A Visual Quickstart Guide.' +
-			'<ul><li>This work is on-going and hence not yet online.</li></ul>' +
-			'</li>' +
-		'<li>Created the ' +
 			'<a href="https://github.com/tomwhartung/jmws_idMyGadget_for_drupal" ' +
 				'title="Link to the jmws_idMyGadget_for_drupal github repository">' +
 				'jmws_idMyGadget_for_drupal github repository</a> ' +
-			'and began integrating idMyGadget with two of the Drupal 7 default themes: ' +
+			'and integrated idMyGadget with two of the Drupal 7 default themes: ' +
 			'<a href="https://github.com/tomwhartung/jmws_drupal_stark_idMyGadget" ' +
 				'title="Link to the jmws_drupal_stark_idMyGadget github repository">' +
 				'stark</a> ' +
