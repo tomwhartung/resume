@@ -93,11 +93,11 @@ ProfessionalExperience.JoomooWebsites_2 = Object.create( ProfessionalExperience.
 				'TomWHartung.com</a> ' +
 			'with some articles explaining how the site implements Adaptive Web Design (AWD) and ' +
 			'Responsive Design With Server Side Components (RESS).</li>' +
-		'<li>Created the ' +
+		'<li>Integrated ' +
 			'<a href="https://github.com/tomwhartung/jmws_idMyGadget_for_drupal-d8" ' +
 				'title="Link to the jmws_idMyGadget_for_drupal github repository">' +
-				'jmws_idMyGadget_for_drupal</a> ' +
-			'github repository and integrated idMyGadget with the ' +
+				'idMyGadget</a> ' +
+			'with the ' +
 			'<a href="https://github.com/tomwhartung/jmws_drupal_idMyGadget_stark-d8" ' +
 				'title="Link to the jmws_drupal_stark_idMyGadget github repository">' +
 				'stark</a> ' +
@@ -105,15 +105,23 @@ ProfessionalExperience.JoomooWebsites_2 = Object.create( ProfessionalExperience.
 			'<a href="https://github.com/tomwhartung/jmws_drupal_idMyGadget_bartik-d8" ' +
 				'title="Link to the jmws_drupal_bartik_idMyGadget github repository">' +
 				'bartik</a> ' +
-			'default Drupal themes for Drupal 7 and Drupal 8.  This work is on-going.' +
+			'default Drupal themes for Drupal 7 and Drupal 8.</li>' +
+			'<li>Deployed preliminary versions of this code to ' +
+				'<a href="http://www.TomHartung.com" ' +
+					'title="Home page of TomHartung.com (this site has minimal content only)" ' +
+					'target="_blank">TomHartung.com</a>.  ' +
+				'This work is on-going.' +
 			'<li>Rewriting bash scripts used for deployment and database access in python.  ' +
 				'This work is on-going.</li>'
 	},
 	moreItems: { value: 
 		'<li>Wrote ' +
-		'idMyGadget' +
-		'an adapter API providing a consistent interface to ' +
-			'multiple device detection packages, allowing users to choose the device ' +
+			'<a href="https://github.com/tomwhartung/idMyGadget" ' +
+				'title="Link to the idMyGadget github repository">' +
+				'idMyGadget</a>, ' +
+			'an adapter API providing a consistent interface to ' +
+			'multiple device detection packages.  ' +
+			'This allows users to choose the device ' +
 			'detection package giving them the optimal balance between cost, ' +
 			'functionality, and licensing requirements.</li>' +
 		'<li>Updated online resume at TomWHartung.com/resume to use the new idMyGadget code, ' +
@@ -136,7 +144,7 @@ ProfessionalExperience.JoomooWebsites_2 = Object.create( ProfessionalExperience.
 		'<li>Integrated idMyGadget with the Joomla menu module, using jQuery Mobile to ' +
 			'implement a pop-up menu that is accessible by clicking on a hamburger icon.  ' +
 			'This icon is configured to appear only when using a mobile device to access the page.</li>' +
-		'<li>Deployed the templates and modules to ' +
+		'<li>Deployed the Joomla templates and modules to ' +
 			'<a href="http://joomoowebsites.com/" title="Link to JooMooWebSites.com Home Page">' +
 				'JooMooWebSites.com</a> ' +
 			'with some explanatory articles that include screenshots of the ' +
@@ -165,7 +173,7 @@ ProfessionalExperience.JoomooWebsites_2 = Object.create( ProfessionalExperience.
 			'default WordPress themes, adding new options to the themes\' configuration pages in ' +
 			'the WordPress administration panel.' +
 			'</li>' +
-		'<li>Deployed the themes and plugin to ' +
+		'<li>Deployed the WordPress themes and plugin to ' +
 			'<a href="http://tomwhartung.com/" title="Link to TomWHartung.com Home Page">' +
 				'TomWHartung.com</a> ' +
 			'with some articles explaining how these sites implement Adaptive Web Design (AWD) and ' +
