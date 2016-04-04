@@ -361,13 +361,17 @@ ProfessionalExperience.ConsultnetTlc = Object.create( ProfessionalExperience.Min
 			'<a href="http://www.tlcdelivers.com" title="Opens link in separate window" target="_blank">' +
 			 'The Library Corporation</a>, ' +
 			'maintained and enhanced Go Cart, an online ordering system for use by libraries.  ' +
-			'Used PHP, Java, Eclipse, Hibernate, Spring, Tomcat, Axis2, SOAP, Oracle, MySql, ' +
+			'Used Java, PHP,  Eclipse, Hibernate, Spring, Tomcat, Axis2, SOAP, Oracle, MySql, ' +
 			'Cygwin, Subversion, and Jira.</li>' +
-		'<li>Identified web services that access the database, refactoring them to use ' +
-			'Spring for transactions and Hibernate to map associations, ' +
-			'enhancing data integrity, efficiency, and maintainability.</li>' +
-		'<li>Wrote and ran performance and unit tests using SOAP-UI and JUnit, and profiled ' +
-			'application with YourKit.</li>'
+		'<li>Identified Java web services and refactored methods that access the database, ' +
+			'changing them to use Spring annotations for transactions and a custom ' +
+			'API that used Spring and Hibernate to map associations. ' +
+			'This refactoring enhanced data integrity along with the efficiency ' +
+			'and maintainability of the code.</li>' +
+		'<li>Wrote and ran performance and unit tests using SOAP-UI and JUnit, profiled ' +
+			'application with YourKit, and participated in demos.</li>' +
+		'<li>Wrote the Go Cart Administrators\' and Operations Guides, and how-to articles ' +
+			'for other developers.</li>'
 	},
 	moreItems: { value:
 		'<li>For ' +
@@ -375,8 +379,8 @@ ProfessionalExperience.ConsultnetTlc = Object.create( ProfessionalExperience.Min
 			 'The Library Corporation</a>:' +
 			'<ul>' +
 				'<li>Maintained and enhanced Go Cart, an online ordering system for use by libraries.  ' +
-					'Used PHP, Java, Eclipse, Hibernate, Spring, Tomcat, Axis2, SOAP, Oracle, ' +
-					'MySql, Cygwin, Subversion (SVN), and Jira.</li>' +
+					'Used Java, PHP,  Eclipse, Hibernate, Spring, Tomcat, Axis2, SOAP, Oracle, ' +
+					'MySql, Cygwin, Subversion, and Jira.</li>' +
 				'<li>Identified Java web services and refactored methods that access the database, ' +
 					'changing them to use Spring annotations for transactions and ' +
 					'a custom API that used Spring and Hibernate to map associations. ' +
@@ -389,8 +393,6 @@ ProfessionalExperience.ConsultnetTlc = Object.create( ProfessionalExperience.Min
 					'One article describes how to set up a Windows 7 workstation to run Go-Cart and ' +
 					'another describes how to switch between using ' +
 					'MySql and Oracle on a developer\'s workstation.</li>' +
-		'<li>Wrote the Go Cart Administrators\' and Operations Guides, and how-to articles ' +
-			'for other developers.</li>' +
 				'<li>Identified bugs, design flaws, and unused code and method parameters in the ' +
 					'existing code base.</li>' +
 				'<li>Assisted in conducting stress testing of Go-Cart.</li>' +
