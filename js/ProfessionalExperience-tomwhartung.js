@@ -292,23 +292,20 @@ ProfessionalExperience.LodoSoftwareD3 = Object.create( ProfessionalExperience.Mi
 	displayLevel: { value: 1 },
 	listItems: { value:
 		'<li>Used Java, Javascript, Spring, Hibernate, REST, Postman, Liquibase, MySql, ' +
-			'Sql Server, Junit, Git, Maven, Jira, CofeeScript, jQuery, Backbone, ' +
-			'Underscore, Node, Perl, Cygwin, Eclipse, Netbeans, IntelliJ, and Windows 7 to ' +
+			'Sql Server, Junit, Git, Maven, Jira, CofeeScript, jQuery, Node, Backbone, ' +
+			'Underscore, Perl, Cygwin, Eclipse, Netbeans, IntelliJ, and Windows 7 to ' +
 			'build the D3 Banking online REST API and User Interface, a product used for ' +
 			'online banking and personal financial management.</li>' +
-		'<li>Worked extensively on all aspects of the Financial Goals feature, from designing ' +
-			'and creating the tables, to writing and debugging the services, and creating ' +
-			'and enhancing the User Interface.</li>' +
-			'<li>Worked on the Administration User Interface of the D3 Banking product, using ' +
-			'CoffeeScript, Backbone, jQuery, Underscore, and Node.</li>' +
-		'<li>Used Java to write automated JUnit tests for an online banking user interface. ' +
-			'Wrote programs using the Selenium WebDriver Java API to manipulate elements in ' +
-			'web pages built using responsive design techniques.  ' +
-			'Used Eclipse to run the tests in Firefox, Chrome, and Internet Explorer.</li>' +
-		'<li>Maintained and enhanced OCF, an online application allowing users to aggregate ' +
-			'accounts, categorize financial transactions, and create budgets, using Java, ' +
-			'Eclipse, Adobe Flex3, Hibernate, Microsoft SQL Server, Liquibase, Struts, Tomcat, ' +
-			'Cygwin, Jira, CVS, Flash Builder, Ant, and Freemarker Template.</li>'
+		'<li>Implemented all aspects of the Financial Goals feature.  ' +
+			'Designed and created the database tables, wrote and debugged the services, and  ' +
+			'created and enhanced the User Interface.</li>' +
+		'<li>Ported, integrated, maintained, and enhanced legacy Java code that uses the ' +
+			'Cash Edge Aggregation API to update the database with user account and transaction data.' +
+			'</li>' +
+		'<li>Fixed Jira tickets affecting all aspects of OCF, an online application allowing ' +
+			'users to aggregate accounts, categorize financial transactions, and create budgets.  ' +
+			'Used Java, Eclipse, Adobe Flex3, Hibernate, Microsoft SQL Server, Liquibase, Struts, ' +
+			'Tomcat, Cygwin, CVS, Flash Builder, and Ant.</li>'
 	},
 	moreItems: { value:
 		'<li>Used Java, Javascript, Spring, Hibernate, REST, Postman, Liquibase, MySql, Sql Server, Junit, ' +
