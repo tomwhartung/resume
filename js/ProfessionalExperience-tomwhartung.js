@@ -94,20 +94,20 @@ ProfessionalExperience.JoomooWebsites_2 = Object.create( ProfessionalExperience.
 			'with some articles explaining how the site implements Adaptive Web Design (AWD) and ' +
 			'Responsive Design With Server Side Components (RESS).</li>' +
 		'<li>Created the ' +
-			'<a href="https://github.com/tomwhartung/jmws_idMyGadget_for_drupal" ' +
+			'<a href="https://github.com/tomwhartung/jmws_idMyGadget_for_drupal-d8" ' +
 				'title="Link to the jmws_idMyGadget_for_drupal github repository">' +
-				'jmws_idMyGadget_for_drupal github repository</a> ' +
-			'and integrated idMyGadget with the ' +
-			'<a href="https://github.com/tomwhartung/jmws_drupal_stark_idMyGadget" ' +
+				'jmws_idMyGadget_for_drupal</a> ' +
+			'github repository and integrated idMyGadget with the ' +
+			'<a href="https://github.com/tomwhartung/jmws_drupal_idMyGadget_stark-d8" ' +
 				'title="Link to the jmws_drupal_stark_idMyGadget github repository">' +
 				'stark</a> ' +
 			'and ' +
-			'<a href="https://github.com/tomwhartung/jmws_drupal_bartik_idMyGadget" ' +
+			'<a href="https://github.com/tomwhartung/jmws_drupal_idMyGadget_bartik-d8" ' +
 				'title="Link to the jmws_drupal_bartik_idMyGadget github repository">' +
-				'bartik</a> .' +
-			'default Drupal themes: ' +
-			'<ul><li>This work is on-going and hence not yet online.</li></ul>' +
-			'</li>'
+				'bartik</a> ' +
+			'default Drupal themes for Drupal 7 and Drupal 8.  This work is on-going.' +
+			'<li>Rewriting bash scripts used for deployment and database access in python.  ' +
+				'This work is on-going.</li>'
 	},
 	moreItems: { value: 
 		'<li>Wrote idMyGadget, an adapter API providing a consistent interface to ' +
