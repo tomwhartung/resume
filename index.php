@@ -252,7 +252,7 @@ print '<link rel="stylesheet" type="text/css" ' .
 		{{#each jobs}}
 			<li id="{{id}}">
 				{{#if title}}
-					<div><span class="bold">{{title}}</span></div>
+					<div class="job-title"><span class="bold">{{title}}</span></div>
 				{{/if}}
 				{{#if companyHref}}
 					<a href="{{companyHref}}" target="_blank">{{companyName}}</a>,&nbsp;{{location}}
