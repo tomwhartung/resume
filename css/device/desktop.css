@@ -25,6 +25,9 @@ ul {
 	margin-top: 0.25em;
 	padding-top: 0.0em;
 }
+ul.job-experience {
+	list-style-type: none;
+}
 a, li, p {
 	margin-top:  0.25em;
 	line-height: 1.25em;
