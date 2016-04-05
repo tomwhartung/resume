@@ -60,7 +60,7 @@ ProfessionalExperience.JoomooWebsites_2 = Object.create( ProfessionalExperience.
 		'<li>Wrote idMyGadget, a PHP Adapter API providing a consistent interface to ' +
 				'multiple device detection packages.  ' +
 			'Updated online resume at TomWHartung.com/resume to use the new code,   ' +
-				'using jQuery Mobile and device-specific CSS files to present different views of the   ' +
+				'using jQuery Mobile, Handlebars, and device-specific CSS files to present different views of the   ' +
 				'resume, depending on the type of device (phone, tablet, or desktop) being used to   ' +
 				'access the page.</li>' +
 		'<li>Integrated idMyGadget with the ' +
@@ -126,7 +126,7 @@ ProfessionalExperience.JoomooWebsites_2 = Object.create( ProfessionalExperience.
 			'detection package giving them the optimal balance between cost, ' +
 			'functionality, and licensing requirements.</li>' +
 		'<li>Updated online resume at TomWHartung.com/resume to use the new idMyGadget code, ' +
-			'using jQuery Mobile and device-specific CSS files to ' +
+			'using jQuery Mobile, Handlebars, and device-specific CSS files to ' +
 			'serve different views of the resume, ' +
 			'depending on the device being used to access the page.</li>' +
 		'<li>Integrated ' +
