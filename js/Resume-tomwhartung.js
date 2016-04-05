@@ -100,7 +100,7 @@ TechnicalExperience.point_30 = {
 };
 TechnicalExperience.point_40 = {
 	bold: "JavaScript Libraries:",
-	text: "jQuery, jQuery Mobile, Backbone, Underscore, Node, Mootools"
+	text: "jQuery, jQuery Mobile, Handlebars, Backbone, Underscore, Node, Mootools"
 };
 TechnicalExperience.point_50 = {
 	bold: "Relational Databases:",
