@@ -25,6 +25,9 @@ ul {
 	margin-top: 0.5em;
 	padding-top: 0.0em;
 }
+ul.job-experience {
+	list-style-type: none;
+}
 a, li, p {
 /*	font-size:   1.25em; */  /* doesn't work as hoped */
 	font-size:   22px;
