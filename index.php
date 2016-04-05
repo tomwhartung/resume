@@ -395,7 +395,7 @@ print '<link rel="stylesheet" type="text/css" ' .
 			<li class="footer_links"><a href="http://tomhartung.com">tomhartung.com</a></li>
 		</ul>
 		<hr />
-		<p class="footer">&copy; 2001-2015 Tom W. Hartung, P. O. Box 18216, Denver, CO 80218, 303-863-1757</p>
+		<p class="footer">&copy; 2001-2016 Tom W. Hartung, P. O. Box 18216, Denver, CO 80218, 303-863-1757</p>
 		<hr />
 	</footer>
 <?php  else: ?>
