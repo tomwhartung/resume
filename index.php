@@ -248,7 +248,7 @@ print '<link rel="stylesheet" type="text/css" ' .
 	</script>
 <?php  else: ?>
 	<script id="experience-section-template" type="text/x-handlebars-template">
-		<ul>
+		<ul class="job-experience">
 		{{#each jobs}}
 			<li id="{{id}}">
 				{{#if title}}
