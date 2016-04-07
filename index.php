@@ -303,7 +303,9 @@ print '<link rel="stylesheet" type="text/css" ' .
 					<div class="bold education-heading">
 						<a href="{{linkHref}}" target="_blank">{{linkText}}</a>
 					</div>
-					<a href="{{schoolHref}}" target="_blank">{{schoolText}}</a>
+					{{#if schoolText}}
+						<a href="{{schoolHref}}" target="_blank">{{schoolText}}</a>
+					{{/if}}
 					{{location}}<br />
 					Completed: {{completedDate}}<br />
 					<ul>{{{listItems}}}</ul>
