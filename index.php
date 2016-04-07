@@ -300,9 +300,9 @@ print '<link rel="stylesheet" type="text/css" ' .
 		<ul class="education">
 			{{#each bulletPoints}}
 				<li>
-					<span class="bold">
+					<div class="bold">
 						<a href="{{linkHref}}" target="_blank">{{linkText}}</a>
-					</span><br />
+					</div>
 					<a href="{{schoolHref}}" target="_blank">{{schoolText}}</a>
 					{{location}}<br />
 					Completed: {{completedDate}}<br />
