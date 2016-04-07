@@ -297,7 +297,7 @@ print '<link rel="stylesheet" type="text/css" ' .
 	</script>
 <?php  else: ?>
 	<script id="education-section-template" type="text/x-handlebars-template">
-		<ul>
+		<ul class="education">
 			{{#each bulletPoints}}
 				<li>
 					<span class="bold">

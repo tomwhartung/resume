@@ -25,7 +25,8 @@ ul {
 	margin-top: 0.25em;
 	padding-top: 0.0em;
 }
-ul.job-experience {
+ul.job-experience,
+ul.education {
 	list-style-type: none;
 }
 a, li, p {
