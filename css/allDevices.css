@@ -13,7 +13,8 @@ body {
 div#content {
 	position: relative;
 }
-div.job-title {
+div.job-title,
+div.education-heading {
 	margin-left: -1em;  /* push the titles back to align with the left margin */
 }
 h1, h2, h3, th {
