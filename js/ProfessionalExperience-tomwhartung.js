@@ -293,7 +293,7 @@ ProfessionalExperience.LodoSoftwareD3 = Object.create( ProfessionalExperience.Mi
 	listItems: { value:
 		'<li>Used Java, Javascript, Spring, Hibernate, REST, Postman, Liquibase, MySql, ' +
 			'Sql Server, JUnit, Git, Maven, Jira, CofeeScript, jQuery, Node, Backbone, ' +
-			'Underscore, Perl, Cygwin, Eclipse, Netbeans, IntelliJ, and Windows 7 to ' +
+			'Underscore, Perl, Cygwin, Eclipse, Netbeans, IntelliJ, Jenkins, and Windows 7 to ' +
 			'build the D3 Banking online REST API and User Interface, a product used for ' +
 			'online banking and personal financial management.</li>' +
 		'<li>Implemented all aspects of the Financial Goals feature.  ' +
@@ -311,7 +311,7 @@ ProfessionalExperience.LodoSoftwareD3 = Object.create( ProfessionalExperience.Mi
 		'<li>Used Java, Javascript, Spring, Hibernate, REST, Postman, Liquibase, MySql, ' +
 			'Microsoft Sql Server, JUnit, Git, Maven, Jira, CofeeScript, jQuery, ' +
 			'Backbone, Underscore, Node, Perl, Cygwin, Eclipse, Netbeans, ' +
-			'IntelliJ, and Windows 7 to build the D3 Banking online REST API and User Interface, a ' +
+			'IntelliJ, Jenkins, and Windows 7 to build the D3 Banking online REST API and User Interface, a ' +
 			'product used for online banking and personal financial management.' +
 		'</li>' +
 		'<li>Implemented all aspects of the Financial Goals feature by designing and ' +
@@ -362,7 +362,7 @@ ProfessionalExperience.ConsultnetTlc = Object.create( ProfessionalExperience.Min
 			 'The Library Corporation</a>, ' +
 			'maintained and enhanced Go Cart, an online ordering system for use by libraries.  ' +
 			'Used PHP, Java, Eclipse, Hibernate, Spring, Tomcat, Axis2, SOAP, Oracle, MySql, ' +
-			'Cygwin, Subversion, and Jira.</li>' +
+			'Cygwin, Subversion, Hudson, and Jira.</li>' +
 		'<li>Identified web services that access the database, refactoring them to use ' +
 			'Spring for transactions and Hibernate to map associations, ' +
 			'enhancing data integrity, efficiency, and maintainability.</li>' +
@@ -374,9 +374,9 @@ ProfessionalExperience.ConsultnetTlc = Object.create( ProfessionalExperience.Min
 			'<a href="http://www.tlcdelivers.com" title="Opens link in separate window" target="_blank">' +
 			 'The Library Corporation</a>:' +
 			'<ul>' +
-				'<li>Maintained and enhanced Go Cart, an online ordering system for use by libraries.  ' +
+				'<li>Maintained and enhanced Go Cart, an online ordering system for use by libraries. ' +
 					'Used PHP, Java, Eclipse, Hibernate, Spring, Tomcat, Axis2, SOAP, Oracle, ' +
-					'MySql, Cygwin, Subversion (SVN), and Jira.</li>' +
+					'MySql, Cygwin, Subversion (SVN), Hudson, and Jira.</li>' +
 				'<li>Identified Java web services called by the PHP front end that access the ' +
 					'database and refactored them to use Spring annotations for transactions, and ' +
 					'a custom API, based on Spring and Hibernate, to map associations. ' +
