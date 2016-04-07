@@ -112,7 +112,7 @@ TechnicalExperience.point_60 = {
 };
 TechnicalExperience.point_70 = {
 	bold: "Software Life Cycle Tools:",
-	text: "Git, Jira, Ant, Subversion (SVN), Tortoise SVN, Maven, Version One, Redmine, Make, Visio, Rational Rose, Clearcase, Bugzilla, CVS, RCS, PVCS"
+	text: "Git, Jira, Ant, Subversion (SVN), Tortoise SVN, Maven, Jenkins, Hudson, Version One, Redmine, Make, Visio, Rational Rose, Clearcase, Bugzilla, CVS, RCS, PVCS"
 };
 TechnicalExperience.point_80 = {
 	bold: "Operating Systems:",
