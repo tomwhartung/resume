@@ -260,6 +260,11 @@ var Volunteering = Object.create( MinimalSection, {
 		writable: true
 	}
 });
+Volunteering.point_GoogleIOExtended = {
+	bold: "Google I/O Extended:",
+	linkHref: "https://events.google.com/io2016/",
+	text: "Volunteered for the all day event in Denver in 2016",
+};
 Volunteering.point_CLevelAtMileHigh = {
 	bold: "C-Level at Mile Hi:",
 	linkHref: "http://clevelmilehigh.org/",
@@ -281,6 +286,7 @@ Volunteering.point_Bonfils = {
 	text: "Blood Donor Since 2012",
 };
 Volunteering.bulletPoints = [
+	Volunteering.point_GoogleIOExtended,
 	Volunteering.point_CLevelAtMileHigh,
 	Volunteering.point_DenverStartupWeek,
 	Volunteering.point_DenverFilmSociety,
