@@ -107,13 +107,15 @@ ProfessionalExperience.JoomooWebsites_2 = Object.create( ProfessionalExperience.
 				'title="Link to the jmws_drupal_bartik_idMyGadget github repository">' +
 				'bartik</a> ' +
 			'default Drupal themes for Drupal 7 and Drupal 8.</li>' +
-			'<li>Deployed preliminary versions of this code to ' +
-				'<a href="http://www.TomHartung.com" ' +
-					'title="Home page of TomHartung.com (this site has minimal content only)" ' +
-					'target="_blank">TomHartung.com</a>.  ' +
-				'This work is on-going.' +
-			'<li>Rewriting bash scripts used for deployment and database access in python.  ' +
-				'This work is on-going.</li>'
+		'<li>Deployed preliminary versions of this code to ' +
+			'<a href="http://www.TomHartung.com" ' +
+				'title="Home page of TomHartung.com (this site has minimal content only)" ' +
+				'target="_blank">TomHartung.com</a>.  ' +
+			'This work is on-going.' +
+		'<li>Rewriting bash scripts used for deployment and database access in python.  ' +
+			'This work is on-going.</li>' +
+		'<li>Writing demo programs for the Intel Edison in arduino (C/C++), node (javascript), and python.  ' +
+			'This work is on-going.</li>'
 	},
 	moreItems: { value: 
 		'<li>Wrote ' +
