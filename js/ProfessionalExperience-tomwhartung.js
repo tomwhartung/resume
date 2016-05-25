@@ -206,11 +206,15 @@ ProfessionalExperience.JoomooWebsites_2 = Object.create( ProfessionalExperience.
 			'<a href="http://tomhartung.com/" ' +
 				'title="Link to TomHartung.com Home Page (this site has only minimal content)" ' +
 				'target="_blank">TomHartung.com</a> ' +
-			'This work is on-going.' +
-			'</li>' +
+			'This work is on-going; for details see ' +
+				'<a href="https://github.com/tomwhartung" target="_blank">github.com/tomwhartung</a>.</li>' +
 		'<li>Rewriting frequently-used bash scripts, such as those used for deployment and ' +
 			'database access, in python.  ' +
-			'This work is on-going.</li>' +
+			'This work is on-going; for details see ' +
+				'<a href="https://github.com/tomwhartung" target="_blank">github.com/tomwhartung</a>.</li>' +
+		'<li>Writing demo programs for the Intel Edison in arduino (C/C++), node (javascript), and python.  ' +
+			'This work is on-going; for details see ' +
+				'<a href="https://github.com/tomwhartung" target="_blank">github.com/tomwhartung</a>.</li>' +
 		'<li>All code implementing idMyGadget and related projects, including ' +
 				'<a href="https://github.com/tomwhartung/resume" target="_blank">this resume</a>' +
 				'is open source, and freely available for inspection and download from ' +
