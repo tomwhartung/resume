@@ -116,7 +116,7 @@ TechnicalExperience.point_70 = {
 };
 TechnicalExperience.point_80 = {
 	bold: "Operating Systems:",
-	text: "Unix/Linux (Ubuntu, Yocto, SuSE, Gentoo, Red Hat, Mac OS X, Solaris, Sun-OS, AIX, HP-UX), Windows10, Windows7, Windows Vista, Windows XP, Windows XP Mode, DOS, MCP, MVS"
+	text: "Unix/Linux (Ubuntu, Yocto, SuSE, Gentoo, Red Hat, Mac OS X, Solaris, Sun-OS, AIX, HP-UX), Windows7, Windows Vista, Windows XP, Windows XP Mode, DOS, MCP, MVS"
 };
 TechnicalExperience.point_90 = {
 	bold: "Other Software Packages:",
