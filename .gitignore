@@ -4,7 +4,12 @@
 /unpack/
 /idMyGadget
 /tmp/
+#
+# I like to switch between vim, eclipse, and netbeans
+#
 *.swp
+.buildpath
+.project
 /nbproject/
 
 js/ProfessionalExperience.js
