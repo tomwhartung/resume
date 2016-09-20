@@ -260,6 +260,21 @@ var Volunteering = Object.create( MinimalSection, {
 		writable: true
 	}
 });
+Volunteering.point_DenverStartupWeek = {
+	bold: "Denver Startup Week:",
+	linkHref: "http://denverstartupweek.org/",
+	text: "Worked two volunteer shifts in 2015 and three in 2016",
+};
+Volunteering.point_DrupalCamp = {
+	bold: "DrupalCamp Colorado:",
+	linkHref: "http://2016.drupalcampcolorado.org/",
+	text: "Worked several volunteer shifts in 2016",
+};
+Volunteering.point_DenverDevs = {
+	bold: "Develop Denver Conference:",
+	linkHref: "http://developdenver.org/",
+	text: "Helped out a bit each day at the conference in 2016",
+};
 Volunteering.point_GoogleIOExtended = {
 	bold: "Google I/O Extended:",
 	linkHref: "https://events.google.com/io2016/",
@@ -269,11 +284,6 @@ Volunteering.point_CLevelAtMileHigh = {
 	bold: "C-Level at Mile Hi:",
 	linkHref: "http://clevelmilehigh.org/",
 	text: "Worked two shifts at the Colorado Technology Association (CTA) Fund Raiser in 2016",
-};
-Volunteering.point_DenverStartupWeek = {
-	bold: "Denver Startup Week:",
-	linkHref: "http://denverstartupweek.org/",
-	text: "Worked volunteer shifts at the job fair and soiree in 2015",
 };
 Volunteering.point_DenverFilmSociety = {
 	bold: "Denver Film Society:",
@@ -286,9 +296,11 @@ Volunteering.point_Bonfils = {
 	text: "Blood Donor Since 2012",
 };
 Volunteering.bulletPoints = [
+	Volunteering.point_DenverStartupWeek,
+	Volunteering.point_DrupalCamp,
+	Volunteering.point_DenverDevs,
 	Volunteering.point_GoogleIOExtended,
 	Volunteering.point_CLevelAtMileHigh,
-	Volunteering.point_DenverStartupWeek,
 	Volunteering.point_DenverFilmSociety,
 	Volunteering.point_Bonfils
 ];
