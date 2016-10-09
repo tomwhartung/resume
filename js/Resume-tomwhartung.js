@@ -88,19 +88,19 @@ var TechnicalExperience = Object.create( MinimalSection, {
 });
 TechnicalExperience.point_10 = {
 	bold: "Programming Languages:",
-	text: "PHP, Java, JavaScript, CoffeeScript, Bash, Ksh, Perl, Awk, C/C++, C#, Tcl/Expect, Cobol, Assemblers"
+	text: "PHP, JavaScript, Bash, Java, CoffeeScript, Ksh, Perl, Awk, C/C++, C#, Tcl/Expect, Cobol, Assemblers"
 };
 TechnicalExperience.point_20 = {
 	bold: "Content Management Systems:",
-	text: "Joomla, WordPress, Drupal 8, Drupal 7, PHP Nuke"
+	text: "Joomla, WordPress, Drupal 8, Drupal 7, Django, PHP Nuke"
 };
 TechnicalExperience.point_30 = {
 	bold: "Web Technologies:",
-	text: "HTML5, CSS, LAMP, WAMP, Apache, Tomcat, REST, SOAP, Ajax, XHTML, XML, JSP, Struts, Selenium WebDriver, Adobe Flex3, Freemarker Templates"
+	text: "HTML5, HTML5BoilerPlate, CSS, LAMP, WAMP, Apache, Tomcat, REST, SOAP, Ajax, XHTML, XML, JSP, Struts, Selenium WebDriver, Adobe Flex3, Freemarker Templates"
 };
 TechnicalExperience.point_40 = {
 	bold: "JavaScript Libraries:",
-	text: "jQuery, jQuery Mobile, Handlebars, Backbone, Underscore, Node, Mootools"
+	text: "Handlebars, jQuery, Node, jQuery Mobile, Backbone, Underscore, Mootools"
 };
 TechnicalExperience.point_50 = {
 	bold: "Relational Databases:",
@@ -120,7 +120,7 @@ TechnicalExperience.point_80 = {
 };
 TechnicalExperience.point_90 = {
 	bold: "Other Software Packages:",
-	text: "Microsoft Office, Open Office, Autocad"
+	text: "Open Office, Microsoft Office, Autocad"
 };
 TechnicalExperience.bulletPoints = [
 	TechnicalExperience.point_10,
