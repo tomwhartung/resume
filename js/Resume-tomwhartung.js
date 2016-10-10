@@ -215,7 +215,10 @@ CertificationsAndEducation.point_OnlineEdx = {
 	completedDate: "",
 	listItems:
 		"<li>W3CX HTML5.1x Web Design Fundamentals &mdash; completed in July, 2015</li>" +
-		"<li>HarvardX GSE2x Leaders of Learning &mdash; completed in August, 2014</li>"
+		"<li>UC BerkeleyX GG101x Science of Happiness &mdash; completed in December, 2014</li>" +
+		"<li>HarvardX GSE2x Leaders of Learning &mdash; completed in August, 2014</li>" +
+		"<li>Successfully completed several other classes &mdash; such as " +
+			"Think101x: The Science of Everyday Thinking at the University of Queensland</li>"
 };
 CertificationsAndEducation.point_OnlineCoursera = {
 	linkText: "Online classes (MOOCs) at Coursera,",
@@ -226,7 +229,9 @@ CertificationsAndEducation.point_OnlineCoursera = {
 	completedDate: "",
 	listItems:
 		"<li>UNM Web Application Architecture &mdash; completed in November, 2014 with distinction</li>" +
-		"<li>UPenn Networked Life &mdash; completed in November, 2014 with distinction</li>"
+		"<li>UPenn Networked Life &mdash; completed in November, 2014 with distinction</li>" +
+		"<li>Successfully completed several other classes &mdash; such as " +
+			"The Music of the Beatles at the University of Rochester</li>"
 };
 CertificationsAndEducation.point_JavaCertification = {
 	linkText: "Sun Certified Java2 Programmer,",
