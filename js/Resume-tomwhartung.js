@@ -270,6 +270,11 @@ var Volunteering = Object.create( MinimalSection, {
 		writable: true
 	}
 });
+Volunteering.point_JoomlaDayDenver = {
+	bold: "Joomla Day Denver:",
+	linkHref: "http://http://joomladaydenver.com//",
+	text: "Helped with both setup and teardown in 2016",
+};
 Volunteering.point_DenverStartupWeek = {
 	bold: "Denver Startup Week:",
 	linkHref: "http://denverstartupweek.org/",
@@ -306,6 +311,7 @@ Volunteering.point_Bonfils = {
 	text: "Blood Donor Since 2012",
 };
 Volunteering.bulletPoints = [
+	Volunteering.point_JoomlaDayDenver,
 	Volunteering.point_DenverStartupWeek,
 	Volunteering.point_DrupalCamp,
 	Volunteering.point_DenverDevs,
