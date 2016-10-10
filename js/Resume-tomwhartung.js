@@ -206,14 +206,27 @@ var CertificationsAndEducation = Object.create( MinimalSection, {
 		writable: true
 	}
 });
-CertificationsAndEducation.point_HTML5Mooc = {
-	linkText: "HTML5 Part 1: HTML5 Coding Essentials and Best Practices,",
-	linkHref: "https://www.edx.org/course/html5-part-1-html5-coding-essentials-w3cx-html5-1x-1",
-	schoolText: "Edx.org",
+CertificationsAndEducation.point_OnlineEdx = {
+	linkText: "Online classes (MOOCs) at edX,",
+	linkHref: "https://www.edx.org/",
+	schoolText: "edX.org",
 	schoolHref: "https://edx.org",
 	location: "",
-	completedDate: "June, 2015",
-	listItems: ""
+	completedDate: "",
+	listItems:
+		"<li>W3CX HTML5.1x Web Design Fundamentals &mdash; completed in July, 2015</li>" +
+		"<li>HarvardX GSE2x Leaders of Learning &mdash; completed in August, 2014</li>"
+};
+CertificationsAndEducation.point_OnlineCoursera = {
+	linkText: "Online classes (MOOCs) at Coursera,",
+	linkHref: "https://www.coursera.org/",
+	schoolText: "Coursera.org",
+	schoolHref: "https://coursera.org",
+	location: "",
+	completedDate: "",
+	listItems:
+		"<li>UNM Web Application Architecture &mdash; completed in November, 2014 with distinction</li>" +
+		"<li>UPenn Networked Life &mdash; completed in November, 2014 with distinction</li>"
 };
 CertificationsAndEducation.point_JavaCertification = {
 	linkText: "Sun Certified Java2 Programmer,",
@@ -247,7 +260,8 @@ CertificationsAndEducation.point_Bachelors = {
 		"Paid for 90% of undergraduate-level education myself."
 };
 CertificationsAndEducation.bulletPoints = [
-	CertificationsAndEducation.point_HTML5Mooc,
+	CertificationsAndEducation.point_OnlineEdx,
+	CertificationsAndEducation.point_OnlineCoursera,
 	CertificationsAndEducation.point_JavaCertification,
 	CertificationsAndEducation.point_Masters,
 	CertificationsAndEducation.point_Bachelors
