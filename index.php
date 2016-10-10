@@ -382,7 +382,7 @@ print '<link rel="stylesheet" type="text/css" ' .
 			<h2>Professional Experience</h2>
 		</section>
 		<section id="content_education" class="section">
-			<h2>Certifications and Education</h2>
+			<h2>Classes, Certifications, and Education</h2>
 		</section>
 		<section id="content_volunteering" class="section">
 			<h2>Volunteering</h2>
