@@ -206,6 +206,15 @@ var CertificationsAndEducation = Object.create( MinimalSection, {
 		writable: true
 	}
 });
+CertificationsAndEducation.point_HTML5Mooc = {
+	linkText: "HTML5 Part 1: HTML5 Coding Essentials and Best Practices,",
+	linkHref: "https://www.edx.org/course/html5-part-1-html5-coding-essentials-w3cx-html5-1x-1",
+	schoolText: "Edx.org",
+	schoolHref: "https://edx.org",
+	location: "",
+	completedDate: "June, 2015",
+	listItems: ""
+};
 CertificationsAndEducation.point_JavaCertification = {
 	linkText: "Sun Certified Java2 Programmer,",
 	linkHref: "http://www.oracle.com/technetwork/topics/newtojava/certification-140469.html",
@@ -238,6 +247,7 @@ CertificationsAndEducation.point_Bachelors = {
 		"Paid for 90% of undergraduate-level education myself."
 };
 CertificationsAndEducation.bulletPoints = [
+	CertificationsAndEducation.point_HTML5Mooc,
 	CertificationsAndEducation.point_JavaCertification,
 	CertificationsAndEducation.point_Masters,
 	CertificationsAndEducation.point_Bachelors
