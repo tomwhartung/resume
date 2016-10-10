@@ -272,7 +272,7 @@ var Volunteering = Object.create( MinimalSection, {
 });
 Volunteering.point_JoomlaDayDenver = {
 	bold: "Joomla Day Denver:",
-	linkHref: "http://http://joomladaydenver.com//",
+	linkHref: "http://joomladaydenver.com//",
 	text: "Helped with both setup and teardown in 2016",
 };
 Volunteering.point_DenverStartupWeek = {
