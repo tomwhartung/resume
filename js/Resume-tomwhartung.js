@@ -208,7 +208,7 @@ var CertificationsAndEducation = Object.create( MinimalSection, {
 });
 CertificationsAndEducation.point_OnlineEdx = {
 	linkText: "Online classes (MOOCs) at edX,",
-	linkHref: "https://www.edx.org/",
+	linkHref: "",
 	schoolText: "edX.org",
 	schoolHref: "https://edx.org",
 	location: "",
@@ -219,7 +219,7 @@ CertificationsAndEducation.point_OnlineEdx = {
 };
 CertificationsAndEducation.point_OnlineCoursera = {
 	linkText: "Online classes (MOOCs) at Coursera,",
-	linkHref: "https://www.coursera.org/",
+	linkHref: "",
 	schoolText: "Coursera.org",
 	schoolHref: "https://coursera.org",
 	location: "",
