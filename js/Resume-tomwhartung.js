@@ -88,7 +88,7 @@ var TechnicalExperience = Object.create( MinimalSection, {
 });
 TechnicalExperience.point_10 = {
 	bold: "Programming Languages:",
-	text: "PHP, JavaScript, Bash, Java, CoffeeScript, Ksh, Perl, Awk, C/C++, C#, Tcl/Expect, Cobol, Assemblers"
+	text: "PHP, JavaScript, Python, Bash, Java, CoffeeScript, Ksh, Perl, Awk, C/C++, C#, Tcl/Expect, Cobol, Assemblers"
 };
 TechnicalExperience.point_20 = {
 	bold: "Content Management Systems:",
