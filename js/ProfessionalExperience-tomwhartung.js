@@ -53,7 +53,7 @@ ProfessionalExperience.JoomooWebsites_2 = Object.create( ProfessionalExperience.
 	companyName: { value: 'Joomoowebsites LLC' },
 	companyHref: { value: 'http://www.JoomooWebsites.com' },
 	location: { value: 'Denver, CO' },
-	title: { value: 'R & D Software Engineer' },
+	title: { value: 'Full SDLC Analyst, Developer, Tech Writer' },
 	dateRange: { value: 'May, 2015 through present' },
 	displayLevel: { value: 1 },
 	listItems: { value:
