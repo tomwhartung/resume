@@ -301,7 +301,11 @@ print '<link rel="stylesheet" type="text/css" ' .
 			{{#each bulletPoints}}
 				<li>
 					<div class="bold education-heading">
-						<a href="{{linkHref}}" target="_blank">{{linkText}}</a>
+						{{#if linkHref}}
+							<a href="{{linkHref}}" target="_blank">{{linkText}}</a>
+						{{else}}
+							<p>{{linkText}}</p>
+						{{/if}}
 					</div>
 					{{#if schoolText}}
 						<a href="{{schoolHref}}" target="_blank">{{schoolText}}</a>
