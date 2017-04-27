@@ -32,13 +32,23 @@ define( "JS_DEVICE_ANDROID_PHONE", "androidPhone.js" );
 define( "JS_DEVICE_APPLE_PHONE",   "iPhone.js" );
 //
 // If it's installed, instantiate an IdMyGadget object and
-// use it to determine key factors about // the device the user is using to access the page.
+// use it to determine key factors about
+// the device the user is using to access the page.
 //
 $newIncludePath = get_include_path() . ":idMyGadget";
 set_include_path( $newIncludePath );
-require_once 'gadget_detectors/tera_wurfl/Tera-Wurfl/wurfl-dbapi/TeraWurfl.php';
+
+//
+// Update for 2017-04-27: Switching to Mobile-Detect
+// -------------------------------------------------
+//
+// require_once 'gadget_detectors/tera_wurfl/Tera-Wurfl/wurfl-dbapi/TeraWurfl.php';
+// require_once 'php/IdMyGadget.php';
+// require_once 'php/IdMyGadgetTeraWurfl.php';
+//
+require_once 'gadget_detectors/mobile_detect/Mobile-Detect/Mobile_Detect.php';
 require_once 'php/IdMyGadget.php';
-require_once 'php/IdMyGadgetTeraWurfl.php';
+require_once 'php/IdMyGadgetMobileDetect.php';
 
 //
 // debugging: displays verbose information; we don't need to use this very often
@@ -51,11 +61,34 @@ require_once 'php/IdMyGadgetTeraWurfl.php';
 // $debugging = TRUE;  // Warning: debug output sends all <head> elts into <body>
 $debugging = FALSE;
 $allowOverridesInUrl = TRUE;
-$idMyGadget = new IdMyGadgetTeraWurfl( $debugging, $allowOverridesInUrl );
+$idMyGadget = new IdMyGadgetMobileDetect( $debugging, $allowOverridesInUrl );
 $deviceData = $idMyGadget->getDeviceData();
 $gadgetType = $deviceData["gadgetType"];
 $gadgetModel = $deviceData["gadgetModel"];
 $gadgetBrand = $deviceData["gadgetBrand"];
+
+//
+// Update for 2017-04-27: Lessons Learned
+// --------------------------------------
+// 0. One of the big lessons learned from integrating idMyGadget with
+//    the LAMP CMSes was that the middle option (Mobile Detect) is the best.
+//    -> Looking back at this, I cannot believe I hard-coded it to use TeraWurfl!
+//    -> It is time to address that issue!
+// 1. gadgetModel - note that:
+//    css/device/androidPhone.css matches iPhone.css and
+//    js/device/androidPhone.js matches iPhone.js
+//    So...
+// 2. There's really no reason to distinguish between iphone and android -
+//    even though it is cool that we can do so!
+//    However, keeping the code simple takes precedence!
+//    And I'm super-busy working on other stuff right now!
+//    And...
+// 3. gadgetBrand - is not even being used, outside of the comment above.
+//    So...
+// 4. We are hard-coding it to use Apple for the brand,
+//    -> Because it's a quick fix and doesn't even matter!
+//
+$gadgetModel = IdMyGadget::GADGET_MODEL_APPLE_PHONE;    # SEE the "Update"s ABOVE!
 
 if ( $gadgetType === IdMyGadget::GADGET_TYPE_DESKTOP )
 {
