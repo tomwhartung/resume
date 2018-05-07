@@ -10,7 +10,7 @@ If you installed this code and are being redirected here, it is because you have
 * For information about idMyGadget, see [the idMyGadget project on github](https://github.com/tomwhartung/idMyGadget) .
 
 * You can see an example of the finished product here:
-[Tom W. Hartung's Mobile Friendly Resume](http://tomwhartung.com/resume) .
+[Tom W. Hartung's Mobile Friendly Resume](http://tomhartung.com/resume) .
 
 Note that to fully appreciate the result, you must access it on both your phone and a desktop or tablet!
 
@@ -22,7 +22,7 @@ The files
 [js/Resume-tomwhartung.js](https://github.com/tomwhartung/resume/blob/master/js/Resume-tomwhartung.js)
 and
 [js/ProfessionalExperience-tomwhartung.js](https://github.com/tomwhartung/resume/blob/master/js/ProfessionalExperience-tomwhartung.js)
-contain the data used in [my resume](http://tomwhartung.com/resume) .
+contain the data used in [my resume](http://tomhartung.com/resume) .
 
 On my web server I link these to js/Resume.js and js/ProfessionalExperience.js .
 
