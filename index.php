@@ -142,6 +142,7 @@ if ( ! file_exists($professionalExperienceFileName) )
 }
 
 print '<head>';
+include_once( 'google_analytics.php' );
 print '<title>' . $myName . '</title>';
 print '<meta charset="utf-8" />';
 print '<meta name="viewport" content="user-scalable=no, width=device-width" />';
